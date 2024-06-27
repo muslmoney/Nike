@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Futura PT Bold Oblique';
+	src: url('../fonts/futura_pt_bold_oblique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/futura_pt_bold_oblique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/futura_pt_bold_oblique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/futura_pt_bold_oblique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/futura_pt_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/futura_pt_bold_oblique.svg#futura_pt_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
+}

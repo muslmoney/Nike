@@ -1,8 +1,24 @@
-import React, { Fragment } from 'react'
-import {Link, Outlet } from 'react-router-dom'
+import React, { Fragment, useEffect } from 'react'
+import "./App.css";
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import Header from './layout/Header'
 import './App.css'
+import Footer from './layout/Footer'
+
+
 const App = () => {
+  const navigate = useNavigate()
+  const { pathname } = useLocation()
+  useEffect(() => {
+    if (pathname === '/') {
+      navigate('/home')
+    }
+  }, [pathname])
+
+
+
+
+
   return (
     <div>
       <Fragment>
@@ -15,7 +31,7 @@ const App = () => {
         </main>
         
         <footer>
-          footer
+          <Footer/>
         </footer>
       </Fragment>
     </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import Home from './pages/Home.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -9,8 +10,19 @@ const router = createBrowserRouter([
   path: "/",
 element: <App/>,
 children: [
-  //todo
-]
+  {
+   path: 'home',
+   element: <Home/>,
+  },
+  // {
+  //  path: 'products',
+  //  element : <Products />
+  // },
+  // {
+  //  path: '*',
+  //  element : <NotFound/>
+  // }
+ ]
 }
 ])
 

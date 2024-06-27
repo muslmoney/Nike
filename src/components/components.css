@@ -1,0 +1,38 @@
+ .Product__card{
+    position: relative;
+    min-height: 300px;
+     a {
+         width: 100%;
+         img{
+    aspect-ratio: 1.46667 / 1;
+    object-fit: cover;
+}
+}
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+position: absolute;
+bottom: 13%;
+left: 8%;
+font-family: 'Helvetica';
+font-weight: 600;
+font-size: 17px;
+}
+button:hover{
+background-color: #fff;
+}
+}
+.Product22{
+  a{
+      object-fit: cover;
+      width: 100%;
+
+  }  
+button{
+    font-size: 30px;
+    padding-top: 40px;
+    border: none;
+    background: transparent;
+}
+}
