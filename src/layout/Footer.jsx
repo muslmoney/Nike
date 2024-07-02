@@ -10,9 +10,9 @@ const Footer = () => {
             <div className='footer__wrap'>
             <div className='footer__card' >
                 <h4>Resourses</h4>
-                <a href="#"><p className='opacity'>Find a store</p></a>
+                <a href="/products"><p className='opacity'>Find a store</p></a>
                 <a href="#"><p className='opacity'>Nike Journal</p></a>
-                <a href="#"><p className='opacity'>Promo Codes</p></a>
+                <a href="/products"><p className='opacity'>Promo Codes</p></a>
                 <a href="#"><p className='opacity'>Feedback</p></a>
             </div>
             <div className='footer__card'> 
@@ -51,7 +51,7 @@ const Footer = () => {
                         <span className="fab fa-twitter"><BsTwitterX /></span>
                     </div>
                     <div className="text">
-                        Twitter</div>
+                        X</div>
                 </a>
                 <a target='_blank' href="https://www.instagram.com/nike/">
                     <div className="layer">

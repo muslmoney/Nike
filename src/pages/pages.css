@@ -1,56 +1,68 @@
-.Home{
-    padding: 0 0 90px 0;
-  .Shop{
+.Home {
+   padding: 0 0 90px 0;
+
+   .Shop {
       text-align: center;
       padding: 15px 0;
-    p{
-        padding: 5px 0;
-    }
-    a{
-        text-decoration: underline;
-    }
-  }
-    .Home__hero{
-        background-image: url('../assets/Nike_hero-1.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 150px 50px 30px 50px;
-     h1{
-        text-transform: uppercase;
-        font-family: 'Futura';
-        font-size: 90px;
-     }   
-     p{
-        text-transform: capitalize ;
-        font-weight: 500;
 
-font-size: 26px;
-        padding: 15px 0;
-     }
-     button{
-        padding: 8px 22px;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #000;
-        border: none;
-        color: #fff;
-     }
-     button:hover{
-        background-color: #313131;
+      p {
+         padding: 5px 0;
+      }
 
-     }
-    }
+      a {
+         text-decoration: underline;
+      }
+   }
+
+   .Home__hero {
+      background-image: url('../assets/Nike_hero-1.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 150px 50px 30px 50px;
+
+      h1 {
+         text-transform: uppercase;
+         font-family: 'Futura';
+         font-size: 90px;
+      }
+
+      p {
+         text-transform: capitalize;
+         font-weight: 500;
+
+         font-size: 26px;
+         padding: 15px 0;
+      }
+
+      button {
+         padding: 8px 22px;
+         font-size: 20px;
+         border-radius: 20px;
+         background-color: #000;
+         border: none;
+         color: #fff;
+      }
+
+      button:hover {
+         background-color: #313131;
+
+      }
+   }
 }
 
-.OurIcons{
- 
+
+section {
+   margin: 90px 0px;
 }
-section{
-   margin:  90px 0px ;
-} 
- .Swiper__cont{
-       h2{
+
+.Swiper__cont {
+   h2 {
       padding: 0px 0 19px 0;
    }
-   }
+}
+.NotFound{
+   text-align: center;
+   padding: 200px;
+   font-size: 3   0px;
+}
