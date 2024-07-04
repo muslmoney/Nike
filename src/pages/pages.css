@@ -1,3 +1,7 @@
+
+section {
+   margin: 90px 0px;
+}
 .Home {
    padding: 0 0 90px 0;
 
@@ -52,10 +56,6 @@
 }
 
 
-section {
-   margin: 90px 0px;
-}
-
 .Swiper__cont {
    h2 {
       padding: 0px 0 19px 0;
@@ -65,4 +65,18 @@ section {
    text-align: center;
    padding: 200px;
    font-size: 3   0px;
+}
+.Jordan{
+   width: 100%;
+   padding: 100px 0;
+   .Jordan__logo{
+      margin: 0 auto;
+      max-width: 200px;
+   }
+   h1{
+padding-top:  50px  ;
+font-size: 50px;
+      text-align: center;
+      font-family: 'Helvetica';
+   }
 }

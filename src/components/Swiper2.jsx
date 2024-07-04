@@ -21,7 +21,7 @@ export default function App() {
     <div>
 
       <Swiper
-        // loop={true}
+        loop={true} 
         // pagination={{
         //   clickable: true,
         // }}

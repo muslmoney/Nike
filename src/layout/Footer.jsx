@@ -6,7 +6,8 @@ import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 const Footer = () => {
     return (
-        <div className='container '>
+      <footer className='Footer'>
+  <div className='container '>
             <div className='footer__wrap'>
             <div className='footer__card' >
                 <h4>Resourses</h4>
@@ -81,6 +82,7 @@ const Footer = () => {
             </div>
             <p className='opacity nuke'>© 2024 Nike, Inc. All rights reserved</p>
         </div>
+      </footer>
     )
 }
 

@@ -6,6 +6,7 @@ import Products from './pages/Products.jsx'
 import Home from './pages/Home.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NotFound from './pages/NotFound.jsx'
+import Jordan from './pages/Jordan.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
       {
        path: '*',
        element : <NotFound/>
-      }
+      },
+      {
+        path: 'jordan',
+        element : <Jordan />
+       },
     ]
   }
 ])
