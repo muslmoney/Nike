@@ -9,7 +9,8 @@ const Footer = () => {
       <footer className='Footer'>
   <div className='container '>
             <div className='footer__wrap'>
-            <div className='footer__card' >
+<div className='footer__cards'>
+<div className='footer__card' >
                 <h4>Resourses</h4>
                 <a href="/products"><p className='opacity'>Find a store</p></a>
                 <a href="#"><p className='opacity'>Nike Journal</p></a>
@@ -29,6 +30,10 @@ const Footer = () => {
                 <a href="#"><p className='opacity'>Careers</p></a>
                 <a href="#"><p className='opacity'>Pupose</p></a>
                 </div>
+        
+</div>
+        
+        
            <div className='footer__icons'>
                 <h3>We on Social Media</h3>
            <div className="icons ">
