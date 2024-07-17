@@ -19,7 +19,7 @@ const Products = () => {
 
                     <div className="Products__content">
                         <aside className='Products__aside-filter'>
-                            <Accordion />
+                            <Accordion />   
                         </aside>
                         <main className='Products__main'></main>
                     </div>
