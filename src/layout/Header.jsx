@@ -48,8 +48,8 @@ const [state, setState] = useState('Header__nav')
                             <Link >
                                 <svg id='pon' className='Header__logo' aria-hidden="true" class="swoosh-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path></svg>
                             </Link>
-    {/* className=  {( State ?? 'Header__nav')}  */}
-<nav  className=  { state + ( ' active' ?? 'Header__nav')} >
+    {/* className=  {( State ?? 'Header__nav')}  */}    
+<nav  className=  { state +  (' active' ?? 'Header__nav')} >
                                 <ul className='Header__nav-list'>
                                     <li className='Header__nav-item'>
                                         <a href={'/products'} className='Header__nav-link'>
@@ -57,6 +57,113 @@ const [state, setState] = useState('Header__nav')
                                                 New & Featured
                                             </p>
                                         </a>
+
+                                        <div className='Header-hover'>
+                                            <div className='Header__hover-menu'>
+
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                       New & Featured
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            New arrivals
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Best sellers
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            new and upcoming  drops
+                                                        </p>
+                                                    </a>
+                                                 
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                        Trending
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           ACG
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Retro running
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            shop sport
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                        Shop classics
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            dunk
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            air jordan
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            air force
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            air max
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            blazer
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                        Explore
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Lorem, ipsum.
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Lorem ipsum dolor sit.
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Lorem, ipsum dolor.
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Lorem ipsum sit.
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                         Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className='Header__nav-item'>
                                         <a href={'/products'} className='Header__nav-link'>
@@ -64,6 +171,176 @@ const [state, setState] = useState('Header__nav')
                                                 Men
                                             </p>
                                         </a>
+
+                                        <div className='Header-hover'>
+                                            <div className='Header__hover-menu'>
+
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                       New & Featured
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            New arrivals
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Best sellers
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            new and upcoming  drops
+                                                        </p>
+                                                    </a>
+                                                <div className='Header__hover-card'>
+                                                <h3>collections</h3>
+                                                 <a className='opacity' href="">
+                                                        <p>
+                                                            summer shop1
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            soccer cleats
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            fitness favourites
+                                                        </p>
+                                                    </a>    
+                                                </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      Shoes
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        all shoes
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        life style
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            jordan
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            metro running 
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            air max
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            trainning & gym
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            nike by you
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      clothing
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all
+                                                            clothing
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            pants & tights
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          jackets & vests
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           big & tall
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            shorts
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           jordan
+                                                        </p>
+                                                    </a>
+                                                    <div className='Header__hover-card'>
+                                                    <h3>
+                                                        accessories
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all accessories
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            socks
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            sunglasses
+                                                        </p>
+                                                    </a>
+                                                    </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                        shop by sport
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           Golf
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          football
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        basketball
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            soccer
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            swimming
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className='Header__nav-item'>
                                         <a href={'/products'} className='Header__nav-link'>
@@ -71,6 +348,176 @@ const [state, setState] = useState('Header__nav')
                                                 Women
                                             </p>
                                         </a>
+                                     
+                                        <div className='Header-hover'>
+                                            <div className='Header__hover-menu'>
+
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                       New & Featured
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            New arrivals
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Best sellers
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            new and upcoming  drops
+                                                        </p>
+                                                    </a>
+                                                <div className='Header__hover-card'>
+                                                <h3>collections</h3>
+                                                 <a className='opacity' href="">
+                                                        <p>
+                                                            summer shop1
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            soccer cleats
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            fitness favourites
+                                                        </p>
+                                                    </a>    
+                                                </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      Shoes
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        all shoes
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        life style
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            jordan
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            metro running 
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            air max
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            trainning & gym
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            nike by you
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      clothing
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all
+                                                            clothing
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            pants & tights
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          jackets & vests
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           big & tall
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            shorts
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           jordan
+                                                        </p>
+                                                    </a>
+                                                    <div className='Header__hover-card'>
+                                                    <h3>
+                                                        accessories
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all accessories
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            socks
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            sunglasses
+                                                        </p>
+                                                    </a>
+                                                    </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                        shop by sport
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           Golf
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          football
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        basketball
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            soccer
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            swimming
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className='Header__nav-item'>
                                         <a href={'/products'} className='Header__nav-link'>
@@ -78,6 +525,175 @@ const [state, setState] = useState('Header__nav')
                                                 Kids
                                             </p>
                                         </a>
+                                        <div className='Header-hover'>
+                                            <div className='Header__hover-menu'>
+
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                       New & Featured
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            New arrivals
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Best sellers
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            new and upcoming  drops
+                                                        </p>
+                                                    </a>
+                                                <div className='Header__hover-card'>
+                                                <h3>collections</h3>
+                                                 <a className='opacity' href="">
+                                                        <p>
+                                                            summer shop1
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            soccer cleats
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            fitness favourites
+                                                        </p>
+                                                    </a>    
+                                                </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      Shoes
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        all shoes
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        life style
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            jordan
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            metro running 
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            air max
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            trainning & gym
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            nike by you
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      clothing
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all
+                                                            clothing
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            pants & tights
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          jackets & vests
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           big & tall
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            shorts
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           jordan
+                                                        </p>
+                                                    </a>
+                                                    <div className='Header__hover-card'>
+                                                    <h3>
+                                                        accessories
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all accessories
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            socks
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            sunglasses
+                                                        </p>
+                                                    </a>
+                                                    </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                        shop by sport
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           Golf
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          football
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        basketball
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            soccer
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            swimming
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className='Header__nav-item'>
                                         <a href={'/products'} className='Header__nav-link'>
@@ -85,6 +701,175 @@ const [state, setState] = useState('Header__nav')
                                                 Sale
                                             </p>
                                         </a>
+                                        <div className='Header-hover'>
+                                            <div className='Header__hover-menu'>
+
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                       New & Featured
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            New arrivals
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            Best sellers
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            new and upcoming  drops
+                                                        </p>
+                                                    </a>
+                                                <div className='Header__hover-card'>
+                                                <h3>collections</h3>
+                                                 <a className='opacity' href="">
+                                                        <p>
+                                                            summer shop1
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            soccer cleats
+                                                        </p>
+                                                    </a>  
+                                                     <a className='opacity' href="">
+                                                        <p>
+                                                            fitness favourites
+                                                        </p>
+                                                    </a>    
+                                                </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      Shoes
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        all shoes
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        life style
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            jordan
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            metro running 
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            air max
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            trainning & gym
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            nike by you
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                      clothing
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all
+                                                            clothing
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            pants & tights
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          jackets & vests
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           big & tall
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            shorts
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           jordan
+                                                        </p>
+                                                    </a>
+                                                    <div className='Header__hover-card'>
+                                                    <h3>
+                                                        accessories
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            all accessories
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            socks
+                                                        </p>
+                                                    </a> 
+                                                      <a className='opacity' href="">
+                                                        <p>
+                                                            sunglasses
+                                                        </p>
+                                                    </a>
+                                                    </div>
+                                                </div>
+                                                <div className='Header__hover-card'>
+                                                    <h3>
+                                                        shop by sport
+                                                    </h3>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                           Golf
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                          football
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                        basketball
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            soccer
+                                                        </p>
+                                                    </a>
+                                                    <a className='opacity' href="">
+                                                        <p>
+                                                            swimming
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
 
                                 </ul>
@@ -126,131 +911,7 @@ const [state, setState] = useState('Header__nav')
                             </nav>
 
                         </div>
-                        <div className='none'>
-                            <div className='Header__hover-menu'>
-
-                                <div className='Header__hover-card'>
-                                    <h3>
-                                        Featured
-                                    </h3>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                </div>
-                                <div className='Header__hover-card'>
-                                    <h3>
-                                        Featured
-                                    </h3>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                </div>
-                                <div className='Header__hover-card'>
-                                    <h3>
-                                        Featured
-                                    </h3>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                </div>
-                                <div className='Header__hover-card'>
-                                    <h3>
-                                        Featured
-                                    </h3>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                    <a className='opacity' href="">
-                                        <p>
-                                            Shop
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                       
 
                     </div>
 
