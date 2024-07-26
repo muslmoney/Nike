@@ -55,8 +55,9 @@
     top: 100px;
     left: 0;
     width: 100%;
-
-
+@media (max-width:800px) {
+    display: none;
+}
     
 }
 .Header__nav-item {
@@ -95,6 +96,7 @@
         }
 
         .Header__nav {
+            z-index: 100;
             margin: 0 auto;
 
             .Header__nav-list {
@@ -189,6 +191,7 @@
                     padding: 5px;
                     width: 35px;
                     height: 35px;
+                    position: relative;
                 }
 
                 .Header__tools-item:hover {
@@ -241,6 +244,7 @@
 
                 .hamburger-react {
                     left: -11px;
+                    z-index: 1011 !important;
                 }
 
                 @media (max-width:800px) {
@@ -267,6 +271,7 @@
             text-align: center;
             border-radius: 50%;
             position: absolute;
+        
         }
 
         @media (max-width:800px) {
@@ -280,9 +285,34 @@
 
     @media (max-width:800px) {
         .Header__nav {
-            display: none;
+/* display: none; */
 
+position: fixed;
+width: 40%;
+height: 100dvh;
+backdrop-filter: blur(10px);
+background-color: rgba(0, 0, 0, 0.245);
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+padding: 90px 0 0 60px;
+gap: 20px;
+top: 0;
+right: -100%;
+transition:  0.3s ease-out;
+color: white;
+&.active {
+    right: 0;       
+}
 
+.Header__nav-list {
+    flex-direction: column;
+    text-align: left;
+
+    
+}
+          
         }
 
     }
@@ -293,7 +323,7 @@
 
 
 .Header-hover{
-
+text-transform: capitalize; 
     .Header__hover-menu {
     
         width: 100%;
