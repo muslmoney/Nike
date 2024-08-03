@@ -323,7 +323,6 @@ section {
 .Products {
    .Products__header {
       position: relative;
-      height: 2000px;
 
       .Products__header-inner {
          display: flex;
@@ -343,8 +342,9 @@ section {
          justify-content: space-between;
 
          div {
-            gap: 5px;
             display: flex;
+            gap: 5px;
+          
          }
 
          button {
@@ -354,11 +354,41 @@ section {
             font-size: 22px;
             font-weight: 500;
             font-family: 'Helvetica';
+            box-shadow: none;
+            padding: 0;
 
          }
 
         
       }
 
+   }
+   .aside{
+      max-width: 260px;
+      padding-left: 48px;
+      a{
+         
+         padding-bottom: 15px;
+         font-size: 25px;
+      }
+      .aside-categoties{
+         display: flex;
+         flex-direction: column;
+padding-bottom: 4ё0px;
+      }
+      .Cascader{
+         box-shadow: none;
+         padding: 15px 0;
+         border-top: 1px solid rgba(0, 0, 0, 0.144);
+
+         div{
+            padding: 0;
+            border: none;
+            span{
+            color: #000;
+            font-size: 25px;
+            }
+         }
+      }
    }
 }

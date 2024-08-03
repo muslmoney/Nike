@@ -1,5 +1,41 @@
 import React from "react";
 import { Button, Dropdown, Space } from "antd";
+import { Cascader } from 'antd';
+const options = [
+  {
+    label: 'Light',
+    value: 'light',
+    children: new Array(20).fill(null).map((_, index) => ({
+      label: `Number ${index}`,
+      value: index,
+    })),
+  },
+  {
+    label: 'Bamboo',
+    value: 'bamboo',
+    children: [
+      {
+        label: 'Little',
+        value: 'little',
+        children: [
+          {
+            label: 'Toy Fish',
+            value: 'fish',
+            disableCheckbox: true,
+          },
+          {
+            label: 'Toy Cards',
+            value: 'cards',
+          },
+          {
+            label: 'Toy Bird',
+            value: 'bird',
+          },
+        ],
+      },
+    ],
+  },
+];
 const items = [
   {
     key: "1",
@@ -98,7 +134,7 @@ const Products = () => {
              </div>
               <button>
                 <Space direction="vertical" >
-                  <Space wrap>
+                  <Space wrap >
                     <Dropdown
                       menu={{
                         items,
@@ -114,14 +150,93 @@ const Products = () => {
            </div>
         </header>
 
+<div className="content">
+  
+<aside className="aside">
+<div className="aside-categoties">
+<a href="/product">
+  <p>
+Shoes
+  </p>
+</a>
+<a href="/product">
+  <p>
+Shoes
+  </p>
+</a>
+<a href="/product">
+  <p>
+Shoes
+  </p>
+</a>
+<a href="/product">
+  <p>
+Shoes
+  </p>
+</a>
+<a href="/product">
+  <p>
+Shoes
+  </p>
+</a>
+</div>
 
+<Cascader
+className="Cascader"
+    style={{
+      width: '100%',
+    }}
+    options={options}
+    multiple
+    maxTagCount="responsive"
+    placeholder={'Gendar'}
+  />
+  <Cascader
+className="Cascader"
+    style={{
+      width: '100%',
+    }}
+    options={options}
+    multiple
+    maxTagCount="responsive"
+    placeholder={'Gendar'}
+  />
+  <Cascader
+className="Cascader"
+    style={{
+      width: '100%',
+    }}
+    options={options}
+    multiple
+    maxTagCount="responsive"
+    placeholder={'Gendar'}
+  />
+  <Cascader
+className="Cascader"
+    style={{
+      width: '100%',
+    }}
+    options={options}
+    multiple
+    maxTagCount="responsive"
+    placeholder={'Gendar'}
+  />
+  <Cascader
+className="Cascader"
+    style={{
+      width: '100%',
+    }}
+    options={options}
+    multiple
+    maxTagCount="responsive"
+    placeholder={'Gendar'}
+  />
+</aside>
+<main>
 
-        <aside>
+</main>
+</div>
 
-        </aside>
-        <main>
-        
-        </main>
       </div>
     </section>
   );
