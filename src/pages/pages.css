@@ -45,7 +45,7 @@ section {
 
       h1 {
          text-transform: uppercase;
-         font-family: 'Futura PT Bold Oblique';
+         font-family: 'Futura';
          font-size: clamp(55px, 5.6875vw, 90px);
 
          @media (max-width:850px) {
@@ -363,30 +363,59 @@ section {
       }
 
    }
-   .aside{
-      max-width: 260px;
-      padding-left: 48px;
-      a{
-         
-         padding-bottom: 15px;
-         font-size: 25px;
+   .content{
+      display: flex;
+      padding-top: 50px;
+      .aside{
+         max-width: 260px;
+         padding-left: 38px;
+         width: 100%;
+         a{
+            padding-bottom: 15px;
+            font-size: 18px;
+            font-weight:500;
+            font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+         }
+         .aside-categoties{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+            padding-left: 10px;
+         }
+         .Cascader{
+            box-shadow: none;
+            padding: 15px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.144);
+            
+            div{
+               padding: 0;
+               border: none;
+               span{
+               color: #000;
+               font-size: 16px;
+               font-weight: 500;
+               }
+            }
+         }
       }
-      .aside-categoties{
-         display: flex;
-         flex-direction: column;
-padding-bottom: 4ё0px;
-      }
-      .Cascader{
-         box-shadow: none;
-         padding: 15px 0;
-         border-top: 1px solid rgba(0, 0, 0, 0.144);
-
-         div{
-            padding: 0;
-            border: none;
-            span{
-            color: #000;
-            font-size: 25px;
+      main{
+         width: 100%;
+         padding-left: 40px;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-gap: 40px 20px;
+         img{
+            max-width: 487px;
+         }
+         .Product__Card2{
+            h3{
+               font-weight: 700;
+               font-size: 16px;
+               line-height: 25px;
+            }
+            p{
+               padding: 4px 0;
+               font-family: 'Helvetica Now Text';
             }
          }
       }

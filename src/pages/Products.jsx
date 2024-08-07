@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Dropdown, Space } from "antd";
 import { Cascader } from 'antd';
+import { ProductCard2 } from "../components/ProductCard";
 const options = [
   {
     label: 'Light',
@@ -233,7 +234,15 @@ className="Cascader"
   />
 </aside>
 <main>
-
+<ProductCard2 title={'Nike air max pro 15dddddddd'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
+<ProductCard2 title={'pon'} category={'mans'} color={'green'}  price={200} ImgSrc={'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png'}/>
 </main>
 </div>
 

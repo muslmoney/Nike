@@ -7,3 +7,12 @@
 		url('../fonts/futura_pt_bold_oblique.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/futura_pt_bold_oblique.svg#futura_pt_bold_oblique') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+@font-face {
+	font-family: 'Helvetica Now Text';
+	src: url('./HelveticaNowText-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('./nike.ttf');
+} 
