@@ -42,7 +42,7 @@ export const ProductCard2 = ({
       <a href="">
         <img src={ImgSrc} alt={ImgTitle} />
       </a>
-      <div >
+      <div>
         <h3>
           <p>{title}</p>
         </h3>

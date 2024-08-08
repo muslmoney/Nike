@@ -14,6 +14,9 @@ section {
       margin: 20px 0;
    }
 }
+h1, h2, h3, h4, h5, h6{
+   font-weight: 900;
+}
 
 .Home {
    padding: 0 0 90px 0;
@@ -148,6 +151,7 @@ section {
       padding-top: 50px;
       font-size: 50px;
       text-align: center;
+      font-weight: 100;
       font-family: 'Helvetica';
    }
 }
@@ -323,14 +327,20 @@ section {
 .Products {
    .Products__header {
       position: relative;
-
+      marquee{
+         font-size: 25px;
+         font-family: '';
+      }
       .Products__header-inner {
          display: flex;
          top: 0;
-         padding: 10px;
+         padding: 10px  15px;
          position: sticky;
          justify-content: space-between;
-         align-items: center;
+         @media (max-width:560px) {
+               flex-direction: column;
+               gap: 10px;
+            }
       }
 
       .Products__header-btns {
@@ -341,10 +351,13 @@ section {
          align-items: center;
          justify-content: space-between;
 
-         div {
+        
+         .filters{
             display: flex;
-            gap: 5px;
-          
+            align-items: center;justify-content: center;
+            gap: 4px;  
+            height: 35px; 
+           
          }
 
          button {
@@ -356,9 +369,16 @@ section {
             font-family: 'Helvetica';
             box-shadow: none;
             padding: 0;
-
+           
          }
-
+         @media (max-width:560px) {
+            width: 140px;   
+               align-self: flex-end;
+            .sortBy{
+               display: none;
+            }
+   
+         }
         
       }
 
@@ -374,7 +394,7 @@ section {
             padding-bottom: 15px;
             font-size: 18px;
             font-weight:500;
-            font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+            font-family: "Helvetica Now Text";
          }
          .aside-categoties{
             display: flex;
@@ -397,13 +417,17 @@ section {
                }
             }
          }
+         @media (max-width:960px) {
+            display: none;
+            
+            }
       }
       main{
          width: 100%;
          padding-left: 40px;
          display: grid;
          grid-template-columns: 1fr 1fr 1fr;
-         grid-gap: 40px 20px;
+         grid-gap: 40px 15px;
          img{
             max-width: 487px;
          }
@@ -417,7 +441,25 @@ section {
                padding: 4px 0;
                font-family: 'Helvetica Now Text';
             }
+            div{
+               padding: 0px 10px;
+            }
          }
+         @media (max-width:960px) {
+               padding: 0;
+               grid-template-columns: 1fr 1fr;    
+               grid-gap: 10px 5px;    
+   
+            }
       }
+         @media (max-width:560px) {
+            padding-top: 20px;
+         }
+   }
+   .container{
+
+@media (max-width:960px) {
+   padding: 0; 
+            }
    }
 }
