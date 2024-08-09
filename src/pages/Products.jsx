@@ -94,7 +94,24 @@ const Products = () => {
         <header className="Products__header">
           <div className="Products__header-inner">
             <h1>new trainers & gear</h1>
-            <marquee behavior="scroll" direction="right" scrollamount='10' >Nike</marquee>
+            <div className="aside-categoties">
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+            </div>
+            <marquee behavior="scroll" direction="right" scrollamount='10' >  ssale sdale sal </marquee>
             <div className="Products__header-btns">
               <div>
                 <button className="filters">
@@ -229,6 +246,7 @@ const Products = () => {
               category={"mans"}
               color={"green"}
               price={200}
+              link={'./product'}
               ImgSrc={
                 "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
               }
