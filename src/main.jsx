@@ -10,6 +10,7 @@ import Jordan from './pages/Jordan.jsx'
 import Bag from './pages/Bag.jsx'
 import Product from './pages/Product.jsx'
 
+
 const router = createBrowserRouter([
   {
     path: "/",

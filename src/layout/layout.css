@@ -80,7 +80,6 @@
     position: relative;
     /* position: fixed; */
     width: 100%;
-    z-index: 5;
     background-color: #fff;
 
     .Header__wrap-menu {
@@ -96,7 +95,6 @@
         }
 
         .Header__nav {
-            z-index: 100;
             margin: 0 auto;
 
             .Header__nav-list {

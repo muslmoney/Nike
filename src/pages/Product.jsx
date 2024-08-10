@@ -13,7 +13,7 @@ const Product = () => {
 return(
 
 <div>
-      <Canvas style={{ width: '100%', height: '100dvh' }}>
+      {/* <Canvas style={{ width: '100%', height: '100dvh' }}>
         <ambientLight intensity={Math.PI / 2} />
         <spotLight
           position={[10, 10, 10]}
@@ -25,8 +25,9 @@ return(
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
         <Model url="/shoe.glb" position={[0, 0, 0]} />
         <OrbitControls />
-      </Canvas>,
-<h1></h1>
+      </Canvas>, */}
+      
+     
 </div>
 
 
