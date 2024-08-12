@@ -21,3 +21,7 @@
 	font-family: 'Thunder';
 	src: url('./Thunder-ExtraBoldLC.ttf');
 } 
+@font-face {
+	font-family: 'Tomorrow';
+	src: url('./Tomorrow-ExtraBold.ttf');
+} 

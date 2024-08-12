@@ -141,25 +141,35 @@ h1, h2, h3, h4, h5, h6{
 .Jordan {
    width: 100%;
    padding: 100px 0;
-
+   .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .Jordan__hero{
+width: 100%;
+}
    .Jordan__logo {
       margin: 0 auto;
       max-width: 200px;
    }
 
-   h1 {
+   /* h1 {
       padding-top: 50px;
       font-size: 50px;
       text-align: center;
       font-weight: 100;
       font-family: 'Helvetica';
-   }
+   } */
    h2{
       font-family: 'Thunder';
       font-size: 690px;
       text-align: center;
       letter-spacing: -10px;
+      position: absolute;
+     
    }
+  
 }
 
 

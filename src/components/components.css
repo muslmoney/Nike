@@ -241,3 +241,12 @@ button{
 
 
  }
+
+ .Jordan__card{
+  max-width: 450px;
+  width: 100%;
+  h1{
+    font-size: 20px;
+    font-family: 'Tomorrow';
+  }
+ }
