@@ -67,7 +67,7 @@ function RouteTransition({ children }) {
       <div className="route-container">
           <div className="overlay"></div>
           <div className="nike-overlay">
-            <div className="nike-text">NIKE</div>
+            <div className="nike-text"  data-glitch="NIKE">NIKE</div>
           </div>
           {children}
           

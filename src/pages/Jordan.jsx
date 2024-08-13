@@ -15,6 +15,8 @@ function Model({ url }) {
       object={scene}
       scale={1}
       onClick={(event) => setActive(!active)}
+      position={[0,0
+        ,0]}
     />
   );
 }
@@ -24,12 +26,12 @@ const Jordan = () => {
       <div className="container">
     <h2>NIKE</h2>
     <div className="Jordan__hero">
-        <div className="Jordan_wrap">
-          <div className="Jordan__options">
-            <JordanCard title={'Nike Jordan 1'} size1={'36'} about={'pon sngfsdhfksjdf sdfigsudfg sdfusdgfssdsdfsdfsdfs sdfsdf  sdfsd fskj'} size2={'37'} size3={'37'} size4={'37'}size5={'37'}size6={'37'} color1={'red'} color3={'blue'} color2={'black'} />
+        <div className="Jordan__wrap">
+          <div className="Jordan__options card1 ">
+            <JordanCard title={'Nike Jordan 1'}size7={'40'} size8={'42'} size1={'36'} color1={'red'}  about={'pon sngfsdhfksjdf sdfigsudfg sdfusdgfssdsdfsdfsdfs sdfsdf  sdfsd fskj'} size2={'37'} size3={'37'} size4={'37'}size5={'37'}size6={'37'}  color3={'blue'} color2={'black'} />
           </div>
           <div className="Jordan__model">
-      <Canvas className='model' style={{ width: '60%', margin: '0 auto', height: '800px', position:'relative' , top:'-170px'  }}>
+      <Canvas className='model' style={{ maxWidth:'800px', width: '100%',height: '800px', margin: '0 auto',  position:'relative' , top:'-140px'  }}>
         <ambientLight intensity={Math.PI / 2} />
         <spotLight
           position={[10, 10, 10]}
@@ -39,13 +41,15 @@ const Jordan = () => {
           intensity={Math.PI}
         />
         <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-        <Model url="/shoe.glb" position={[0, 0, 0]} />
+        <Model url="/jordan.glb" position={[0, 0, 0]} />
         <OrbitControls  maxPolarAngle={Math.PI/2} maxDistance={5} minDistance={5} minPolarAngle={Math.PI/2}/> 
       </Canvas>
       
           </div>
-          <div className="Jordan__options">
-            
+          <div className="Jordan__options card2">
+            <p>landitiis incidunt aliquam repellat quisquam ex dolores, ipsum, officiis laudantium et. Aliquid commodi amet consequuntur molestias, repellendus necessitatibus adipisci.
+            </p>
+            <button>buy</button>
           </div>
         </div>
     </div>
