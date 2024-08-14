@@ -27,9 +27,9 @@
 
 }
 .nike-overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 265px;
+  top: 170px;
   width: 100%;
   z-index: 10;
   display: flex;
@@ -40,6 +40,7 @@
 
 .nike-text {
   color: #fff;
+  
   font-size: 680px;
   font-family: 'Thunder';
   opacity: 0;

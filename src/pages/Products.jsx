@@ -2,6 +2,74 @@ import React from "react";
 import { Button, Dropdown, Space } from "antd";
 import { Cascader } from "antd";
 import { ProductCard2 } from "../components/ProductCard";
+import axios, { isChancel, AxiosError } from 'axios'
+  
+  
+const APIUrl = `https://jsonplaceholder.typicode.com`
+
+const RequesGet = async (path = "") =>{
+    path = APIUrl + path 
+    return await fetch(path)
+   .then(response => response.json())
+}
+
+
+const RequestPost =  async (path, data) =>{
+    path = APIUrl + path
+    return await fetch(path, {
+        method:"POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-type": "application/json"
+        }
+    }).then(response => response.json())
+}
+
+const RequesDelete = async (path = '') =>{
+    path = APIUrl + path 
+    return await fetch(path,{
+        method:'DELETE',
+        headers: {
+                "Content-type": "application/json"}
+
+    }).then(response => response.json())
+}
+
+
+const RequesPatch = async (path, data) =>{
+    return await fetch (path,{
+        method:'PATCH',
+        body: JSON.stringify(data),
+    })
+}
+
+window.addEventListener("DOMContentLoaded",() =>{
+    const getBtn = document.querySelector('#getbtn')
+    const resultTable = document.querySelector("#result tbody")
+    getBtn.addEventListener('click', () =>{
+        resultTable.innerHTML = "Loading . . . ";
+
+        RequesGet('/posts').then(data =>{
+            if(data){
+                resultTable.innerHTML = ""
+                data.forEach(element =>{
+                    resultTable.insertAdjacentHTML("beforeend",`
+                    <tr>
+                <td>${element.userId}</td>
+                <td>${element.title}</td>
+                <td>${element.body}</td>
+                <td>
+                    <button type="button">&times;</button>
+                </td>
+            </tr>
+            `)
+                    
+                })
+            }
+        })
+    })
+})
+
 const options = [
   {
     label: "Light",

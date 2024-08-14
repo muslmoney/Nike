@@ -1,62 +1,104 @@
 import { createRoot } from 'react-dom/client';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import './pages.css';
-import JordanCard from '../components/JordanCard';
-// import React from 'react'
 
 function Model({ url }) {
-  const [active, setActive] = useState(false);
+  const modelRef = useRef();
   const { scene } = useGLTF(url);
+
+  // Вращаем модель
+  useFrame(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.01; // Ротация модели по оси Y
+    }
+  });
 
   return (
     <primitive
       object={scene}
+      ref={modelRef}
       scale={1}
-      onClick={(event) => setActive(!active)}
-      position={[0,0
-        ,0]}
+      position={[0, 0, 0]}
     />
   );
 }
+
 const Jordan = () => {
+  
   return (
     <div className="Jordan">
       <div className="container">
-    <h2>NIKE</h2>
-    <div className="Jordan__hero">
-        <div className="Jordan__wrap">
-          <div className="Jordan__options card1 ">
-            <JordanCard title={'Nike Jordan 1'}size7={'40'} size8={'42'} size1={'36'} color1={'red'}  about={'pon sngfsdhfksjdf sdfigsudfg sdfusdgfssdsdfsdfsdfs sdfsdf  sdfsd fskj'} size2={'37'} size3={'37'} size4={'37'}size5={'37'}size6={'37'}  color3={'blue'} color2={'black'} />
+        <h2>NIKE</h2>
+        <div className="Jordan__hero">
+          <div className="Jordan__wrap">
+            <div className="Jordan__options card1">
+              <h1>Nike jordan 1</h1>
+              <div className="Jordan__about">
+              <p>realize date</p>
+              <p>2016-10-06</p>
+              <p>color way </p>
+                <p>sail/starfish-black</p>
+                
+              </div>
+              <div className='Jordan__sizes'>
+              <h3>Select size</h3>
+                <div className='Jordan__sizes-wrap'>
+            <button>41</button>
+            <button>42</button>
+            <button>43</button>
+            <button>44</button>
+            <button>45</button>
+            <button>46</button>
+            <button>47</button>
+            <button>48</button>
+</div>
+           </div>
+            </div>
+            <div className="Jordan__model">
+              <Canvas
+                className='model'
+                style={{
+                  maxWidth: '800px',
+                  width: '100%',
+                  backgroundColor:'transparent',
+                  height: '700px',
+                  margin: '0 auto',
+                  position: 'relative',
+                  top: '-100px'
+                }}
+              >
+                <ambientLight intensity={3} color={'lightpink'}/>
+                <spotLight
+                  position={[10, 10, 10]}
+                  angle={0.15}
+                  penumbra={1}
+                  decay={0}
+                  intensity={1.4}
+                  color={'lightblue'}
+                />
+                <pointLight position={[-10, -10, -10]} decay={0} intensity={1}  color={'lightblue'}/>
+                <Model url="/jordan.glb" position={[0, 0, 0]} />
+                <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} maxDistance={5} minDistance={5} minPolarAngle={Math.PI / 2} />
+              </Canvas>
+            </div>
+            <div className="Jordan__options card2">
+          
+              <button>buy</button>
+            </div>
           </div>
-          <div className="Jordan__model">
-      <Canvas className='model' style={{ maxWidth:'800px', width: '100%',height: '800px', margin: '0 auto',  position:'relative' , top:'-140px'  }}>
-        <ambientLight intensity={Math.PI / 2} />
-        <spotLight
-          position={[10, 10, 10]}
-          angle={0.15}
-          penumbra={1}
-          decay={0}
-          intensity={Math.PI}
-        />
-        <pointLight position={[-10, -10, -10]} decay={0} intensity={Math.PI} />
-        <Model url="/jordan.glb" position={[0, 0, 0]} />
-        <OrbitControls  maxPolarAngle={Math.PI/2} maxDistance={5} minDistance={5} minPolarAngle={Math.PI/2}/> 
-      </Canvas>
-      
-          </div>
-          <div className="Jordan__options card2">
-            <p>landitiis incidunt aliquam repellat quisquam ex dolores, ipsum, officiis laudantium et. Aliquid commodi amet consequuntur molestias, repellendus necessitatibus adipisci.
-            </p>
-            <button>buy</button>
+          <div className="Jordan__colors">
+            <button className='red'></button>
+            <button className='white'></button>
+            <button></button>
           </div>
         </div>
-    </div>
       </div>
-
     </div>
   );
 };
+
+
 
 export default Jordan;

@@ -16,16 +16,7 @@ const JordanCard = ({title , about , className, size1,size8,size7,color,size2,si
             <h3>
                 Select Size
             </h3>
-           <div  className='Jordan__sizes'>
-           <button>{size1}</button>
-            <button>{size2}</button>
-            <button>{size3}</button>
-            <button>{size4}</button>
-            <button>{size5}</button>
-            <button>{size6}</button>
-            <button>{size7}</button>
-            <button>{size8}</button>
-           </div>
+         
         </div>
         <div>
             <h3>Select Color</h3>
