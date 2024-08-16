@@ -33,7 +33,8 @@ export const ProductCard2 = ({
   title,
   category,
   price,
-  color,
+  brand,
+  gender,
   ...props
 }) => {
   return (
@@ -46,8 +47,11 @@ export const ProductCard2 = ({
         <h3>
           <p>{title}</p>
         </h3>
-        <p className="opacity">{category}</p>
-        <p className="opacity">{color}</p>
+          <div>
+        <p className="opacity">{gender}</p>
+          <p className="opacity">{category}</p>
+        <p className="opacity">{brand}</p>
+</div>
         <b>
           <p>${price}</p>
         </b>

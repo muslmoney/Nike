@@ -7,6 +7,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Header from './layout/Header'
 import Footer from './layout/Footer'
 import Background from 'three/src/renderers/common/Background.js';
+import { SearchProvider } from './SearchContext';
+import SearchContext from './SearchContext';
 
 
 
@@ -49,6 +51,7 @@ function RouteTransition({ children }) {
   const location = useLocation();
 
   return (
+    <SearchProvider>
     <AnimatePresence>
 
     <TransitionGroup>
@@ -75,7 +78,8 @@ function RouteTransition({ children }) {
         </motion.div>
       </CSSTransition>
     </TransitionGroup>
-    </AnimatePresence>
+      </AnimatePresence>
+      </SearchProvider>
   );
 }
 export default App

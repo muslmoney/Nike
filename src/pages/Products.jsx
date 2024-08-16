@@ -2,73 +2,9 @@ import React from "react";
 import { Button, Dropdown, Space } from "antd";
 import { Cascader } from "antd";
 import { ProductCard2 } from "../components/ProductCard";
-import axios, { isChancel, AxiosError } from 'axios'
-  
-  
-const APIUrl = `https://jsonplaceholder.typicode.com`
+// import axios, { isChancel, AxiosError } from 'axios'
+import ProductsData from '../data/Products'
 
-const RequesGet = async (path = "") =>{
-    path = APIUrl + path 
-    return await fetch(path)
-   .then(response => response.json())
-}
-
-
-const RequestPost =  async (path, data) =>{
-    path = APIUrl + path
-    return await fetch(path, {
-        method:"POST",
-        body: JSON.stringify(data),
-        headers: {
-            "Content-type": "application/json"
-        }
-    }).then(response => response.json())
-}
-
-const RequesDelete = async (path = '') =>{
-    path = APIUrl + path 
-    return await fetch(path,{
-        method:'DELETE',
-        headers: {
-                "Content-type": "application/json"}
-
-    }).then(response => response.json())
-}
-
-
-const RequesPatch = async (path, data) =>{
-    return await fetch (path,{
-        method:'PATCH',
-        body: JSON.stringify(data),
-    })
-}
-
-window.addEventListener("DOMContentLoaded",() =>{
-    const getBtn = document.querySelector('#getbtn')
-    const resultTable = document.querySelector("#result tbody")
-    getBtn.addEventListener('click', () =>{
-        resultTable.innerHTML = "Loading . . . ";
-
-        RequesGet('/posts').then(data =>{
-            if(data){
-                resultTable.innerHTML = ""
-                data.forEach(element =>{
-                    resultTable.insertAdjacentHTML("beforeend",`
-                    <tr>
-                <td>${element.userId}</td>
-                <td>${element.title}</td>
-                <td>${element.body}</td>
-                <td>
-                    <button type="button">&times;</button>
-                </td>
-            </tr>
-            `)
-                    
-                })
-            }
-        })
-    })
-})
 
 const options = [
   {
@@ -156,6 +92,7 @@ const items = [
   },
 ];
 const Products = () => {
+  
   return (
     <section className="Products">
       <div className="container">
@@ -186,7 +123,7 @@ const Products = () => {
                   hide filters{" "}
                   <svg
                     aria-hidden="true"
-                    class="icon-filter-ds"
+                    className="icon-filter-ds"
                     focusable="false"
                     viewBox="0 0 24 24"
                     role="img"
@@ -309,88 +246,38 @@ const Products = () => {
             />
           </aside>
           <main>
-            <ProductCard2
-              title={"Nike air max pro 15dddddddd"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              link={'./product'}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
-            <ProductCard2
-              title={"pon"}
-              category={"mans"}
-              color={"green"}
-              price={200}
-              ImgSrc={
-                "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a6edece2-a3d6-4ad9-821c-9b87cf65f91e/AIR+MAX+90+DRIFT.png"
-              }
-            />
+
+            {ProductsData.map((item) => (
+              <ProductCard2
+
+                title={item.name}
+                category={item.category.name}
+                // color={"green"}
+                price={item.price}
+                brand={item.brand}
+                gender={item.gender}
+                link={`/product/${item.id}`}
+                ImgSrc={item.imageUrl}
+              />
+            ))}
+
+
+            {/* {ProductsData.map((item) => (
+              <SwiperSlide key={item.id}>
+                <div className={s.card}>
+                  <Link to={`/product/${item.id}`}>
+                    <img src={item.imageUrl} alt={item.name} />
+                  </Link>
+                  <h3>{item.name}</h3>
+                  <p>{item.brand}</p>
+                  <h4>{item.price} <span>{item.currency}</span></h4>
+
+                </div>
+              </SwiperSlide>
+
+            ))} */}
+
+
           </main>
         </div>
       </div>
