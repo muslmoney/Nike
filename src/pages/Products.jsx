@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Dropdown, Space } from "antd";
 import { Cascader } from "antd";
 import { ProductCard2 } from "../components/ProductCard";
-// import axios, { isChancel, AxiosError } from 'axios'
-import ProductsData from '../data/Products'
-
+import ProductsData from '../data/Products';
 
 const options = [
   {
@@ -41,6 +39,7 @@ const options = [
     ],
   },
 ];
+
 const items = [
   {
     key: "1",
@@ -91,8 +90,10 @@ const items = [
     ),
   },
 ];
+
 const Products = () => {
-  
+
+ 
   return (
     <section className="Products">
       <div className="container">
@@ -100,23 +101,13 @@ const Products = () => {
           <div className="Products__header-inner">
             <h1>new trainers & gear</h1>
             <div className="aside-categoties">
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
             </div>
-            <marquee behavior="scroll" direction="right" scrollamount='10' >  ssale sdale sal </marquee>
+            <marquee behavior="scroll" direction="right" scrollamount="10">ssale sdale sal</marquee>
             <div className="Products__header-btns">
               <div>
                 <button className="filters">
@@ -133,25 +124,25 @@ const Products = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       d="M21 8.25H10m-5.25 0H3"
                     ></path>
                     <path
                       stroke="currentColor"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       d="M7.5 6v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                     <path
                       stroke="currentColor"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       d="M3 15.75h10.75m5 0H21"
                     ></path>
                     <path
                       stroke="currentColor"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       d="M16.5 13.5v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </button>
@@ -177,28 +168,16 @@ const Products = () => {
         <div className="content">
           <aside className="aside">
             <div className="aside-categoties">
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
+              <a href="/product"><p>Shoes</p></a>
             </div>
 
             <Cascader
               className="Cascader"
-              style={{
-                width: "100%",
-              }}
+              style={{ width: "100%" }}
               options={options}
               multiple
               maxTagCount="responsive"
@@ -206,9 +185,7 @@ const Products = () => {
             />
             <Cascader
               className="Cascader"
-              style={{
-                width: "100%",
-              }}
+              style={{ width: "100%" }}
               options={options}
               multiple
               maxTagCount="responsive"
@@ -216,9 +193,7 @@ const Products = () => {
             />
             <Cascader
               className="Cascader"
-              style={{
-                width: "100%",
-              }}
+              style={{ width: "100%" }}
               options={options}
               multiple
               maxTagCount="responsive"
@@ -226,9 +201,7 @@ const Products = () => {
             />
             <Cascader
               className="Cascader"
-              style={{
-                width: "100%",
-              }}
+              style={{ width: "100%" }}
               options={options}
               multiple
               maxTagCount="responsive"
@@ -236,9 +209,7 @@ const Products = () => {
             />
             <Cascader
               className="Cascader"
-              style={{
-                width: "100%",
-              }}
+              style={{ width: "100%" }}
               options={options}
               multiple
               maxTagCount="responsive"
@@ -246,13 +217,11 @@ const Products = () => {
             />
           </aside>
           <main>
-
             {ProductsData.map((item) => (
               <ProductCard2
-
+                key={item.id}
                 title={item.name}
                 category={item.category.name}
-                // color={"green"}
                 price={item.price}
                 brand={item.brand}
                 gender={item.gender}
@@ -260,24 +229,6 @@ const Products = () => {
                 ImgSrc={item.imageUrl}
               />
             ))}
-
-
-            {/* {ProductsData.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className={s.card}>
-                  <Link to={`/product/${item.id}`}>
-                    <img src={item.imageUrl} alt={item.name} />
-                  </Link>
-                  <h3>{item.name}</h3>
-                  <p>{item.brand}</p>
-                  <h4>{item.price} <span>{item.currency}</span></h4>
-
-                </div>
-              </SwiperSlide>
-
-            ))} */}
-
-
           </main>
         </div>
       </div>

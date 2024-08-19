@@ -78,7 +78,7 @@ const Jordan = () => {
                   intensity={1.4}
                   color={'lightblue'}
                 />
-                <pointLight position={[-10, -10, -10]} decay={0} intensity={1}  color={'lightblue'}/>
+                <pointLight position={[-10, -10, -10]} decay={0} intensity={1}  color={''}/>
                 <Model url="/jordan.glb" position={[0, 0, 0]} />
                 <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} maxDistance={5} minDistance={5} minPolarAngle={Math.PI / 2} />
               </Canvas>
