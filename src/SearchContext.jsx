@@ -11,7 +11,7 @@ export const SearchProvider = ({ children }) => {
     const fetchProducts = async () => {
       try {
         // Замените URL на ваш локальный API
-        const response = await fetch('./data/Products.js');
+        const response = await fetch('../data/Products.js');
         const data = await response.json();
         setFilteredProducts(data.products || []); // Обработка данных в формате JSON
       } catch (error) {

@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Fade as Hamburger } from "hamburger-react";
 import SearchContext from '../SearchContext';
-import { SearchProvider } from '../SearchContext';
+import { SearchProvider } from '../SearchContext';const { searchTerm, setSearchTerm } = useContext(SearchContext);
+
 
 const Header = () => {
   const [Burger, setBurger] = useState(false)
@@ -18,7 +19,7 @@ const Header = () => {
   
 
     const handleBlur = () => {
-      setIsActive(false);
+      setActive(false);
     };
     const handleSearch = (event) => {
       event.preventDefault();
