@@ -1,38 +1,38 @@
-import React, { useContext } from "react";
-import { Button, Dropdown, Space } from "antd";
-import { Cascader } from "antd";
-import { ProductCard2 } from "../components/ProductCard";
+import React from 'react';
+import { Button, Dropdown, Space, Cascader } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import ProductsData from '../data/Products';
+import { ProductCard2 } from '../components/ProductCard';
 
 const options = [
   {
-    label: "Light",
-    value: "light",
+    label: 'Light',
+    value: 'light',
     children: new Array(20).fill(null).map((_, index) => ({
       label: `Number ${index}`,
       value: index,
     })),
   },
   {
-    label: "Bamboo",
-    value: "bamboo",
+    label: 'Bamboo',
+    value: 'bamboo',
     children: [
       {
-        label: "Little",
-        value: "little",
+        label: 'Little',
+        value: 'little',
         children: [
           {
-            label: "Toy Fish",
-            value: "fish",
+            label: 'Toy Fish',
+            value: 'fish',
             disableCheckbox: true,
           },
           {
-            label: "Toy Cards",
-            value: "cards",
+            label: 'Toy Cards',
+            value: 'cards',
           },
           {
-            label: "Toy Bird",
-            value: "bird",
+            label: 'Toy Bird',
+            value: 'bird',
           },
         ],
       },
@@ -42,7 +42,7 @@ const options = [
 
 const items = [
   {
-    key: "1",
+    key: '1',
     label: (
       <a
         target="_blank"
@@ -54,7 +54,7 @@ const items = [
     ),
   },
   {
-    key: "2",
+    key: '2',
     label: (
       <a
         target="_blank"
@@ -66,7 +66,7 @@ const items = [
     ),
   },
   {
-    key: "3",
+    key: '3',
     label: (
       <a
         target="_blank"
@@ -78,7 +78,7 @@ const items = [
     ),
   },
   {
-    key: "4",
+    key: '4',
     label: (
       <a
         target="_blank"
@@ -92,8 +92,12 @@ const items = [
 ];
 
 const Products = () => {
+  const navigate = useNavigate();
 
- 
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`);
+  };
+
   return (
     <section className="Products">
       <div className="container">
@@ -101,17 +105,29 @@ const Products = () => {
           <div className="Products__header-inner">
             <h1>new trainers & gear</h1>
             <div className="aside-categoties">
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
             </div>
-            <marquee behavior="scroll" direction="right" scrollamount="10">ssale sdale sal</marquee>
+            <marquee behavior="scroll" direction="right" scrollamount="10">
+              ssale sdale sal
+            </marquee>
             <div className="Products__header-btns">
               <div>
                 <button className="filters">
-                  hide filters{" "}
+                  hide filters{' '}
                   <svg
                     aria-hidden="true"
                     className="icon-filter-ds"
@@ -150,12 +166,7 @@ const Products = () => {
               <button className="sortBy">
                 <Space direction="vertical">
                   <Space wrap>
-                    <Dropdown
-                      menu={{
-                        items,
-                      }}
-                      placement="bottomLeft"
-                    >
+                    <Dropdown menu={{ items }} placement="bottomLeft">
                       <Button>sort by</Button>
                     </Dropdown>
                   </Space>
@@ -168,53 +179,40 @@ const Products = () => {
         <div className="content">
           <aside className="aside">
             <div className="aside-categoties">
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
-              <a href="/product"><p>Shoes</p></a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
+              <a href="/product">
+                <p>Shoes</p>
+              </a>
             </div>
 
             <Cascader
               className="Cascader"
-              style={{ width: "100%" }}
+              style={{ width: '100%' }}
               options={options}
               multiple
               maxTagCount="responsive"
-              placeholder={"Gendar"}
+              placeholder={'Gender'}
             />
             <Cascader
               className="Cascader"
-              style={{ width: "100%" }}
+              style={{ width: '100%' }}
               options={options}
               multiple
               maxTagCount="responsive"
-              placeholder={"Gendar"}
+              placeholder={'Category'}
             />
-            <Cascader
-              className="Cascader"
-              style={{ width: "100%" }}
-              options={options}
-              multiple
-              maxTagCount="responsive"
-              placeholder={"Gendar"}
-            />
-            <Cascader
-              className="Cascader"
-              style={{ width: "100%" }}
-              options={options}
-              multiple
-              maxTagCount="responsive"
-              placeholder={"Gendar"}
-            />
-            <Cascader
-              className="Cascader"
-              style={{ width: "100%" }}
-              options={options}
-              multiple
-              maxTagCount="responsive"
-              placeholder={"Gendar"}
-            />
+            {/* Добавьте дополнительные Cascader по необходимости */}
           </aside>
           <main>
             {ProductsData.map((item) => (
@@ -225,8 +223,9 @@ const Products = () => {
                 price={item.price}
                 brand={item.brand}
                 gender={item.gender}
-                link={`/product/${item.id}`}
+                link={`/product/${item.id}`} // Используйте правильный путь
                 ImgSrc={item.imageUrl}
+                onClick={() => handleProductClick(item.id)}
               />
             ))}
           </main>

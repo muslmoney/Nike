@@ -92,12 +92,14 @@
       .Header__nav-list {
         display: flex;
 
-        gap: 30px;
 
         a {
           font-weight: 700;
           font-size: 20px;
           position: relative;
+        }
+        .Header__nav-text{
+          padding: 0 15px;
         }
 
         .Header__nav-link::after,
@@ -136,6 +138,7 @@
     }
 
     .Header__tools {
+
       .Header__tools-list {
         display: flex;
         align-items: center;
@@ -202,8 +205,13 @@
             }
           }
         }
+
+        .Header-search {
+          transition: 0.4s ease-out ;
+
+        }
         .Header-search.SearchActive {
-          transition: 0.4s;
+          padding-top: 50px;     
           position: fixed;
           width: 100%;
           height: 40dvh;
@@ -211,18 +219,23 @@
           inset: 0;
           z-index: 10000000;
           align-items: flex-start;
-          padding-top: 50px;
           justify-content: center;
           display: flex;
           gap: 30px;
           background: #fff;
+
           .Header__input {
 padding: 9px;
   width: 100%;
+  
             display: flex;
           }
           .Header__form{
             width: 90%;
+            .Header__form-close{
+              border: none;
+              background: transparent;
+            }
           }
         }
 
@@ -554,4 +567,5 @@ padding: 9px;
     bottom: -35px;
     opacity: 1;
   }
+  
 }

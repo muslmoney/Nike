@@ -1,6 +1,9 @@
-
 body {
   font-family: 'Helvetica Now Text';
+}
+
+:root {
+  --color-default-black: #000;
 }
 
 * {
@@ -13,7 +16,6 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
-
 }
 picture,
 img,
@@ -22,8 +24,6 @@ svg {
   width: 100%;
   height: auto;
 }
-
-
 
 a,
 span,
@@ -35,14 +35,13 @@ textarea {
   font-family: inherit;
   color: inherit;
   font-weight: inherit;
-
 }
 
 a,
 button,
 label,
 textarea,
-li  {
+li {
   list-style: none;
   text-decoration: none;
   cursor: pointer;
@@ -53,19 +52,17 @@ q::before {
   content: '';
 }
 
-
-
 #root {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#root>* {
+#root > * {
   flex-shrink: 0;
 }
 
-#root>main {
+#root > main {
   flex-grow: 1;
 }
 
@@ -76,7 +73,6 @@ q::before {
   font-weight: 500;
   line-height: 30px;
   text-align: left;
-
 }
 
 h1,

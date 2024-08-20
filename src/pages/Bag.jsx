@@ -1,27 +1,31 @@
-import React from 'react'
-import { IoIosArrowUp } from "react-icons/io"
+import React, {useState} from 'react'
+import { IoIosArrowDown } from "react-icons/io"
 const Bag = () => {
+    const  [Arrow, setArrow] = useState(false)
+    const onClickArrow = () => setArrow ((prev) => !prev)
     return (
         <section className='Bag'>
             <div className="container">
                 <div className='Bag__wrap'>
                     <main>
                         <div>
-                            <h1>
+                        <h1>
                                 Bag
                             </h1>
-                            <p>
-                                There is no items in your bag
-                            </p>
 
                         </div>
+                          <div className='Bag__inner'>
+                          <p >
+                                There is no items in your bag
+                            </p>
+                          </div>
                     </main>
                     <aside>
                         <h2 className='Bag__title'>
                             Summary
                         </h2>
-                        <details className='Bag-arrow' >
-                            <summary>Do you have a promo code? <div className='arrow'> <IoIosArrowUp  /></div> </summary>
+              <details className='Bag-arrow'  >
+                            <summary onClick={onClickArrow}>Do you have a promo code? <div   className={`arrow  ${Arrow && 'active'}`}> <IoIosArrowDown /></div> </summary>
                             <div className='Bag-arrow-promo' >
                                 <span>
                                     <form > 
