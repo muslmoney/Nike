@@ -93,7 +93,7 @@ const items = [
 
 const Products = () => {
   const navigate = useNavigate();
-
+  
   const handleProductClick = (id) => {
     navigate(`/product/${id}`);
   };

@@ -45,14 +45,14 @@ const Jordan = () => {
               <div className='Jordan__sizes'>
               <h3>Select size</h3>
                 <div className='Jordan__sizes-wrap'>
+            <button>37</button>
+            <button>38</button>
+            <button>39</button>
+            <button>40</button>
             <button>41</button>
             <button>42</button>
             <button>43</button>
             <button>44</button>
-            <button>45</button>
-            <button>46</button>
-            <button>47</button>
-            <button>48</button>
 </div>
            </div>
             </div>

@@ -1,3 +1,4 @@
+
 .nuke {
   padding-top: 70px;
   text-align: center;
@@ -75,7 +76,9 @@
   /* position: fixed; */
   width: 100%;
   background-color: #fff;
-
+  ::-webkit-scrollbar{
+    width: 0;
+  }
   .Header__wrap-menu {
     align-items: center;
     padding: 10px 0;
