@@ -15,6 +15,7 @@ const ProductsData = [
       {
         id: 1,
         url: 'https://lauf.shoes/upload/iblock/c17/a6kiw1p2xiq4twmfr3wsropsq0v6z8oj/1Y8A2145_web.jpg',
+       
       },
       {
         id: 2,
@@ -49,7 +50,10 @@ const ProductsData = [
         id: 1,
         url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/849566c0-f04e-4742-96f1-8f6ca677f246/AIR+JORDAN+1+RETRO+HIGH+OG.png',
       },
-
+      {
+        id: 2,
+        url: '/public/nikevideo.gif',
+      },
       {
         id: 3,
         url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b2dafcc8-39b6-4fab-971c-cd0f841eee1c/AIR+JORDAN+1+RETRO+HIGH+OG.png',
@@ -1701,6 +1705,7 @@ const ProductsData = [
       },
       {
         id: 4,
+        
         url: 'https://img.vitkac.com/uploads/product_thumb/TORBA%20724642%209C2ST-8746/up/3.png',
       },
       {
