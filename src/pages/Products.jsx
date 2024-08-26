@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Dropdown, Space, Cascader } from 'antd';
 import { useNavigate } from 'react-router-dom';
-import ProductsData from '../data/Products';
+// import ProductsData from '../data/Products';
+import ProductsData from '../data/api.json';
 import { ProductCard2 } from '../components/ProductCard';
 
 const options = [
@@ -126,8 +127,6 @@ const Products = () => {
               ssale sdale sal
             </marquee>
 
-            
-
             <div className="Products__header-btns">
               <div>
                 <button className="filters">
@@ -219,16 +218,16 @@ const Products = () => {
             {/* Добавьте дополнительные Cascader по необходимости */}
           </aside>
           <main>
-            {ProductsData.map((item) => (
+            {ProductsData.sneakers.map((item) => (
               <ProductCard2
                 key={item.id}
                 title={item.name}
-                category={item.category.name}
+                category={item.category}
                 price={item.price}
-                brand={item.brand}
+                brand={item.brand_name}
                 gender={item.gender}
                 link={`/product/${item.id}`} // Используйте правильный путь
-                ImgSrc={item.imageUrl}
+                ImgSrc={item.grid_picture_url}
                 onClick={() => handleProductClick(item.id)}
               />
             ))}

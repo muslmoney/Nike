@@ -753,6 +753,31 @@ h6 {
   justify-content: center;
   gap: 24px;
   padding-top: 80px;
+
+  
+  .Product__carousel-img-container.video {
+
+
+    position: relative;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      /* background-color: #fff; */
+      position: absolute;
+      background-image: url(/public/play-icon.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0px;
+      bottom: 5px;
+
+  
+
+
+    }
+  }
+
   .Product__carousel {
     display: flex;
     justify-content: space-between;
@@ -776,6 +801,10 @@ h6 {
       .Product__carousel-img {
         transform: scale(1);
         border-radius: 4px;
+
+        display: inline-block !important;
+
+        
       }
     }
     .Product__main {
@@ -908,4 +937,3 @@ h6 {
     }
   }
 }
-

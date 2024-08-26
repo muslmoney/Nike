@@ -1,4 +1,4 @@
-import React, { useState,  useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
 
@@ -11,14 +11,30 @@ const Header = () => {
   // Ссылка на элемент поиска
   const searchRef = useRef(null);
 
+  const [inputValue, setInputValue] = useState('');
+
   // Переключение состояния поиска
-  const toggleSearch = () => setSearchActive(prev => !prev);
+  // const toggleSearch = () => setSearchActive(prev => !prev);
+
+  const toggleSearch = () => {
+    // Проверка на наличие класса SearchActive
+    if (
+      searchRef.current &&
+      searchRef.current.classList.contains('SearchActive')
+    ) {
+      return; // Если класс SearchActive есть, не выполнять toggleSearch
+    } else {
+      setInputValue('');
+    }
+    setSearchActive((prev) => !prev);
+  };
 
   // Закрытие поиска
   const closeSearch = (event) => {
     // Останавливаем распространение события, чтобы клик на крестике не закрывал поиск
     event.stopPropagation();
     setSearchActive(false);
+    setInputValue('');
   };
 
   // Закрытие поиска при клике вне его области
@@ -27,8 +43,10 @@ const Header = () => {
       closeSearch({ stopPropagation: () => {} }); // Вызываем закрытие поиска
     }
   };
-  
 
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
   // Добавление и удаление обработчика кликов вне элемента поиска
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
@@ -623,7 +641,9 @@ const Header = () => {
                   <li
                     ref={searchRef}
                     onClick={(e) => e.stopPropagation()}
-                    className={`Header__input-item ${isSearchActive ? 'SearchActive' : ''} Header-search`}
+                    className={`Header__input-item ${
+                      isSearchActive ? 'SearchActive' : ''
+                    } Header-search`}
                   >
                     <form
                       onSubmit={(e) => e.preventDefault()}
@@ -649,10 +669,11 @@ const Header = () => {
                         </svg>
                       </button>
                       <input
+                      onChange={handleInputChange}
+                        value={inputValue}
                         style={{ border: 'none', background: 'transparent' }}
                         placeholder="Search"
                         type="text"
-                        
                         className="Header__input"
                       />
                       {isSearchActive && (

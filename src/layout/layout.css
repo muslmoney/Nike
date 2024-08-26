@@ -134,7 +134,6 @@
 
         .Header__nav-link:hover::after {
           transform: translate3d(0, 0, 0);
-
         }
       }
     }
@@ -148,7 +147,6 @@
         .Header__form {
           background: #000;
           padding: 5px 10px;
-          overflow: hidden;
           background-color: #f5f5f5;
           border-radius: 20px;
 
@@ -207,10 +205,8 @@
           }
         }
 
-        .Header-search {
-          transition: 0.4s ease-out;
-        }
         .Header-search.SearchActive {
+          transition: 0.2s linear;
           padding-top: 50px;
           position: fixed;
           width: 100%;
@@ -230,8 +226,20 @@
 
             display: flex;
           }
+          .Header__form::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            max-width: 66px;
+            background-image: url(../assets/Nike-logo.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -100px;
+            top: 10px;
+          }
           .Header__form {
-            width: 90%;
+            width: 85%;
+
             .Header__form-close {
               border: none;
               background: transparent;

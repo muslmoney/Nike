@@ -1,37 +1,51 @@
 const ProductsData = [
   {
     id: 1,
-    name: "Air Jordan 1 Retro High OG 'Yellow Ochre'",
+    name: 'Air Jordan 4RM',
     brand: 'NIKE',
-    price: '27.000',
+    price: '150',
     currency: '₽',
-    gender: 'Man',
+    gender: 'Woman',
 
     imageUrl:
       'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b276ea43-556c-49f1-a38c-28cb77626a10/air-jordan-4rm-womens-shoes-C6VzTr.png',
     category: { id: 1, name: 'Shoes' },
-    gender: 'Man',
     images: [
       {
         id: 1,
-        url: 'https://lauf.shoes/upload/iblock/c17/a6kiw1p2xiq4twmfr3wsropsq0v6z8oj/1Y8A2145_web.jpg',
-       
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/990cda9d-ab7c-4d99-ac1b-20e8ea9694b7/WMNS+AIR+JORDAN+4+RM.png',
       },
       {
         id: 2,
-        url: 'https://crepdogcrew.com/cdn/shop/files/1_fd82f7a6-b60b-46c5-a5f6-48549403ce91.png?v=1707298145&width=2048',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e29ac38d-64a3-4b48-95f1-fe58f131b4dc/WMNS+AIR+JORDAN+4+RM.png',
       },
       {
         id: 3,
-        url: 'https://media2.bulavka.uz/zNcCEht4fbkI5xrvw3wN-W8PcqM=/fit-in/485x570/products/5jLOTGjCFS/input.jpeg',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ae722316-7199-4a61-9951-1f44306f9ce4/WMNS+AIR+JORDAN+4+RM.png',
       },
       {
         id: 4,
-        url: 'https://crepdogcrew.com/cdn/shop/files/1_fd82f7a6-b60b-46c5-a5f6-48549403ce91.png?v=1707298145&width=2048',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8fb796f9-da78-45ad-bfb0-06d30183e0fd/WMNS+AIR+JORDAN+4+RM.png',
       },
       {
         id: 5,
-        url: 'https://cdn.zenden.cloud/KhG3Iimt6tZUTuOZmy-9ulLLbQEM-eVbmZkfuWbx7L8/resize:fill:627:815:false:false:ce:0:0/aHR0cHM6Ly9tYXNjb3R0ZS5ydS91cGxvYWQvaWJsb2NrL2IyOC9sdXlhMGtkeG9vdGl4cmw5YW03cG85azZ6Zm95cG5obS5qcGc.jpg',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e71c4f1d-a035-4d15-9a0a-0faf207be4eb/WMNS+AIR+JORDAN+4+RM.png',
+      },
+      {
+        id: 6,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/40581a40-fb51-4b1c-b431-57a92668fca7/WMNS+AIR+JORDAN+4+RM.png',
+      },
+      {
+        id: 7,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4735eaa3-7ceb-42fc-a398-6714215f4629/WMNS+AIR+JORDAN+4+RM.png',
+      },
+      {
+        id: 8,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f8e41a7d-79d8-4104-9164-b9f962a429af/WMNS+AIR+JORDAN+4+RM.png',
+      },
+      {
+        id: 9,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/720afe9e-c38b-49bd-a362-e0599c30cb82/WMNS+AIR+JORDAN+4+RM.png',
       },
     ],
   },
@@ -39,7 +53,7 @@ const ProductsData = [
     id: 2,
     name: "Air Jordan 1 Retro High OG 'Black and Gold'",
     brand: 'Nike',
-    price: '150.000',
+    price: '150 ',
     currency: '₽',
     gender: "man's",
     imageUrl:
@@ -83,24 +97,17 @@ const ProductsData = [
         id: 9,
         url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9ce486e0-eadf-4724-96d4-b037c3f8ea33/AIR+JORDAN+1+RETRO+HIGH+OG.png',
       },
+   
       {
-        id: 9,
+        id: 10,
         url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9ce486e0-eadf-4724-96d4-b037c3f8ea33/AIR+JORDAN+1+RETRO+HIGH+OG.png',
       },
       {
-        id: 9,
+        id: 11,
         url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9ce486e0-eadf-4724-96d4-b037c3f8ea33/AIR+JORDAN+1+RETRO+HIGH+OG.png',
       },
       {
-        id: 9,
-        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9ce486e0-eadf-4724-96d4-b037c3f8ea33/AIR+JORDAN+1+RETRO+HIGH+OG.png',
-      },
-      {
-        id: 9,
-        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9ce486e0-eadf-4724-96d4-b037c3f8ea33/AIR+JORDAN+1+RETRO+HIGH+OG.png',
-      },
-      {
-        id: 9,
+        id: 12,
         url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9ce486e0-eadf-4724-96d4-b037c3f8ea33/AIR+JORDAN+1+RETRO+HIGH+OG.png',
       },
     ],
@@ -109,7 +116,7 @@ const ProductsData = [
     id: 3,
     name: "Air Jordan 1 Retro High 'Shattered Backboard 3.0'",
     brand: 'NIKE',
-    price: '50.000',
+    price: '50 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -140,11 +147,11 @@ const ProductsData = [
   },
   {
     id: 4,
-    name: "Scroll Logo Sweatpants 'Black'",
+    name: "Luka 3 'Speedway'",
     brand: 'CHROME HEARTS',
-    price: '127.000',
+    price: '127 ',
     currency: '₽',
-    gender: 'Woman',
+    gender: "Man's",
 
     imageUrl:
       'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png',
@@ -152,19 +159,36 @@ const ProductsData = [
     images: [
       {
         id: 1,
-        url: 'https://rodiconnect.com/cdn/shop/files/MOTO-BUNKA-BoxLogoSweatpants-Black.jpg?v=1707379354',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png',
       },
       {
         id: 2,
-        url: 'https://rodiconnect.com/cdn/shop/files/MOTO-BUNKA-BoxLogoSweatpants-Black.jpg?v=1707379354',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png',
       },
       {
         id: 3,
-        url: 'https://rodiconnect.com/cdn/shop/files/MOTO-BUNKA-BoxLogoSweatpants-Black.jpg?v=1707379354',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png',
       },
       {
         id: 4,
-        url: 'https://rodiconnect.com/cdn/shop/files/MOTO-BUNKA-BoxLogoSweatpants-Black.jpg?v=1707379354',
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png',
+      },
+      {
+        id: 5,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png',
+      },
+
+      {
+        id: 6,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png',
+      },
+      {
+        id: 7,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png',
+      },
+      {
+        id: 8,
+        url: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png',
       },
     ],
     colors: [
@@ -190,7 +214,7 @@ const ProductsData = [
     id: 5,
     name: "Air Jordan 1 Mid 'Light Smoke Grey'",
     brand: 'NIKE',
-    price: '30.000',
+    price: '30 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -219,7 +243,7 @@ const ProductsData = [
     id: 6,
     name: "Leather Pocket Bag 'Black'",
     brand: 'Miu Miu',
-    price: '320.000',
+    price: '320 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -249,7 +273,7 @@ const ProductsData = [
     id: 7,
     name: "Yeezy Boost 350 V2 'Zebra'",
     brand: 'ADIDAS',
-    price: '60.000',
+    price: '60 ',
     currency: '₽',
     gender: 'Man',
     imageUrl: 'https://i.ebayimg.com/images/g/9-wAAOSw1CxjTn~N/s-l640.png',
@@ -281,7 +305,7 @@ const ProductsData = [
     id: 8,
     name: "Balenciaga Triple S 'White'",
     brand: 'BALENCIAGA',
-    price: '70.000',
+    price: '70 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -315,7 +339,7 @@ const ProductsData = [
     id: 9,
     name: 'Louis Vuitton Neverfull MM',
     brand: 'LOUIS VUITTON',
-    price: '200.000',
+    price: '200 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -349,7 +373,7 @@ const ProductsData = [
     id: 10,
     name: "Fear of God Essentials Sweatpants 'Grey'",
     brand: 'FEAR OF GOD',
-    price: '100.000',
+    price: '100 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -382,7 +406,7 @@ const ProductsData = [
     id: 11,
     name: "Yeezy Boost 700 'Wave Runner'",
     brand: 'ADIDAS',
-    price: '80.000',
+    price: '80 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -416,7 +440,7 @@ const ProductsData = [
     id: 12,
     name: 'Balenciaga Hourglass Blazer',
     brand: 'BALENCIAGA',
-    price: '120.000',
+    price: '120 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -449,7 +473,7 @@ const ProductsData = [
     id: 13,
     name: 'Louis Vuitton Twist PM',
     brand: 'LOUIS VUITTON',
-    price: '180.000',
+    price: '180 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -482,7 +506,7 @@ const ProductsData = [
     id: 14,
     name: "Nike Air Force 1 '07 'Triple White'",
     brand: 'NIKE',
-    price: '25.000',
+    price: '25 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -516,7 +540,7 @@ const ProductsData = [
     id: 15,
     name: 'Gucci GG Supreme Belt',
     brand: 'GUCCI',
-    price: '45.000',
+    price: '45 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -550,7 +574,7 @@ const ProductsData = [
     id: 16,
     name: 'Off-White Industrial Belt',
     brand: 'OFF-WHITE',
-    price: '38.000',
+    price: '38 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -584,7 +608,7 @@ const ProductsData = [
     id: 17,
     name: 'Nike Air Max 270 React',
     brand: 'NIKE',
-    price: '40.000',
+    price: '40 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -617,7 +641,7 @@ const ProductsData = [
     id: 18,
     name: 'Fear of God Track Pants',
     brand: 'FEAR OF GOD',
-    price: '110.000',
+    price: '110 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -651,7 +675,7 @@ const ProductsData = [
     id: 19,
     name: 'Gucci Tennis 1977',
     brand: 'GUCCI',
-    price: '55.000',
+    price: '55 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -685,7 +709,7 @@ const ProductsData = [
     id: 20,
     name: 'Louis Vuitton Soft Trunk',
     brand: 'LOUIS VUITTON',
-    price: '220.000',
+    price: '220 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -719,7 +743,7 @@ const ProductsData = [
     id: 21,
     name: "Nike Dunk Low 'Panda'",
     brand: 'NIKE',
-    price: '28.000',
+    price: '28 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -753,7 +777,7 @@ const ProductsData = [
     id: 22,
     name: 'Off-White x Nike Air Presto',
     brand: 'OFF-WHITE',
-    price: '120.000',
+    price: '120 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -787,7 +811,7 @@ const ProductsData = [
     id: 23,
     name: 'Gucci Wool Cardigan',
     brand: 'GUCCI',
-    price: '130.000',
+    price: '130 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -821,7 +845,7 @@ const ProductsData = [
     id: 24,
     name: 'Fear of God Sweatshirt',
     brand: 'FEAR OF GOD',
-    price: '95.000',
+    price: '95 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -855,7 +879,7 @@ const ProductsData = [
     id: 25,
     name: 'Louis Vuitton Scarf',
     brand: 'LOUIS VUITTON',
-    price: '85.000',
+    price: '85 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -889,7 +913,7 @@ const ProductsData = [
     id: 26,
     name: 'Off-White Arrows T-shirt',
     brand: 'OFF-WHITE',
-    price: '55.000',
+    price: '55 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -922,7 +946,7 @@ const ProductsData = [
     id: 27,
     name: 'Balenciaga Logo Cap',
     brand: 'BALENCIAGA',
-    price: '30.000',
+    price: '30 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -956,7 +980,7 @@ const ProductsData = [
     id: 28,
     name: 'Gucci Leather Loafers',
     brand: 'GUCCI',
-    price: '65.000',
+    price: '65 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -990,7 +1014,7 @@ const ProductsData = [
     id: 29,
     name: 'Off-White Vulcanized Sneakers',
     brand: 'OFF-WHITE',
-    price: '48.000',
+    price: '48 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -1024,7 +1048,7 @@ const ProductsData = [
     id: 30,
     name: "Nike Air Max 1 'Sketch to Shelf'",
     brand: 'NIKE',
-    price: '75.000',
+    price: '75 ',
     currency: '₽',
     gender: 'Man',
 
@@ -1058,7 +1082,7 @@ const ProductsData = [
     id: 31,
     name: 'Fear of God Essentials T-shirt',
     brand: 'FEAR OF GOD',
-    price: '60.000',
+    price: '60 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -1092,7 +1116,7 @@ const ProductsData = [
     id: 32,
     name: 'Gucci Leather Jacket',
     brand: 'GUCCI',
-    price: '210.000',
+    price: '210 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -1126,7 +1150,7 @@ const ProductsData = [
     id: 33,
     name: 'Off-White Sweatpants',
     brand: 'OFF-WHITE',
-    price: '105.000',
+    price: '105 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -1162,7 +1186,7 @@ const ProductsData = [
     id: 34,
     name: 'Louis Vuitton Monogram Hoodie',
     brand: 'LOUIS VUITTON',
-    price: '250.000',
+    price: '250 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -1195,7 +1219,7 @@ const ProductsData = [
     id: 35,
     name: 'Balenciaga Speed Trainer',
     brand: 'BALENCIAGA',
-    price: '85.000',
+    price: '85 ',
     currency: '₽',
     gender: 'Man',
 
@@ -1228,7 +1252,7 @@ const ProductsData = [
     id: 36,
     name: 'Fear of God Denim Jacket',
     brand: 'FEAR OF GOD',
-    price: '170.000',
+    price: '170 ',
     currency: '₽',
     gender: 'Man',
 
@@ -1246,7 +1270,7 @@ const ProductsData = [
     id: 37,
     name: 'Off-White Arrow Hoodie',
     brand: 'OFF-WHITE',
-    price: '140.000',
+    price: '140 ',
     currency: '₽',
     gender: 'Man',
 
@@ -1279,7 +1303,7 @@ const ProductsData = [
     id: 38,
     name: 'Louis Vuitton Keepall Bandouliere',
     brand: 'LOUIS VUITTON',
-    price: '280.000',
+    price: '280 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -1313,7 +1337,7 @@ const ProductsData = [
     id: 39,
     name: 'Balenciaga Triple S Sneakers',
     brand: 'BALENCIAGA',
-    price: '95.000',
+    price: '95 ',
     currency: '₽',
     gender: 'Woman',
 
@@ -1347,7 +1371,7 @@ const ProductsData = [
     id: 40,
     name: 'Fear of God Track Jacket',
     brand: 'FEAR OF GOD',
-    price: '150.000',
+    price: '150 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1381,7 +1405,7 @@ const ProductsData = [
     id: 41,
     name: 'Off-White x Nike Blazer Mid',
     brand: 'OFF-WHITE',
-    price: '135.000',
+    price: '135 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -1414,7 +1438,7 @@ const ProductsData = [
     id: 42,
     name: 'Gucci Embroidered Jeans',
     brand: 'GUCCI',
-    price: '160.000',
+    price: '160 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -1447,7 +1471,7 @@ const ProductsData = [
     id: 43,
     name: 'Louis Vuitton Trainer Sneakers',
     brand: 'LOUIS VUITTON',
-    price: '115.000',
+    price: '115 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1481,7 +1505,7 @@ const ProductsData = [
     id: 44,
     name: 'Fear of God Pullover Hoodie',
     brand: 'FEAR OF GOD',
-    price: '90.000',
+    price: '90 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1515,7 +1539,7 @@ const ProductsData = [
     id: 45,
     name: 'Off-White Jitney Bag',
     brand: 'OFF-WHITE',
-    price: '140.000',
+    price: '140 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1549,7 +1573,7 @@ const ProductsData = [
     id: 46,
     name: 'Balenciaga Logo Hoodie',
     brand: 'BALENCIAGA',
-    price: '130.000',
+    price: '130 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1583,7 +1607,7 @@ const ProductsData = [
     id: 47,
     name: 'Louis Vuitton x Supreme Hoodie',
     brand: 'LOUIS VUITTON',
-    price: '350.000',
+    price: '350 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1617,7 +1641,7 @@ const ProductsData = [
     id: 48,
     name: 'Fear of God Bomber Jacket',
     brand: 'FEAR OF GOD',
-    price: '190.000',
+    price: '190 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1651,7 +1675,7 @@ const ProductsData = [
     id: 49,
     name: 'Off-White Cargo Pants',
     brand: 'OFF-WHITE',
-    price: '90.000',
+    price: '90 ',
     currency: '₽',
     gender: 'Unisex',
 
@@ -1684,7 +1708,7 @@ const ProductsData = [
     id: 50,
     name: 'Gucci GG Supreme Duffle Bag',
     brand: 'GUCCI',
-    price: '240.000',
+    price: '240 ',
     currency: '₽',
     gender: 'Man',
     imageUrl:
@@ -1705,7 +1729,7 @@ const ProductsData = [
       },
       {
         id: 4,
-        
+
         url: 'https://img.vitkac.com/uploads/product_thumb/TORBA%20724642%209C2ST-8746/up/3.png',
       },
       {
