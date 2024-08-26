@@ -1,0 +1,164 @@
+.route-container {
+  width: 100%;
+  height: 100%;
+}
+.app-container {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+.overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0); 
+  text-shadow: #fff 11px 11px 11px 11px;
+  opacity: 0;
+  pointer-events: none; 
+  z-index: 9; 
+  transition: opacity 800ms ease-in-out;
+  animation: fadeInOut 800ms ease-in-out ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.nike-overlay {
+  position: fixed;
+  left: 0;
+  top: 170px;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.nike-text {
+  color: #fff;
+  
+  font-size: 680px;
+  font-family: 'Thunder';
+  opacity: 0;
+  animation: fadeInOut 800ms ease-in-out forwards;
+}
+
+  
+  .fade-enter {
+    opacity: 0;
+    height: 100dvh;
+ 
+
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+
+  }
+  
+  .fade-exit-active {
+    
+    opacity: 0;
+    transition: opacity 400ms ease-out;
+  }
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* .route-container {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fade-enter {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+  }
+   */
+
+.nike-text{
+  position: relative;
+}
+
+
+.nike-text:before,
+.nike-text:after {
+   display: block;
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+}
+
+.nike-text:before {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: #0ff;
+   z-index: -1;
+}
+
+.nike-text:after {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: #ff00ff;
+   z-index: -2;
+}
+
+@keyframes glitch-color {
+   0% {
+      transform: translate(0);
+   }
+
+   20% {
+      transform: translate(-6px, 6px);
+   }
+
+   40% {
+      transform: translate(-6px, -6px);
+   }
+
+   60% {
+      transform: translate(6px, 6px);
+   }
+
+   80% {
+      transform: translate(6px, -6px);
+   }
+
+   to {
+      transform: translate(0);
+   }
+}
