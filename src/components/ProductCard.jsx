@@ -8,12 +8,15 @@ const ProductCard = ({
   className,
   link,
   title,
+  onClick,
   ...props
 }) => {
+  onClick={onClick}
+  className={className}
   return (
-    <div className={className}>
+    <div className={'Product__card'}>
       {/* //опеределенный товар */}
-      <Link to={"./products"}>
+      <Link to={link}>
         <div>
           <img src={ImgSrc} alt={ImgTitle} />
           <a href={link}>

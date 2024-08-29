@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import './index.css';
-import Products from './pages/Products.jsx';
-import Home from './pages/Home.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
+import App from './App.jsx';
+import Home from './pages/Home.jsx';
+import Products from './pages/Products.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Jordan from './pages/Jordan.jsx';
 import Bag from './pages/Bag.jsx';
 import Product from './pages/Product.jsx'
+
 
 const router = createBrowserRouter([
   // {

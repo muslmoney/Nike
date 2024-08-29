@@ -1,3 +1,4 @@
+
  .swiper{
   
   .Product22{
@@ -44,8 +45,8 @@
    width: 100%;
    height: auto;
    overflow: hidden;   
-
    a {
+
      width: 100%;
 
      img {
@@ -65,6 +66,11 @@
      font-family: 'Helvetica';
      font-weight: 600;
      font-size: 17px;
+     max-height: 40px;
+     max-width: 170px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     line-height: 25px;
    }
 
    button:hover {
@@ -132,7 +138,6 @@ button{
      position: relative;
      cursor: pointer;
      font-size: var(--size);
-     /* user-select: none; */
      fill: var(--color);
    }
 
@@ -141,13 +146,11 @@ button{
      animation: keyframes-return .5s;
    }
 
-   /* ------ On check event ------ */
    .Accordion-label input:checked~.chevron-down {
      animation: keyframes-rotate .5s;
      transform: rotate(180deg);
    }
 
-   /* ------ Hide the default checkbox ------ */
    .Accordion-label input {
      position: absolute;
      opacity: 0;
@@ -156,7 +159,6 @@ button{
      width: 0;
    }
 
-   /* ------ Animation ------ */
    @keyframes keyframes-rotate {
      0% {
        transform: rotate(0deg);
@@ -195,8 +197,6 @@ button{
      /* user-select: none; */
      /* -webkit-tap-highlight-color: transparent;     */
    }
-
-   /* Create a custom checkbox */
    .checkmark {
      position: relative;
      top: 0;
@@ -208,12 +208,10 @@ button{
      transition: all 0.25s;
    }
 
-   /* When the checkbox is checked, add a blue background */
    .Accordion__checkbox-label input:checked~.checkmark {
      background-color: #2196F3;
    }
 
-   /* Create the checkmark/indicator (hidden when not checked) */
    .checkmark:after {
      content: "";
      position: absolute;
@@ -227,7 +225,6 @@ button{
      transition: all 0.25s, border-width 0.1s;
    }
 
-   /* Show the checkmark when checked */
    .Accordion__checkbox-label input:checked~.checkmark:after {
      left: 0.45em;
      top: 0.25em;
@@ -250,4 +247,12 @@ button{
     font-family: 'Tomorrow';
   }
  }
-    /* негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр негр  */
+ .Footer__swiper{
+  h1{
+    padding: 250px 0 15px 0 ;
+  }
+  img{
+    border: 1px rgb(187, 182, 182) solid;
+  }
+ }
+   

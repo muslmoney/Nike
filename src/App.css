@@ -18,7 +18,7 @@
   text-shadow: #fff 11px 11px 11px 11px;
   opacity: 0;
   pointer-events: none; 
-  z-index: 9; 
+  z-index: 9 ; 
   transition: opacity 800ms ease-in-out;
   animation: fadeInOut 800ms ease-in-out ;
   display: flex;

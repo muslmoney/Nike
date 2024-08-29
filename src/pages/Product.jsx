@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductsData from '../data/api.json';
+import NotFound from './NotFound';
 
 const Product = () => {
   const { id } = useParams();
   const product = ProductsData.sneakers.find((product) => product.id == id);
 
   if (!product) {
-    return <div>Product not found</div>;
+    return <NotFound/>;
   }
 
   const [mainImage, setMainImage] = useState(product.images[0]);
@@ -59,7 +60,6 @@ const Product = () => {
           <div className="Product__sizes">
             <h3>Select size</h3>
             <div className="Product__sizes">
-              {/* Подставьте ваши размеры */}
               <button>37</button>
               <button>38</button>
               <button>39</button>

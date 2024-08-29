@@ -1,12 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './pages.css'
-import Jordan from '../assets/ProductsImages/Jordan.jpg'
-import Dunk from '../assets/ProductsImages/Dunk.jpg'
-import AirForce from '../assets/ProductsImages/AirForce.jpg'
-import ProductCard from '../components/ProductCard'
 import Swiper1 from '../components/Swiper1'
 import Swiper2 from '../components/Swiper2'
+
 const Home = () => {
   return (
     <div className='Home'>

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import ProductsData from '../data/api.json';
 import { ProductCard2 } from '../components/ProductCard';
 
+
 const options = [
   {
     label: 'Light',

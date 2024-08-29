@@ -4,8 +4,12 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import SwiperFooter from '../components/SwiperFooter'
 const Footer = () => {
-    return (
+    return (<div>
+<div className='Footer-swiper'>
+<SwiperFooter/>
+</div>
       <footer className='Footer'>
   <div className='container '>
             <div className='footer__wrap'>
@@ -88,6 +92,7 @@ const Footer = () => {
             <p className='opacity nuke'>© 2024 Nike, Inc. All rights reserved</p>
         </div>
       </footer>
+    </div>
     )
 }
 

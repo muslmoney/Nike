@@ -1,6 +1,8 @@
 import React from 'react'
+import SwiperFooter from '../components/SwiperFooter'
 
 const NotFound = () => {
+  
   return (
     <div className='NotFound'>
       <h2>
@@ -12,6 +14,7 @@ Sorry for the inconvenience.
 
 
       </h2>
+      <SwiperFooter/>
     </div>
   )
 }
