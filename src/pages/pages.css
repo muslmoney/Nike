@@ -752,7 +752,7 @@ h6 {
   justify-content: center;
   gap: 24px;
   padding-top: 80px;
-
+position: relative;
   
   .Product__carousel-img-container.video {
 
@@ -808,6 +808,8 @@ h6 {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: sticky;
+      top: 0;
       .Product__main-img {
         object-fit: cover;
         border-radius: 4px;
@@ -863,9 +865,10 @@ h6 {
       .Product__colors {
         display: flex;
         gap: 10px;
-
+max-width: 370px;
         transition: 0.3s;
         height: auto;
+        flex-wrap: wrap;
 
         .Product__colors-imgs {
           gap: 10px;

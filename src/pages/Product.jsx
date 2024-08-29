@@ -8,7 +8,7 @@ const Product = () => {
   const product = ProductsData.sneakers.find((product) => product.id == id);
 
   if (!product) {
-    return <NotFound/>;
+    return <NotFound />;
   }
 
   const [mainImage, setMainImage] = useState(product.images[0]);
@@ -22,11 +22,12 @@ const Product = () => {
             return (
               <div
                 key={index}
-                className={`Product__carousel-img-container ${
-                  isGif ? 'video' : ''
-                }`}
+                className={`Product__carousel-img-container ${isGif ? 'video' : ''
+                  }`}
               >
                 <img
+                  loading="lazy"
+
                   src={image.url}
                   alt={`Product-${index}`}
                   onMouseEnter={() => setMainImage(image)}
@@ -37,7 +38,10 @@ const Product = () => {
           })}
         </aside>
         <main className="Product__main">
-          <img src={mainImage.url} alt="main" className="Product__main-img" />
+
+          <img     
+                loading="lazy" 
+                src={mainImage.url} alt="main" className="Product__main-img" />
         </main>
       </div>
       <div className="Product__about">
