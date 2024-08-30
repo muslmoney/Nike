@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import './pages.css'
 import Swiper1 from '../components/Swiper1'
 import Swiper2 from '../components/Swiper2'
+import Swiper3 from '../components/Swiper3'
 
 import ProductsData from '../data/api.json';
 
@@ -37,7 +38,7 @@ const Home = () => {
         <div className="container">
           <div className='Swiper__cont'>
             <h2>Niggers</h2>
-            <Swiper1 />
+            <Swiper1 /> 
           </div>
         </div>
       </section>
@@ -47,7 +48,7 @@ const Home = () => {
         <div className="container">
           <div className='Swiper__cont'>
             <h2>Shop our icons</h2>
-            <Swiper2 />
+            <Swiper2 /> 
           </div>
         </div>
       </section>
@@ -56,7 +57,7 @@ const Home = () => {
         <div className="container">
           <div className='Swiper__cont'>
             <h2>Niggers</h2>
-            <Swiper1 />
+            {/* <Swiper1 /> */}
           </div>
         </div>
       </section>
@@ -66,7 +67,7 @@ const Home = () => {
         <div className="container">
           <div className='Swiper__cont'>
             <h2>Shop By Classics</h2>
-            <Swiper2 />
+            {/* <Swiper2 /> */}
           </div>
         </div>
       </section>

@@ -1,32 +1,31 @@
 
- .swiper{
-  
-  .Product22{
+.Product22{ 
+  button{
+    white-space: nowrap;
+    font-size: clamp(10px , 1.5625vw , 30px);
+  }
+  @media (max-width:1100px) {
     button{
-      white-space: nowrap;
-      font-size: clamp(10px , 1.5625vw , 30px);
-    }
-    @media (max-width:1100px) {
-      button{
-        padding-top: 26px;
-      }
-    }
-    @media (max-width:900px) {
-      button{
-        padding-top: 20px;
-      }
-    }
-    @media (max-width:650px) {
-      button{
-        padding-top: 15px;
-      }
-    }
-    @media (max-width:450px) {
-      button{
-        padding-top: 10px;
-      }
+      padding-top: 26px;
     }
   }
+  @media (max-width:900px) {
+    button{
+      padding-top: 20px;
+    }
+  }
+  @media (max-width:650px) {
+    button{
+      padding-top: 15px;
+    }
+  }
+  @media (max-width:450px) {
+    button{
+      padding-top: 10px;
+    }
+  }
+}
+ .swiper{
   @media (max-width:700px) {
     .swiper-slide {
    margin-right: 5px !important;
@@ -71,6 +70,7 @@
      text-overflow: ellipsis;
      overflow: hidden;
      line-height: 25px;
+     white-space: nowrap;
    }
 
    button:hover {
@@ -81,6 +81,8 @@
 button{
   font-size: 14px;
   padding: 5px 10px;
+  max-width: 130px;
+
 }
 
   }
@@ -89,6 +91,8 @@ button{
     bottom:25px;
     font-size: 10px;
     padding: 3px 6px;
+  max-width: 90px;
+
   }
   
     }
@@ -96,7 +100,10 @@ button{
       button{
         bottom:25px;
         font-size: 7px;
-        padding: 3px 6px;
+  max-width: 60px;
+  height: 10px;
+
+
       }
       
         }
@@ -118,135 +125,11 @@ button{
  }
 
  
+
+
  
- .Accordion {
-   padding-top: 100px;
-   
-   .Accordion__arrow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-  }
-   .Accordion-label {
-     width: 20px;
-     --color: #a5a5b0;
-     --size: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     position: relative;
-     cursor: pointer;
-     font-size: var(--size);
-     fill: var(--color);
-   }
 
-   .Accordion-label .chevron-down {
-     position: absolute;
-     animation: keyframes-return .5s;
-   }
-
-   .Accordion-label input:checked~.chevron-down {
-     animation: keyframes-rotate .5s;
-     transform: rotate(180deg);
-   }
-
-   .Accordion-label input {
-     position: absolute;
-     opacity: 0;
-     cursor: pointer;
-     height: 0;
-     width: 0;
-   }
-
-   @keyframes keyframes-rotate {
-     0% {
-       transform: rotate(0deg);
-       opacity: 0;
-     }
-
-     100% {
-       transform: rotate(-180deg);
-     }
-   }
-
-   @keyframes keyframes-return  {
-     0% {
-       transform: rotate(-180deg);
-       opacity: 0;
-     }
-
-     100% {
-       transform: rotate(0deg);
-     }
-   }
-
- }
-
-
- .Accordion__checkbox {
-   .Accordion__checkbox-label {
-     display: none;
-   }
-
-   .Accordion__checkbox-label {
-     display: block;
-     position: relative;
-     cursor: pointer;
-     font-size: 20px;
-     /* user-select: none; */
-     /* -webkit-tap-highlight-color: transparent;     */
-   }
-   .checkmark {
-     position: relative;
-     top: 0;
-     left: 0;
-     height: 1.3em;
-     width: 1.3em;
-     background-color: #2196F300;
-     border-radius: 0.25em;
-     transition: all 0.25s;
-   }
-
-   .Accordion__checkbox-label input:checked~.checkmark {
-     background-color: #2196F3;
-   }
-
-   .checkmark:after {
-     content: "";
-     position: absolute;
-     transform: rotate(0deg);
-     border: 0.1em solid black;
-     left: 0;
-     top: 0;
-     width: 1.05em;
-     height: 1.05em;
-     border-radius: 0.25em;
-     transition: all 0.25s, border-width 0.1s;
-   }
-
-   .Accordion__checkbox-label input:checked~.checkmark:after {
-     left: 0.45em;
-     top: 0.25em;
-     width: 0.25em;
-     height: 0.5em;
-     border-color: #fff0 white white #fff0;
-     border-width: 0 0.15em 0.15em 0;
-     border-radius: 0em;
-     transform: rotate(45deg);
-   }
-
-
- }
-
- .Jordan__card{
-  max-width: 450px;
-  width: 100%;
-  h1{
-    font-size: 20px;
-    font-family: 'Tomorrow';
-  }
- }
+ 
  .Footer__swiper{
   h1{
     padding: 250px 0 15px 0 ;
@@ -256,3 +139,4 @@ button{
   }
  }
    
+ 

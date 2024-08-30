@@ -2,9 +2,9 @@ import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
-import 'swiper/css/scrollbar';
+import './components.css';
 import ProductsData from '../data/api.json';
-import ProductCard from './ProductCard';
+import ProductCard2 from './ProductCard';
 
 const shuffleArray = (array) => {
   let shuffled = array.slice();
@@ -15,7 +15,7 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-const Swiper1 = () => {
+const Swiper2 = () => {
   const { id } = useParams();
   const products = ProductsData.sneakers;
  const product = products.find((product) => product.id == id);
@@ -38,10 +38,11 @@ const Swiper1 = () => {
       >
         {displayedProducts.map((item) => (
           <SwiperSlide key={item.id}>
-            <ProductCard
+            <ProductCard2
               link={`/product/${item.id}`}
               key={item.id}
               title={item.name}
+              className={'Product22'}
               ImgSrc={item.grid_picture_url}
               onClick={() => handleProductClick(item.id)}
             />
@@ -52,5 +53,5 @@ const Swiper1 = () => {
   );
 };
 
-export default Swiper1;
+export default Swiper2;
  

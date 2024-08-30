@@ -190,12 +190,15 @@ h6 {
             max-width: 200px;
             line-height: 25px;
           }
+
           .Jordan__sizes {
             padding-top: 158px;
+
             h3 {
               font-size: 25px;
               padding-bottom: 20px;
             }
+
             .Jordan__sizes-wrap {
               display: flex;
               flex-wrap: wrap;
@@ -211,6 +214,7 @@ h6 {
                 width: 55px;
                 height: 55px;
               }
+
               /* button:hover{
                      border: 2px solid black;
 
@@ -272,9 +276,11 @@ h6 {
     padding: 0px 0 70px 0;
     justify-content: center;
     gap: 40px;
+
     h2 {
       font-size: 20px;
     }
+
     button {
       width: 46px;
       height: 46px;
@@ -342,6 +348,7 @@ h6 {
       flex-basis: 66.6667%;
       max-width: 66.6667%;
       min-height: 380px;
+
       .Bag__inner {
         p {
           padding-top: 10px;
@@ -356,12 +363,15 @@ h6 {
 
       .Bag-arrow {
         transition: 0.2s all;
+
         .arrow {
           transition: transform 0.3s ease;
         }
+
         .arrow.active {
           transform: rotate(180deg);
         }
+
         summary {
           transition: 0.2s all;
 
@@ -386,7 +396,7 @@ h6 {
           }
         }
 
-        details[open] > .arrow {
+        details[open]>.arrow {
           transform: rotate(180deg);
         }
 
@@ -692,6 +702,7 @@ h6 {
           text-overflow: ellipsis;
           white-space: normal;
         }
+
         p {
           display: -webkit-box;
           -webkit-line-clamp: 1;
@@ -717,6 +728,7 @@ h6 {
           width: 100%;
           margin-top: auto;
           max-height: 117px;
+
           div {
             line-height: 15px;
             padding: 7px 0 5px 0;
@@ -752,12 +764,13 @@ h6 {
   justify-content: center;
   gap: 24px;
   padding-top: 80px;
-position: relative;
-  
+  position: relative;
+
   .Product__carousel-img-container.video {
 
 
     position: relative;
+
     &::after {
       content: '';
       display: inline-block;
@@ -771,7 +784,7 @@ position: relative;
       left: 0px;
       bottom: 5px;
 
-  
+
 
 
     }
@@ -783,6 +796,7 @@ position: relative;
     align-items: start;
     max-width: 620px;
     width: 100%;
+
     aside {
       display: flex;
       flex-direction: column;
@@ -790,6 +804,7 @@ position: relative;
       overflow-y: scroll;
       max-height: 669px;
       scrollbar-width: none;
+
       .Product__carousel-img {
         width: 60px;
         height: 60px;
@@ -797,12 +812,14 @@ position: relative;
         border-radius: 4px;
         transition: 0.2s;
       }
+
       .Product__carousel-img {
         transform: scale(1);
         border-radius: 4px;
         display: inline-block !important;
       }
     }
+
     .Product__main {
       flex-grow: 1;
       display: flex;
@@ -810,6 +827,7 @@ position: relative;
       align-items: center;
       position: sticky;
       top: 0;
+
       .Product__main-img {
         object-fit: cover;
         border-radius: 4px;
@@ -819,20 +837,25 @@ position: relative;
       }
     }
   }
+
   .Product__about {
     padding-left: 15px;
+
     .Product__about-card {
       text-transform: capitalize;
       max-width: 400px;
+
       p:nth-child(3) {
         padding: 30px 0;
         font-size: 24px;
       }
+
       p {
         font-weight: 900;
         padding: 10px 0px;
         font-size: 19px;
       }
+
       h3 {
         font-size: 18px;
       }
@@ -858,14 +881,16 @@ position: relative;
           padding: 0 89px;
           height: 55px;
         }
+
         button:hover {
           border: 1px solid black;
         }
       }
+
       .Product__colors {
         display: flex;
         gap: 10px;
-max-width: 370px;
+        max-width: 390px;
         transition: 0.3s;
         height: auto;
         flex-wrap: wrap;
@@ -886,6 +911,7 @@ max-width: 370px;
         }
       }
     }
+
     .Product-payment {
       display: flex;
       flex-direction: column;
@@ -893,12 +919,14 @@ max-width: 370px;
       gap: 10px;
       max-width: 400px;
       width: 100%;
+
       p {
         padding: 10px 0;
       }
 
       a {
         width: 100%;
+
         button {
           font-size: 20px;
           border: none;
@@ -917,6 +945,7 @@ max-width: 370px;
           color: #fff;
 
         }
+
         .Product_payment-btn2 {
           display: flex;
           align-items: center;
@@ -924,23 +953,26 @@ max-width: 370px;
           justify-content: center;
           color: #000;
           gap: 5px;
+
           svg.fav {
             fill: red;
           }
         }
+
         .Product_payment-btn2:hover {
           box-shadow: inset 0px 2px 0px 0px #000000,
             inset -2px 0px 0px 0px #000000, inset 0px -2px 0px 0px #000000,
             inset 2px 0px 0px 0px #000000;
-            color: #000;
+          color: #000;
           background: #fff;
 
 
         }
-        button:hover{
+
+        button:hover {
           background-color: #000000;
 
-        } 
+        }
       }
     }
   }

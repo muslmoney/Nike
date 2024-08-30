@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./components.css";
-import Title from "antd/es/skeleton/Title";
 const ProductCard = ({
   ImgSrc,
   ImgTitle,
@@ -58,6 +57,29 @@ export const ProductCard2 = ({
         <b>
           <p>${price}</p>
         </b>
+      </div>
+    </div>
+    </a>
+  );
+};
+export const ProductCardSwiper = ({
+  ImgSrc,
+  ImgTitle,
+  className,
+  link,
+  title,
+  ...props
+}) => {
+  return (
+   <a>
+    <div className="ProductCardSwiper">
+      <a href={link}>
+        <img src={ImgSrc} alt={ImgTitle} />
+      </a>
+      <div>
+        <h3>
+          <p>{title}</p>
+        </h3>
       </div>
     </div>
     </a>

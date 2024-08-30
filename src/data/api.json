@@ -63,7 +63,7 @@
       "designer": "Peter Moore",
       "details": "Black/White-Medium Grey",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b276ea43-556c-49f1-a38c-28cb77626a10/WMNS+AIR+JORDAN+4+RM.png",
       "has_picture": true,
@@ -231,7 +231,7 @@
       "designer": "Tinker Hatfield",
       "details": "Gym Red/Black-White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/184dc3ab-98d3-4802-bd1d-338bfe75a865/JORDAN+LUKA+3.png",
       "has_picture": true,
@@ -391,7 +391,7 @@
       ],
       "details": "Black/Concord-White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b490f25a-fb5f-4431-9ab9-acd8ce18e038/jordan-1-retro-high-og-black-and-gold-baby-toddler-shoes-5SqFx5.png",
       "has_picture": true,
@@ -501,7 +501,7 @@
       ],
       "details": "White/Legend Blue",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2f988915-2092-47c6-8f69-8f19dce02a0c/WMNS+AIR+JORDAN+1+MID.png",
       "has_picture": true,
@@ -770,7 +770,7 @@
       ],
       "details": "Black/Varsity Red-Varsity Royal-White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/BLAZER+MID+%2777+VNTG.png",
       "has_picture": true,
@@ -926,7 +926,7 @@
       ],
       "details": "Black/Cement Grey-Summit White-Fire Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/251eb083-1148-47e9-a9d2-4fe859e153c0/AIR+DT+MAX+%2796.png",
       "has_picture": true,
@@ -998,46 +998,38 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/kpqddwb8onq6vurqmmyy/NIKE+ZOOM+VOMERO+5.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/t6muyiowqf7q3mvq21hk/NIKE+ZOOM+VOMERO+5.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/sqj9b8gqy0mofneog6cx/NIKE+ZOOM+VOMERO+5.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/l0svab1ihb4o5dl7anuq/NIKE+ZOOM+VOMERO+5.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dkf9neqkrfgzmtlu6ut3/NIKE+ZOOM+VOMERO+5.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/rihi1y7ze3yznpppnlwn/NIKE+ZOOM+VOMERO+5.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ov74xiwk0dbxfl08tm3f/NIKE+ZOOM+VOMERO+5.png"
         }
       ],
       "details": "Black/Infrared 23-Black",
       "gender": [
-        "men"
+        "men's"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/675/311/original/464372_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/lkwfba88t6qix4qxaavi/NIKE+ZOOM+VOMERO+5.png",
       "has_picture": true,
       "has_stock": true,
       "price": 190,
@@ -1045,7 +1037,7 @@
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/675/311/original/464372_00.png.png",
       "midsole": "Air",
-      "name": "Air Jordan 6 Retro 'Infrared' 2019",
+      "name": "Nike Zoom Vomero 5",
       "nickname": "Infrared",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/675/311/original/464372_00.png.png",
       "product_template_id": 464372,
@@ -1090,6 +1082,32 @@
       "sku": "384664 060",
       "slug": "air-jordan-6-retro-black-infrared-384664-060",
       "status": "active",
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/76eaf2b6-c847-4a50-a02a-9c1234fb19c7/NIKE+ZOOM+VOMERO+5.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/305a75c4-b498-4d8c-a52d-0781dac1c0af/NIKE+ZOOM+VOMERO+5.png  "
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b95b8842-6390-423f-a177-acd377cb2ff2/NIKE+ZOOM+VOMERO+5.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/caab5214-9db2-4e9f-b166-6f5c8ee13c13/NIKE+ZOOM+VOMERO+5+NBHD.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aa722273-9564-42c6-8143-a1d086ef16b6/NIKE+ZOOM+VOMERO+5.png"
+        },
+        {
+          "id": 6,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/48b54e7d-3745-4e5b-986c-17284add731b/NIKE+ZOOM+VOMERO+5.png"
+        }
+      ],
       "story_html": "<p>The 2019 edition of the Air Jordan 6 Retro ‘Infrared’ is true to the original colorway, which Michael Jordan wore when he captured his first NBA title. Dressed primarily in black nubuck with a reflective 3M layer underneath, the mid-top features Infrared accents on the midsole, heel tab and lace lock. Nike Air branding adorns the heel and sockliner, an OG detail last seen on the 2000 retro.</p>\n",
       "upper_material": ""
     },
@@ -1109,54 +1127,54 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2c25c676-832d-453f-9cd9-dd6b492d7636/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/30ed2748-cf6a-4697-a59f-105bbc4de8dc/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2f7301c8-1550-4207-8360-0490266cf821/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b8083f2f-0933-4c11-9438-5497d751ce62/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ebd299fe-f5b4-45c6-9bf5-88bce1dc9878/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b64e38ae-4c2b-446d-9378-d100a190f847/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ff34d958-eebb-44b0-b5b8-1f2e6cc9a7ae/NIKE+DUNK+LOW+RETRO.png"
         },
         {
           "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e863ca32-5f23-49eb-9ee6-da62958650f9/NIKE+DUNK+LOW+RETRO.png"
         }
       ],
       "details": "Black/Metallic Gold-White",
       "gender": [
-        "women"
+        "Men's"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/042/384/original/500924_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0f76f73e-2578-4d62-abab-c5563ea4f78c/NIKE+DUNK+LOW+RETRO.png",
       "has_picture": true,
       "has_stock": true,
-      "price": 190,
+      "price": 115,
       "id": 500924,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/021/042/384/original/500924_00.png.png",
       "midsole": "Air",
-      "name": "Wmns Air Jordan 12 Retro 'Reptile'",
+      "name": "Nike Dunk Low Retro",
       "nickname": "Reptile",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/021/042/384/original/500924_00.png.png",
       "product_template_id": 500924,
@@ -1210,56 +1228,82 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "/Nike Air Force.gif"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/AIR+FORCE+1+%2707.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/33533fe2-1157-4001-896e-1803b30659c8/AIR+FORCE+1+%2707.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0a300da-2e16-4483-ba64-9815cf0598ac/AIR+FORCE+1+%2707.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/82aa97ed-98bf-4b6f-9d0b-31a9f907077b/AIR+FORCE+1+%2707.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ef92df87-6098-4fa5-bc88-7107492febcf/AIR+FORCE+1+%2707.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/120a31b0-efa7-41c7-9a84-87b1e56ab9c3/AIR+FORCE+1+%2707.png"
         },
         {
           "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1c1e5f55-99c2-4522-b398-2352e01ba566/AIR+FORCE+1+%2707.png"
+        },
+        {
+          "id": 10,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/00375837-849f-4f17-ba24-d201d27be49b/AIR+FORCE+1+%2707.png"
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d762c5e2-ae49-4208-99df-484594b51e5f/AIR+FORCE+1+%2707.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/350e7f3a-979a-402b-9396-a8a998dd76ab/AIR+FORCE+1+%2707.png"
+        },
+        {
+          "id":4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc4622c4-2769-4665-aa6e-42c974a7705e/AIR+FORCE+1+%2707.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/208fa98b-8958-43f6-84f5-9d53050abd36/JORDAN+LUKA+3.png"
         }
       ],
       "details": "Black/White-Gum Light Brown",
       "gender": [
-        "men"
+        "men's"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/071/547/original/479524_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/AIR+FORCE+1+%2707.png",
       "has_picture": true,
       "has_stock": true,
-      "price": 190,
+      "price": 115,
       "id": 479524,
       "keywords": [
         "promoted1"
       ],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/071/547/original/479524_00.png.png",
       "midsole": "Air",
-      "name": "Air Jordan 4 Retro 'Laser'",
+      "name": "Nike Air Force 1 '07",
       "nickname": "Laser, 30th Anniversary",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/071/547/original/479524_00.png.png",
       "product_template_id": 479524,
@@ -1306,7 +1350,157 @@
       "status": "active",
       "story_html": "<p>Releasing in January 2019, the Air Jordan 4 Retro ‘Laser’ celebrates the venerable silhouette’s 30th anniversary. Laser-etched designs are nothing new for the Air Jordan 4, and this iteration showcases the embellishments in subtle tonal fashion on a full-grain black leather upper. Contrasting white appears on the Jumpman logos that adorn the heel and tongue tag, while a gum rubber outsole delivers grippy traction underfoot.</p>\n",
       "upper_material": ""
-    },
+    },{
+      "box_condition": "good_condition",
+      "brand_name": "Air Jordan",
+      "category": [
+        "lifestyle"
+      ],
+      "collection_slugs": [
+        "air-jordan-1",
+        "belly",
+        "brokenrecord",
+        "bs",
+        "capspace",
+        "congrats",
+        "friendzone",
+        "greatness",
+        "hangtime",
+        "idiots",
+        "jj",
+        "just-dropped",
+        "just-dropped-1",
+        "kfc",
+        "official",
+        "pka",
+        "ringer",
+        "sneakdiss",
+        "solid",
+        "super-bowl-liii",
+        "tape",
+        "teeth",
+        "theread",
+        "thestarters",
+        "top-20-trending",
+        "wgg",
+        "woj"
+      ],
+      "color": "Brown",
+      "designer": "Peter Moore",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd150294-a43a-4eb9-949d-50f9d82d3cd1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45ba78cb-baf3-4c12-b4a2-e7056bd052fd/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aefbcc9a-6111-40b9-88cc-45062648690a/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 6,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 7,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e6546a3-2b89-4257-b5a4-70a1d0a53195/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 8,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ea5f52c-5273-4ae7-89f3-083008280fce/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 9,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e8f94f-9519-4ebf-8a59-e0830a9bc2f7/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        }
+      ],
+      "details": "Sail/Dark Mocha-University Red-Black",
+      "gender": [
+        "men's"
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13564560-2361-400e-bb23-cb0142d3620d/JR+ZM+VAPOR+16+PRO+FG.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
+        }
+      ],
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b2f41c22-aea5-458b-9366-fa5b10d48606/JR+ZM+VAPOR+16+PRO+FG+OLY.png",
+      "has_picture": true,
+      "has_stock": true,
+      "price": 150,
+      "id": 488879,
+      "keywords": [
+        "cactus jack"
+      ],
+      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "midsole": "Air",
+      "name": "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'",
+      "nickname": "Mocha",
+      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "product_template_id": 488879,
+      "release_date": "2019-05-11T23:59:59.000Z",
+      "release_date_unix": 1557619199,
+      "release_year": 2019,
+      "retail_price_cents": 16000,
+      "shoe_condition": "new_no_defects",
+      "silhouette": "Air Jordan 1",
+      "size_range": [
+        10,
+        10.5,
+        11,
+        11.5,
+        12,
+        12.5,
+        13,
+        13.5,
+        14,
+        14.5,
+        15,
+        15.5,
+        16,
+        16.5,
+        17,
+        17.5,
+        18,
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5
+      ],
+      "sku": "CD4487 100",
+      "slug": "travis-scott-x-air-jordan-1-retro-high-og-cd4487-100",
+      "status": "active",
+      "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
+      "upper_material": ""
+    },  
     {
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
@@ -1327,54 +1521,72 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95b79b5e-e4e5-42a2-bec1-0be3de0dcb95/JORDAN+TRUE+FLIGHT.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/43b0b7ed-7d28-4975-9431-e55c0ec9e1a8/JORDAN+TRUE+FLIGHT.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9241183d-1a95-43ff-b3e5-461c2d7f1545/JORDAN+TRUE+FLIGHT.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ee4e9b5d-8079-48d3-be88-4234d78c016c/JORDAN+TRUE+FLIGHT.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/484240c5-2aae-4f6b-b96d-09663a465eee/JORDAN+TRUE+FLIGHT.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2ef27063-7991-4d41-b871-c70052e9a7f4/JORDAN+TRUE+FLIGHT.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/dc03d592-62b0-40d5-8881-6440fdf3bcb6/JORDAN+TRUE+FLIGHT.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/84c725bb-055c-4c21-a3a9-4fc44e03056f/JORDAN+TRUE+FLIGHT.png"
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1e44839d-cb85-4199-a109-a759c27c7c64/JORDAN+TRUE+FLIGHT.png"
         },
         {
-          "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a9ba9284-8dea-4aed-9eef-3f4c9f15ff35/JORDAN+TRUE+FLIGHT.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/adcef870-31c6-436c-8872-275bfa172046/JORDAN+TRUE+FLIGHT.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/51299507-7f69-40bd-a584-81538c820e1f/JORDAN+TRUE+FLIGHT.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/95b79b5e-e4e5-42a2-bec1-0be3de0dcb95/JORDAN+TRUE+FLIGHT.png"
         }
       ],
       "details": "White/Dark Powder Blue-Cone",
       "gender": [
-        "men"
+        "men's"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/012/219/518/original/335047_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8bad4fba-94e6-40a2-abf4-845de70da8ce/JORDAN+TRUE+FLIGHT.png",
       "has_picture": true,
       "has_stock": true,
-      "price": 190,
+      "price": 150,
       "id": 335047,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/012/219/518/original/335047_00.png.png",
       "midsole": "Air",
-      "name": "OFF-WHITE x Air Jordan 1 Retro High OG 'UNC'",
+      "name": "Jordan True Flight",
       "nickname": "UNC",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/012/219/518/original/335047_00.png.png",
       "product_template_id": 335047,
@@ -1436,46 +1648,50 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4c0c1fae-5312-4589-81f4-6ceb86254154/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6ba515a5-446a-4803-a564-f3b4f9765faf/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4070c409-48d5-4b38-a7ec-5bb99937c02f/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9e3e50aa-bbc1-4e0f-84bb-290cb8f8d590/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/07465bb4-2184-4b7b-88ce-935acee0c253/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/28615d44-39d0-4e87-9761-a9c9877a388b/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/28615d44-39d0-4e87-9761-a9c9877a388b/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f93648b6-dd8f-48e1-8263-32cebcd221a7/WMNS+AIR+JORDAN+6+RETRO.png"
         },
         {
           "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/35533220-abfc-478c-97c6-bb88ff223808/WMNS+AIR+JORDAN+6+RETRO.png"
+        },
+        {
+          "id": 10,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/84c7e167-a555-4a56-8626-d8a0163a0f74/WMNS+AIR+JORDAN+6+RETRO.png"
         }
       ],
       "details": "Ice Blue/Sail-Metallic Gold-University Red",
       "gender": [
-        "men"
+        "men's"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/474/777/original/TR_JSP_5_ICE.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b4759111-b9fb-436e-b6a5-1c80d38399cf/WMNS+AIR+JORDAN+6+RETRO.png",
       "has_picture": true,
       "has_stock": true,
       "price": 190,
@@ -1483,7 +1699,7 @@
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/021/474/777/original/TR_JSP_5_ICE.png.png",
       "midsole": "Air",
-      "name": "Trophy Room x Air Jordan 5 Retro 'Ice Blue'",
+      "name": "Air Jordan 6 Retro 'Pearl'",
       "nickname": "Ice Blue",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/021/474/777/original/TR_JSP_5_ICE.png.png",
       "product_template_id": 515029,
@@ -1548,56 +1764,56 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/82ac0411-d6f9-4ee1-8af6-10d7a335426c/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0a29464b-7bd5-4ff5-ac8f-6e810d554867/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/69a80cc6-4345-48b7-b047-69d2b8e6c47a/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5aa3b84d-3b5b-402f-b55a-ace935985686/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4e29d7a9-e384-4e62-bc2a-9e6562548979/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b983b15c-1b9f-4a4f-8be1-c0137b3c7454/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c964b9b-060c-47b7-915d-d9637c263d24/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9b73f1d9-f5a5-49bd-9e7a-aa00d9bfcd55/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         },
         {
           "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b69ef75b-4e4f-405a-93d7-f23162782364/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png"
         }
       ],
       "details": "university blue/varsity red-black",
       "gender": [
-        "men"
+        "men's's"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/012/478/518/original/365514_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3ef2396b-4b89-42d7-b627-ab3fc48d2910/W+AIR+JORDAN+1+ZM+AIR+CMFT+2.png",
       "has_picture": true,
       "has_stock": true,
-      "price": 190,
+      "price": 150,
       "id": 365514,
       "keywords": [
         "travis scott"
       ],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/012/478/518/original/365514_00.png.png",
       "midsole": "Air",
-      "name": "Travis Scott x Air Jordan 4 Retro 'Cactus Jack'",
+      "name": "Air Jordan 1 Zoom CMFT 2 SE 'YW'",
       "nickname": "Cactus Jack",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/012/478/518/original/365514_00.png.png",
       "product_template_id": 365514,
@@ -1645,6 +1861,8 @@
       "story_html": "<p>Music artist Travis Scott hails from Houston, where the Oilers used to take the field in red, white and blue uniforms. The Travis Scott x Air Jordan 4 Retro &#39;Cactus Jack&#39; colorway pays tribute to the city’s bygone football team with a Durabuck leather upper dressed in University Blue and a Varsity Red insole. The black lace cage and a heel panel feature a light blue speckle pattern. Cactus Jack branding appears on the left heel in Varsity Red, with a matching Jumpman logo on the right.</p>\n",
       "upper_material": ""
     },
+  
+    
     {
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
@@ -1698,9 +1916,9 @@
       ],
       "details": "Gold Harvest/Black-Sail",
       "gender": [
-        "men"
+        "men's"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/016/152/710/original/402491_00.png.png",
+      "grid_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/012/478/518/original/365514_00.png.png",
       "has_picture": true,
       "has_stock": true,
       "price": 190,
@@ -1765,143 +1983,6 @@
         "lifestyle"
       ],
       "collection_slugs": [
-        "air-jordan-1",
-        "belly",
-        "brokenrecord",
-        "bs",
-        "capspace",
-        "congrats",
-        "friendzone",
-        "greatness",
-        "hangtime",
-        "idiots",
-        "jj",
-        "just-dropped",
-        "just-dropped-1",
-        "kfc",
-        "official",
-        "pka",
-        "ringer",
-        "sneakdiss",
-        "solid",
-        "super-bowl-liii",
-        "tape",
-        "teeth",
-        "theread",
-        "thestarters",
-        "top-20-trending",
-        "wgg",
-        "woj"
-      ],
-      "color": "Brown",
-      "designer": "Peter Moore",
-      "images": [
-        {
-          "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
-        },
-        {
-          "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
-        }
-      ],
-      "details": "Sail/Dark Mocha-University Red-Black",
-      "gender": [
-        "men"
-      ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
-      "has_picture": true,
-      "has_stock": true,
-      "price": 190,
-      "id": 488879,
-      "keywords": [
-        "cactus jack"
-      ],
-      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
-      "midsole": "Air",
-      "name": "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'",
-      "nickname": "Mocha",
-      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
-      "product_template_id": 488879,
-      "release_date": "2019-05-11T23:59:59.000Z",
-      "release_date_unix": 1557619199,
-      "release_year": 2019,
-      "retail_price_cents": 16000,
-      "shoe_condition": "new_no_defects",
-      "silhouette": "Air Jordan 1",
-      "size_range": [
-        10,
-        10.5,
-        11,
-        11.5,
-        12,
-        12.5,
-        13,
-        13.5,
-        14,
-        14.5,
-        15,
-        15.5,
-        16,
-        16.5,
-        17,
-        17.5,
-        18,
-        3.5,
-        4,
-        4.5,
-        5,
-        5.5,
-        6,
-        6.5,
-        7,
-        7.5,
-        8,
-        8.5,
-        9,
-        9.5
-      ],
-      "sku": "CD4487 100",
-      "slug": "travis-scott-x-air-jordan-1-retro-high-og-cd4487-100",
-      "status": "active",
-      "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
-      "upper_material": ""
-    },
-    {
-      "box_condition": "good_condition",
-      "brand_name": "Air Jordan",
-      "category": [
-        "lifestyle"
-      ],
-      "collection_slugs": [
         "just-dropped",
         "just-dropped-1"
       ],
@@ -1947,7 +2028,7 @@
       ],
       "details": "Shimmer/Mahogany Mink-Velvet Brown-Tough Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/321/847/original/473391_00.png.png",
       "has_picture": true,
@@ -2058,7 +2139,7 @@
       ],
       "details": "Turbo Green/White-Light Smoke Grey-Sail",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/552/901/original/404758_00.png.png",
       "has_picture": true,
@@ -2163,7 +2244,7 @@
       ],
       "details": "Black/Crimson Tint-Hyper Pink-White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/249/059/original/485842_00.png.png",
       "has_picture": true,
@@ -2389,7 +2470,7 @@
       ],
       "details": "Court Purple/Sail-University Gold-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/270/533/original/CD6578_507.png.png",
       "has_picture": true,
@@ -2503,7 +2584,7 @@
       ],
       "details": "Gym Red/Summit White-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/009/559/594/original/144690_00.png.png",
       "has_picture": true,
@@ -2615,7 +2696,7 @@
       ],
       "details": "Gym Red/White-Black-Photo Blue",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/016/867/969/original/478648_00.png.png",
       "has_picture": true,
@@ -2729,7 +2810,7 @@
       ],
       "details": "Gym Red/Gym Red-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/016/596/414/original/376931_00.png.png",
       "has_picture": true,
@@ -2840,7 +2921,7 @@
       ],
       "details": "Light Bone/University Red-Sail-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/219/116/original/CD6846_002.png.png",
       "has_picture": true,
@@ -2972,7 +3053,7 @@
       ],
       "details": "Light Bone/Crimson Tint-Hyper Pink-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/147/976/original/497870_00.png.png",
       "has_picture": true,
@@ -3082,7 +3163,7 @@
       ],
       "details": "Sail/Black-Phantom-University Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/095/762/original/411931_00.png.png",
       "has_picture": true,
@@ -3193,7 +3274,7 @@
       ],
       "details": "White/White-Gum Yellow",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/317/617/original/SP_AJ1_LOW_BP.png.png",
       "has_picture": true,
@@ -3302,7 +3383,7 @@
       ],
       "details": "Platinum Tint/Sail-University Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/015/392/851/original/429772_00.png.png",
       "has_picture": true,
@@ -3416,7 +3497,7 @@
       ],
       "details": "White/Black-Dark Concord",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/016/934/177/original/351614_00.png",
       "has_picture": true,
@@ -3528,7 +3609,7 @@
       ],
       "details": "White/Black-Navy",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/310/667/original/459705_00.png.png",
       "has_picture": true,
@@ -3634,7 +3715,7 @@
       ],
       "details": "White/Fire Red-Tech Grey-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/008/654/831/original/31342_00.png.png",
       "has_picture": true,
@@ -3744,7 +3825,7 @@
       ],
       "details": "Black/White/Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/015/567/335/original/CM100018M.png.png",
       "has_picture": true,
@@ -3857,7 +3938,7 @@
       ],
       "details": "Cream/Multicolor",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/552/840/original/476518_00.png.png",
       "has_picture": true,
@@ -3962,7 +4043,7 @@
       ],
       "details": "Milk",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/015/298/767/original/77243_00.png.png",
       "has_picture": true,
@@ -4066,7 +4147,7 @@
       ],
       "details": "Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/009/249/006/original/259509_00.png.png",
       "has_picture": true,
@@ -4173,7 +4254,7 @@
       ],
       "details": "Black/White-Bright Crimson",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/840/270/original/491192_00.png.png",
       "has_picture": true,
@@ -4282,7 +4363,7 @@
       ],
       "details": "Black/Reflect Silver-Blue Lagoon",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/627/570/original/491891_00.png.png",
       "has_picture": true,
@@ -4397,7 +4478,7 @@
       ],
       "details": "Black/Black-Fossil",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/545/549/original/489359_00.png.png",
       "has_picture": true,
@@ -4511,7 +4592,7 @@
       ],
       "details": "Black/Black-Cone-White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/017/763/484/original/466439_00.png.png",
       "has_picture": true,
@@ -4625,7 +4706,7 @@
       ],
       "details": "Black/White/Cone",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/012/750/761/original/351623_00.png.png",
       "has_picture": true,
@@ -4757,7 +4838,7 @@
       ],
       "details": "Varsity Blue/Del Sol-Varsity Red-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/019/246/220/original/491897_00.png.png",
       "has_picture": true,
@@ -4864,7 +4945,7 @@
       ],
       "details": "Sail/Obsidian-Total Crimson",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/545/501/original/507173_00.png.png",
       "has_picture": true,
@@ -4979,7 +5060,7 @@
       ],
       "details": "Black/Bright Crimson",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/249/043/original/494127_00.png.png",
       "has_picture": true,
@@ -5086,7 +5167,7 @@
       ],
       "details": "Team Orange/White-Black-Tour Yellow",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/019/994/877/original/AJ7747_800.png.png",
       "has_picture": true,
@@ -5199,7 +5280,7 @@
       ],
       "details": "Mars Stone/Magma Orange",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/019/804/999/original/488028_00.png.png",
       "has_picture": true,
@@ -5319,7 +5400,7 @@
       ],
       "details": "Desert Ore/Desert Ore-Hyper Jade-Bright Mango",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/017/794/455/original/394710_00.png.png",
       "has_picture": true,
@@ -5436,7 +5517,7 @@
       ],
       "details": "White/Total Orange-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/010/564/058/original/303229_00.png.png",
       "has_picture": true,
@@ -5550,7 +5631,7 @@
       ],
       "details": "Sail/Gum Light Brown/Sail",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/013/832/092/original/306892_00.png.png",
       "has_picture": true,
@@ -5680,7 +5761,7 @@
       ],
       "details": "White/Black-Hyper Crimson",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/881/688/original/508101_00.png.png",
       "has_picture": true,
@@ -5790,7 +5871,7 @@
       ],
       "details": "White/Black-White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/019/367/662/original/484799_00.png.png",
       "has_picture": true,
@@ -5897,7 +5978,7 @@
       ],
       "details": "White/University Blue",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/898/008/original/482531_00.png.png",
       "has_picture": true,
@@ -6014,7 +6095,7 @@
       ],
       "details": "White/White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/010/222/352/original/240_00.png.png",
       "has_picture": true,
@@ -6123,7 +6204,7 @@
       ],
       "details": "Game Royal/Metallic Silver-White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/562/245/original/480142_00.png.png",
       "has_picture": true,
@@ -6263,7 +6344,7 @@
       ],
       "details": "Light Bone/Black-Sail",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/627/586/original/487222_00.png.png",
       "has_picture": true,
@@ -6379,7 +6460,7 @@
       ],
       "details": "Pure Platinum/Black-Sail",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/737/643/original/504006_00.png.png",
       "has_picture": true,
@@ -6617,7 +6698,7 @@
       ],
       "details": "White/Wolf Grey-Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/010/988/952/original/180155_00.png.png",
       "has_picture": true,
@@ -6724,7 +6805,7 @@
       ],
       "details": "White/Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/010/634/133/original/303217_00.png.png",
       "has_picture": true,
@@ -6838,7 +6919,7 @@
       ],
       "details": "Blue/Green-Yellow",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/011/051/956/original/335725_00.png.png",
       "has_picture": true,
@@ -6941,7 +7022,7 @@
       ],
       "details": "Black/Black/Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/624/696/original/FU9013.png.png",
       "has_picture": true,
@@ -7054,7 +7135,7 @@
       ],
       "details": "Vanta/Vanta/Vanta",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/147/972/original/504187_00.png.png",
       "has_picture": true,
@@ -7172,7 +7253,7 @@
       ],
       "details": "Blue Tint/Grey Three/High Resolution Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/008/707/328/original/152603_00.png.png",
       "has_picture": true,
@@ -7283,7 +7364,7 @@
       ],
       "details": "Power Blue/Core Black/Cloud White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/545/467/original/512006_00.png.png",
       "has_picture": true,
@@ -7418,7 +7499,7 @@
       ],
       "details": "Analog/Analog/Analog",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/287/568/original/480136_00.png.png",
       "has_picture": true,
@@ -7553,7 +7634,7 @@
       ],
       "details": "Glow/Glow/Glow",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/357/863/original/508082_00.png.png",
       "has_picture": true,
@@ -7669,7 +7750,7 @@
       ],
       "details": "Grey/Bold Orange/Dark Solid Grey",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/008/654/534/original/152982_00.png.png",
       "has_picture": true,
@@ -7786,7 +7867,7 @@
       ],
       "details": "Inertia/Inertia/Inertia",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/019/367/689/original/479750_00.png.png",
       "has_picture": true,
@@ -7901,7 +7982,7 @@
       ],
       "details": "Sesame/Sesame/Sesame",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/014/037/000/original/357808_00.png.png",
       "has_picture": true,
@@ -8021,7 +8102,7 @@
       ],
       "details": "Solid Grey/Chalk White/Core Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/014/507/851/original/195483_00.png.png",
       "has_picture": true,
@@ -8142,7 +8223,7 @@
       ],
       "details": "Static/Static/Static",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/017/488/396/original/424152_00.png",
       "has_picture": true,
@@ -8257,7 +8338,7 @@
       ],
       "details": "Scarlet/Footwear White/Core Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/666/882/original/486579_00.png.png",
       "has_picture": true,
@@ -8395,7 +8476,7 @@
       ],
       "details": "Clay/Clay/Clay",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/019/471/948/original/487214_00.png.png",
       "has_picture": true,
@@ -8513,7 +8594,7 @@
       ],
       "details": "Cream White/Cream White/Core White",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/014/822/680/original/116662_00.png.png",
       "has_picture": true,
@@ -8631,7 +8712,7 @@
       ],
       "details": "Salt/Salt/Salt",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/018/951/283/original/492186_00.png.png",
       "has_picture": true,
@@ -8748,7 +8829,7 @@
       ],
       "details": "White/Core Black/Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/014/979/033/original/105568_00.png.png",
       "has_picture": true,
@@ -8858,7 +8939,7 @@
       ],
       "details": "Cloud White/Cloud White/Core Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/249/956/original/EF3326.png.png",
       "has_picture": true,
@@ -8975,7 +9056,7 @@
       ],
       "details": "Butter/Butter/Butter",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/012/598/505/original/348063_00.png.png",
       "has_picture": true,
@@ -9092,7 +9173,7 @@
       ],
       "details": "Semi Frozen Yellow/Raw Steel/Red",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/016/928/118/original/155573_00.png.png",
       "has_picture": true,
@@ -9205,7 +9286,7 @@
       ],
       "details": "White/White/Black",
       "gender": [
-        "men"
+        "men's"
       ],
       "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/011/292/904/original/298048_00.png.png",
       "has_picture": true,
