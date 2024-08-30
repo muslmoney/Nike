@@ -31,7 +31,7 @@ const Home = () => {
             Shop
           </button>
         </Link>
-      </div>
+      </div> 
       <section className='Latest' >
 
         <div className="container">
