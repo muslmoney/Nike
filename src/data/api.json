@@ -503,17 +503,17 @@
       "gender": [
         "men"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/010/223/048/original/13607_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2f988915-2092-47c6-8f69-8f19dce02a0c/WMNS+AIR+JORDAN+1+MID.png",
       "has_picture": true,
       "has_stock": true,
       "price": 190,
       "id": 13607,
       "keywords": [],
-      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/010/223/048/original/13607_00.png.png",
+      "main_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2f988915-2092-47c6-8f69-8f19dce02a0c/WMNS+AIR+JORDAN+1+MID.png",
       "midsole": "Air",
       "name": "Air Jordan 1 Mid",
       "nickname": "Legend Blue",
-      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/010/223/048/original/13607_00.png.png",
+      "original_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2f988915-2092-47c6-8f69-8f19dce02a0c/WMNS+AIR+JORDAN+1+MID.png",
       "product_template_id": 13607,
       "release_date": "2014-12-20T23:59:59.000Z",
       "release_date_unix": 1419119999,
@@ -597,7 +597,7 @@
         },
         {
           "id": 10,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0aa2164a-fae9-421a-b1db-47e634333859/WMNS+AIR+JORDAN+1+MID.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_я126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0aa2164a-fae9-421a-b1db-47e634333859/WMNS+AIR+JORDAN+1+MID.png"
         }
       ]
     },
@@ -618,46 +618,52 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ee38bbd1-8476-4175-bce4-f580ecb91750/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/884dcc23-4679-4223-a144-4fb855ee889d/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2bb71055-2f3d-429d-851f-4c6cd81e0169/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d56b67fc-4bd8-4fc4-bf0e-d52921faad70/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d5b8cd5f-5b7d-480e-8881-1a9a9cb5c4f1/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/45f42c58-9a72-4bc9-a6d3-7366f2c693f0/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
+      
+   
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f86117c9-e82e-497b-9dc2-1eb7485e41b5/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c26881cf-5be5-4272-89ba-9f16d80e1b8f/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         },
         {
-          "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "id":9,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e158ac19-e667-4bba-8767-276b81ca5dab/AIR+JORDAN+5+RETRO+EL+GRITO.png"
+        },
+        {
+          "id": 10,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d10da1a2-8b48-4b72-9e8f-72628e549815/AIR+JORDAN+5+RETRO+EL+GRITO.png"
         }
       ],
       "details": "Black/Black-Metallic Gold-White",
       "gender": [
         "women"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/021/545/481/original/509480_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9cd53f28-b8a2-4868-a9ec-7855c634aa6f/AIR+JORDAN+5+RETRO+EL+GRITO.png",
       "has_picture": true,
       "has_stock": true,
       "price": 190,
@@ -668,7 +674,7 @@
       ],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/021/545/481/original/509480_00.png.png",
       "midsole": "Air",
-      "name": "Wmns Air Jordan 1 Retro High OG 'Twist'",
+      "name": "Air Jordan 5 Retro 'El Grito'",
       "nickname": "Twist, Pony",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/021/545/481/original/509480_00.png.png",
       "product_template_id": 509480,
@@ -705,6 +711,7 @@
       "slug": "wmns-air-jordan-1-retro-high-og-panda-cd0461-007",
       "status": "active",
       "story_html": null,
+     
       "upper_material": ""
     },
     {
@@ -721,49 +728,54 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cacf1d36-8769-41b2-8616-a351efae9ce5/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6eea83ac-7862-459e-abf5-2f566e2f0ac1/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8bc7d689-de2c-4b49-986c-b42153895bc0/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ef4dbed6-c621-4879-8db3-f87296bfb570/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d9fe33e-9a31-4e7b-9d7c-c4ecf7abd2bb/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ee4cdc5a-36bb-40f5-bf8d-a441674bdfd6/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3844259f-f989-464c-a143-b3a274b35ae9/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/adc43e71-ff78-4d39-a95f-ba86aa88565f/BLAZER+MID+%2777+VNTG.png"
+        }
+        ,
+        {
+          "id": 10,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/eb25805f-6064-42a1-aa7a-0e4c426bc374/BLAZER+MID+%2777+VNTG.png"
         }
       ],
       "details": "Black/Varsity Red-Varsity Royal-White",
       "gender": [
         "men"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/012/910/690/original/554724_065.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/BLAZER+MID+%2777+VNTG.png",
       "has_picture": true,
       "has_stock": true,
-      "price": 190,
+      "price": 108,
       "id": 397517,
       "keywords": [
         "promoted1",
@@ -771,7 +783,7 @@
       ],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/012/910/690/original/554724_065.png.png",
       "midsole": "Air",
-      "name": "Air Jordan 1 Mid 'Multicolor Swoosh Black'",
+      "name": "Nike Blazer Mid '77 Vintage",
       "nickname": "Multicolor Swoosh Black",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/012/910/690/original/554724_065.png.png",
       "product_template_id": 397517,
@@ -817,6 +829,28 @@
       "slug": "air-jordan-1-mid-554724-065",
       "status": "active",
       "story_html": null,
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5ae3d658-7948-4212-8a97-b4ac30005e90/BLAZER+MID+%2777+VNTG.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/057482ba-4077-40a4-aa18-ef8f1b8f4fcf/BLAZER+MID+%2777+VNTG.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b47d63e-e088-4b4c-b5fd-40c9d0fb15ba/BLAZER+MID+%2777+VNTG.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d5495df-cdd7-432a-afc1-1f5606a1f03f/BLAZER+MID+%2777+VNTG.png"
+        }
+      ],
       "upper_material": ""
     },
     {
@@ -859,46 +893,42 @@
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fd71a36-68fc-4d19-9fa4-2ed034d4e747/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b8f2b4d5-1240-4a80-aa73-7a3b3509fba6/AIR+DT+MAX+%2796.png"
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/358b7ba9-1ecb-4df9-b1c6-41f31fd5d7b6/AIR+DT+MAX+%2796.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8e0dc7be-9b20-4ce6-b088-7d99447dc79a/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/573e198f-cbdd-4d44-9343-50d330db66ae/AIR+DT+MAX+%2796.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/933f7dff-27c3-477a-9af6-2de1c3ed9fcc/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9e256c43-bf70-4f56-9970-6832f3148987/AIR+DT+MAX+%2796.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b8d327c4-269f-4716-8665-bbc6ff0c2873/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1a5bf921-059e-4b5d-b0bf-707bedf175c4/AIR+DT+MAX+%2796.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a3aaafb-9ad8-4c84-b20e-7eba5d7c85b9/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1a5bf921-059e-4b5d-b0bf-707bedf175c4/AIR+DT+MAX+%2796.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06f2e6d1-acd9-4582-b106-a18f67eae646/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cdfe4b76-1320-4372-802b-4c5f52c79bef/AIR+DT+MAX+%2796.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/08c7be1e-0d5a-4948-b097-d36c88481878/JORDAN+LUKA+3.png"
-        },
-        {
-          "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f0c6a4da-2614-4543-88c0-9a7f23582bd6/JORDAN+LUKA+3.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1437fb8e-00e8-4240-9168-c25ae1e1100b/AIR+DT+MAX+%2796.png"
         }
       ],
       "details": "Black/Cement Grey-Summit White-Fire Red",
       "gender": [
         "men"
       ],
-      "grid_picture_url": "https://image.goat.com/375/attachments/product_template_pictures/images/020/806/485/original/461782_00.png.png",
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/251eb083-1148-47e9-a9d2-4fe859e153c0/AIR+DT+MAX+%2796.png",
       "has_picture": true,
       "has_stock": true,
       "price": 190,
@@ -910,7 +940,7 @@
       ],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/020/806/485/original/461782_00.png.png",
       "midsole": "Air",
-      "name": "Air Jordan 4 Retro OG 'Bred' 2019",
+      "name": "Nike Air DT Max '96",
       "nickname": "Bred",
       "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/020/806/485/original/461782_00.png.png",
       "product_template_id": 461782,

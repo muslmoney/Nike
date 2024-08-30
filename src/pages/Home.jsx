@@ -1,10 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './pages.css'
 import Swiper1 from '../components/Swiper1'
 import Swiper2 from '../components/Swiper2'
 
+import ProductsData from '../data/api.json';
+
 const Home = () => {
+    const { id } = useParams();
+    const product = ProductsData.sneakers.find((product) => product.id == id);
+  
+  
   return (
     <div className='Home'>
       <div className='Shop' >
@@ -59,7 +65,7 @@ const Home = () => {
 
         <div className="container">
           <div className='Swiper__cont'>
-            <h2>Shop our icons</h2>
+            <h2>Shop By Classics</h2>
             <Swiper2 />
           </div>
         </div>

@@ -1,52 +1,56 @@
-import React, { useRef, useState } from 'react';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-// import { Pagination, Navigation } from 'swiper/modules';
-
+import React from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
 import 'swiper/css/scrollbar';
-
-// Import Swiper styles
-import 'swiper/css';
+import ProductsData from '../data/api.json';
 import ProductCard from './ProductCard';
 
-export default function App() {
+const shuffleArray = (array) => {
+  let shuffled = array.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
+const Swiper1 = () => {
+  const { id } = useParams();
+  const products = ProductsData.sneakers;
+ const product = products.find((product) => product.id == id);
+
+  const navigate = useNavigate();
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`);
+  };
+
+  const shuffledProducts = shuffleArray(products);
+  const displayedProducts = shuffledProducts.slice(0, 10);
+
   return (
-    <div>
-      {/* <Swiper
-        loop={true} 
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // navigation={true}
-        scrollbar={{
-          hide: true,
-        }}
-        // , Pagination, Navigation
-        modules={[Scrollbar]}
+    <div className="Footer__swiper">
+      <Swiper
         watchSlidesProgress={true}
         slidesPerView={3.13}
+        spaceBetween={10}
         className="Swiper"
-        spaceBetween={10}>
-
-
-
-
-
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Jordan} title={'Jordan'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Dunk} title={'Dunk'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={AirForce} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Jordan} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Dunk} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={AirForce} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Jordan} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Dunk} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={AirForce} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Jordan} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={Dunk} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-        <SwiperSlide><ProductCard className='Product__card' ImgSrc={AirForce} title={'AirForce'} link={'./products'} ImgTitle={'product'} /></SwiperSlide>
-      </Swiper> */}
+      >
+        {displayedProducts.map((item) => (
+          <SwiperSlide key={item.id}>
+            <ProductCard
+              link={`/product/${item.id}`}
+              key={item.id}
+              title={item.name}
+              ImgSrc={item.grid_picture_url}
+              onClick={() => handleProductClick(item.id)}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
-}
+};
+
+export default Swiper1;
+ 

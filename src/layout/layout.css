@@ -352,6 +352,7 @@
 }
 
 .Header-hover {
+
   text-transform: capitalize;
   .Header__hover-menu {
     width: 100%;
