@@ -776,7 +776,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 108,
-      "id": 397517,
+      "id": 7,
       "keywords": [
         "promoted1",
         "underRetail"
@@ -932,7 +932,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 461782,
+      "id": 8,
       "keywords": [
         "black cement",
         "bred",
@@ -1033,7 +1033,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 464372,
+      "id": 9,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/675/311/original/464372_00.png.png",
       "midsole": "Air",
@@ -1170,7 +1170,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 115,
-      "id": 500924,
+      "id": 10,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/021/042/384/original/500924_00.png.png",
       "midsole": "Air",
@@ -1297,7 +1297,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 115,
-      "id": 479524,
+      "id": 11,
       "keywords": [
         "promoted1"
       ],
@@ -1861,9 +1861,7 @@
       "story_html": "<p>Music artist Travis Scott hails from Houston, where the Oilers used to take the field in red, white and blue uniforms. The Travis Scott x Air Jordan 4 Retro &#39;Cactus Jack&#39; colorway pays tribute to the city’s bygone football team with a Durabuck leather upper dressed in University Blue and a Varsity Red insole. The black lace cage and a heel panel feature a light blue speckle pattern. Cactus Jack branding appears on the left heel in Varsity Red, with a matching Jumpman logo on the right.</p>\n",
       "upper_material": ""
     },
-  
-    
-    {
+      {
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [

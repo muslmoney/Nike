@@ -108,11 +108,15 @@ h6 {
   @media (max-width: 650px) {
     padding: 0;
   }
+ 
 }
 
 .Swiper__cont {
-  h2 {
+  h2{
+    font-family: 'Futura' !important;
     padding: 0px 0 19px 0;
+    font-size: 65px;
+    text-transform: uppercase;
   }
 }
 

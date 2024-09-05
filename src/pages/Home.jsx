@@ -4,13 +4,13 @@ import './pages.css'
 import Swiper1 from '../components/Swiper1'
 import Swiper2 from '../components/Swiper2'
 import Swiper3 from '../components/Swiper3'
-
 import ProductsData from '../data/api.json';
 
 const Home = () => {
     const { id } = useParams();
     const product = ProductsData.sneakers.find((product) => product.id == id);
   
+  console.log(Swiper2);
   
   return (
     <div className='Home'>
@@ -37,7 +37,7 @@ const Home = () => {
 
         <div className="container">
           <div className='Swiper__cont'>
-            <h2>Niggers</h2>
+            <h2>Latest & Greatest</h2>
             <Swiper1 /> 
           </div>
         </div>
@@ -45,32 +45,33 @@ const Home = () => {
 
       <section className='OurIcons' >
 
-        <div className="container">
-          <div className='Swiper__cont'>
-            <h2>Shop our icons</h2>
-            <Swiper2 /> 
-          </div>
-        </div>
-      </section>
+<div className="container">
+  <div className='Swiper__cont ShopByClassic'>
+    <h2>Shop By Classics</h2>
+    <Swiper2 />
+  </div>
+</div>
+</section>
+      
       <section className='Latest' >
 
         <div className="container">
           <div className='Swiper__cont'>
-            <h2>Niggers</h2>
-            {/* <Swiper1 /> */}
+      <h2>Shop by sport</h2>
+            <Swiper1 /> 
           </div>
         </div>
       </section>
 
       <section className='OurIcons' >
 
-        <div className="container">
-          <div className='Swiper__cont'>
-            <h2>Shop By Classics</h2>
-            {/* <Swiper2 /> */}
-          </div>
-        </div>
-      </section>
+<div className="container">
+  <div className='Swiper__cont'>
+    <h2>Shop our icons</h2>
+    <Swiper3 /> 
+  </div>
+</div>
+</section>
 
 
 

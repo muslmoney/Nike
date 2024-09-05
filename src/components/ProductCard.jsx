@@ -86,4 +86,29 @@ export const ProductCardSwiper = ({
   );
 };
 
+export const ProductCardIcons = ({
+  ImgSrc,
+  ImgTitle,
+  className,
+  link,
+  title,
+  onClick,
+  ...props
+}) => {
+  onClick={onClick}
+  className={className}
+  return (
+    <div className={'Product__card-icons'}>
+      {/* //опеределенный товар */}
+      <Link to={link}>
+        <div>
+          <img src={ImgSrc} alt={ImgTitle} />
+          <p>
+            {title}
+          </p>
+        </div>
+      </Link>
+    </div>
+  );
+};
 export default ProductCard;
