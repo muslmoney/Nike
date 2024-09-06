@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Footer from './layout/Footer';
 import Background from 'three/src/renderers/common/Background.js';
 import Header from './layout/Header';
+import { CartProvider } from './context/CartContext';
 
 const App = () => {
   const navigate = useNavigate();
@@ -68,6 +69,7 @@ function RouteTransition({ children }) {
         </CSSTransition>
       </TransitionGroup>
     </AnimatePresence>
+ 
   );
 }
 

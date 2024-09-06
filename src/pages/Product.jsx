@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductsData from '../data/api.json';
 import NotFound from './NotFound';
+import { useCart } from '../context/CartContext';
 
 const Product = () => {
   const { id } = useParams();
+  const { addToCart } = useCart(); // Достаем функцию addToCart
   const product = ProductsData.sneakers.find((product) => product.id == id);
 
   if (!product) {
@@ -22,12 +24,10 @@ const Product = () => {
             return (
               <div
                 key={index}
-                className={`Product__carousel-img-container ${isGif ? 'video' : ''
-                  }`}
+                className={`Product__carousel-img-container ${isGif ? 'video' : ''}`}
               >
                 <img
                   loading="lazy"
-
                   src={image.url}
                   alt={`Product-${index}`}
                   onMouseEnter={() => setMainImage(image)}
@@ -38,10 +38,12 @@ const Product = () => {
           })}
         </aside>
         <main className="Product__main">
-
-          <img     
-                loading="lazy" 
-                src={mainImage.url} alt="main" className="Product__main-img" />
+          <img
+            loading="lazy"
+            src={mainImage.url}
+            alt="main"
+            className="Product__main-img"
+          />
         </main>
       </div>
       <div className="Product__about">
@@ -76,12 +78,12 @@ const Product = () => {
           </div>
         </div>
         <div className="Product-payment">
-          <a href="">
-            <button className="Product-payment-btn1">
-              <p>add to bag</p>
+          <a href="#">
+            <button className="Product-payment-btn1" onClick={() => addToCart(product)}>
+              <p>Add to bag</p>
             </button>
           </a>
-          <a href="">
+          <a href="#">
             <button className="Product_payment-btn2">
               <p>Add to favourites</p>
               <span>

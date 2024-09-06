@@ -76,6 +76,11 @@
    button:hover {
      background-color: #fff;
    }
+   @media (prefers-color-scheme: dark) {
+    button:hover {
+      background-color: #000;
+    }
+  }
    @media (max-width:1300px) {
   min-height: 0px;
 button{
@@ -134,8 +139,13 @@ button{
 
  
  .Footer__swiper{
+  padding: 0px 0 95px 0 ;
+
   h1{
-    padding: 250px 0 15px 0 ;
+    padding: 250px 30px 35px 30px ;
+    font-size: 50px ;
+    font-family: 'Futura';
+    text-transform: uppercase;
   }
   img{
     border: 1px rgb(187, 182, 182) solid;

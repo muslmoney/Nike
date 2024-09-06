@@ -94,10 +94,8 @@ h6 {
     button:hover {
       background-color: #313131;
     }
-
-    @media (max-width: 850px) {
+    @media (prefers-color-scheme: dark) {
       background-image: url('../assets/Nike-hero-2.jpg');
-      padding: 150px 20px 20px 20px;
     }
 
     @media (max-width: 450px) {

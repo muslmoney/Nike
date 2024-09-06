@@ -3,13 +3,13 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './components.css';
 import ProductsData from '../data/api.json';
-import ProductCardClass from './ProductCard'
+import   ProductCardClass   from   './ProductCard'
 
 const Swiper2 = () => {
   const { id } = useParams();
   const products = ProductsData.sneakers;
 
-  const requiredIds = [7, 8, 9, 10, 11];
+  const requiredIds = [7, 8, 9, 10, 11, ];
 
 
   const filteredProducts = products.filter((product) =>

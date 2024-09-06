@@ -69,10 +69,12 @@
     }
   }
 }
-
 .Header {
+  /* position: sticky; */
   position: relative;
-  /* position: fixed; */
+  width: 100%;
+  background-color: #fff;
+  top: 0; 
   width: 100%;
   background-color: #fff;
   ::-webkit-scrollbar {
@@ -147,7 +149,7 @@
         .Header__form {
           background: #000;
           padding: 5px 10px;
-          background-color: #f5f5f5;
+          background-color: transparent;
           border-radius: 20px;
 
           position: relative;
@@ -182,12 +184,20 @@
           border-radius: 50%;
           background-color: #cacacb;
         }
+        @media (prefers-color-scheme: dark) {
+          .Header__tools-item:hover {
+            
+            background-color: #000;
+            }
+        }
 
         .Header-search {
+          border: #cacacb 1px solid;
+          border-radius: 20px;
           @media (max-width: 1000px) {
-            background: #fff;
             .Header__form-btn {
               padding: 5px;
+              
             }
 
             .Header__form-btn:hover {
@@ -197,15 +207,19 @@
             .Header__form {
               padding: 0;
               background: transparent;
+
             }
 
             .Header__input {
+
               display: none;
             }
           }
         }
 
         .Header-search.SearchActive {
+          border: none;
+          border-radius: unset;
           transition: 0.2s linear;
           padding-top: 50px;
           position: fixed;
@@ -218,10 +232,10 @@
           justify-content: center;
           display: flex;
           gap: 30px;
-          background: #fff;
-
+          background: #000;
           .Header__input {
             padding: 9px;
+
             width: 100%;
 
             display: flex;
@@ -230,6 +244,7 @@
             content: '';
             width: 100%;
             height: 100%;
+            color-scheme: dark !important;
             max-width: 66px;
             background-image: url(../assets/Nike-logo.svg);
             background-repeat: no-repeat;
@@ -239,6 +254,7 @@
           }
           .Header__form {
             width: 85%;
+            border: #cacacb 1px solid;
 
             .Header__form-close {
               border: none;
