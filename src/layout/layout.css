@@ -215,6 +215,7 @@
               display: none;
             }
           }
+      
         }
 
         .Header-search.SearchActive {
@@ -232,7 +233,7 @@
           justify-content: center;
           display: flex;
           gap: 30px;
-          background: #000;
+          background-color: #fff;
           .Header__input {
             padding: 9px;
 
@@ -260,6 +261,12 @@
               border: none;
               background: transparent;
             }
+          }
+          @media (prefers-color-scheme: dark) {
+            background: #000;
+        
+            color: #fff;  
+           
           }
         }
 

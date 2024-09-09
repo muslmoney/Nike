@@ -86,7 +86,7 @@ export const ProductCardSwiper = ({
   );
 };
 
-export const ProductCardIcons = ({
+export const ProductCardClass = ({
   ImgSrc,
   ImgTitle,
   className,

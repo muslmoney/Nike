@@ -14,6 +14,8 @@ const Home = () => {
   
   return (
     <div className='Home'>
+      <div className="Hero">
+      </div>
       <div className='Shop' >
         <p>Shop All New Arrivals</p>
         <a href="/products">
