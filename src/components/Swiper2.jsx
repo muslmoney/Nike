@@ -3,7 +3,9 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './components.css';
 import ProductsData from '../data/api.json';
-import   ProductCardClass   from   './ProductCard'
+import ProductCard from './ProductCard';
+import { ProductCardClass } from './ProductCard';
+import { Navigation } from 'swiper/modules';
 
 const Swiper2 = () => {
   const { id } = useParams();
@@ -20,10 +22,13 @@ const Swiper2 = () => {
   return (
     <div className="Classic-swiper">
       <Swiper
-        watchSlidesProgress={true}
-        slidesPerView={3.13}
-        spaceBetween={10}
-        className="Swiper"
+        slidesPerView={3.9}
+        spaceBetween={20}
+        className="Swiper" 
+        centeredSlides = {true}
+        loop={true}                // Зацикливание слайдов
+        initialSlide={3}           // Начинаем с третьего слайда
+        modules={[Navigation]}     // Подключаем модуль навигации
       >
         {filteredProducts.map((item) => (
           <SwiperSlide key={item.id}>
@@ -41,5 +46,6 @@ const Swiper2 = () => {
     </div>
   );
 };
+
 
 export default Swiper2;

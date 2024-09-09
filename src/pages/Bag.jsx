@@ -3,7 +3,7 @@ import { useCart } from '../context/CartContext';
 import { IoIosArrowDown } from "react-icons/io";
 
 const Bag = () => {
-  const { cart, getTotalPrice } = useCart();
+  const { cart, getTotalPrice, removeFromCart, updateQuantity } = useCart();
   const [isArrowOpen, setArrowOpen] = React.useState(false);
 
   const handleArrowClick = () => {
@@ -28,7 +28,13 @@ const Bag = () => {
                     <div className='Bag__item-details'>
                       <p>{item.name}</p>
                       <p>${item.price}</p>
-                    </div>
+                      <div className='Bag__item-quantity'>
+                        <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
+                        <span>{item.quantity}</span>
+                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
+                      </div>
+                      <button className='Bag__btn-remove' onClick={() => removeFromCart(item.id)}>Remove</button>
+                    </div>          
                   </div>
                 ))}
               </div>

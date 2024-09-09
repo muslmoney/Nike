@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
 import 'swiper/css/scrollbar';
 import ProductsData from '../data/api.json';
-import ProductCard from './ProductCard';
+import ProductCard  from './ProductCard';
+import { ProductCardClass } from './ProductCard';
 
 const shuffleArray = (array) => {
   let shuffled = array.slice();
@@ -32,9 +33,10 @@ const Swiper3 = () => {
     <div className="Footer__swiper">
       <Swiper
         watchSlidesProgress={true}
-        slidesPerView={3.13}
-        spaceBetween={10}
+        slidesPerView = {3.5}
+        spaceBetween = {10}
         className="Swiper"
+        
       >
         {displayedProducts.map((item) => (
           <SwiperSlide key={item.id}>

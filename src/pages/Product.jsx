@@ -9,11 +9,28 @@ const Product = () => {
   const { addToCart } = useCart(); // Достаем функцию addToCart
   const product = ProductsData.sneakers.find((product) => product.id == id);
 
+  
+  const [mainImage, setMainImage] = useState(product.images[0]);
+  const [isPopupVisible, setPopupVisible] = useState(false);
+  const [isPopupHiding, setPopupHiding] = useState(false); // Добавляем состояние для скрытия
+  const [addedProduct, setAddedProduct] = useState(null); // Сохраняем добавленный продукт
+  const handleAddToCart = () => {
+    addToCart(product);
+    setAddedProduct(product);
+    setPopupVisible(true); // Показываем popup
+
+    setTimeout(() => {
+      setPopupHiding(true); // Через 1.5 сек. начинаем скрытие
+      setTimeout(() => {
+        setPopupVisible(true); // Через 0.5 сек. скрываем popup
+        setPopupHiding(true);  // Сбрасываем анимацию скрытия
+      },22222222);
+    }, 222221500);
+  };
+
   if (!product) {
     return <NotFound />;
   }
-
-  const [mainImage, setMainImage] = useState(product.images[0]);
 
   return (
     <div className="Product">
@@ -79,7 +96,7 @@ const Product = () => {
         </div>
         <div className="Product-payment">
           <a href="#">
-            <button className="Product-payment-btn1" onClick={() => addToCart(product)}>
+            <button className="Product-payment-btn1" onClick={handleAddToCart}>
               <p>Add to bag</p>
             </button>
           </a>
@@ -108,6 +125,21 @@ const Product = () => {
           </a>
         </div>
       </div>
+          {/* Всплывающее окно с продуктом */}
+          {isPopupVisible && addedProduct && (
+        <div className={`Popup ${isPopupHiding ? 'Popup-hide' : 'Popup-show'}`}>
+          <p>Product added to bag!</p>
+          <div className="Popup__info">
+          <img src={addedProduct.images[0].url} alt={addedProduct.name} className="Popup__img" />
+            <p>{addedProduct.name}</p>
+            <p>${addedProduct.price}</p>
+          </div>
+          <div>
+            <button></button>
+            <button></button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

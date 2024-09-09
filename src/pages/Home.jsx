@@ -10,7 +10,6 @@ const Home = () => {
     const { id } = useParams();
     const product = ProductsData.sneakers.find((product) => product.id == id);
   
-  console.log(Swiper2);
   
   return (
     <div className='Home'>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { CartProvider } from './context/CartContext.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from './App.jsx';
@@ -12,10 +13,7 @@ import Product from './pages/Product.jsx'
 
 
 const router = createBrowserRouter([
-  // {
-  //   path: '/component',
-  //   element: <Component />,
-  // },
+ 
   {
     path: '/',
     element: <App />,
@@ -60,6 +58,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <CartProvider>
     <RouterProvider router={router} />
+    </CartProvider>
   </React.StrictMode>
 );
