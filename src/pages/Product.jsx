@@ -24,8 +24,8 @@ const Product = () => {
       setTimeout(() => {
         setPopupVisible(true); // Через 0.5 сек. скрываем popup
         setPopupHiding(true);  // Сбрасываем анимацию скрытия
-      },22222222);
-    }, 222221500);
+      },2000);
+    }, 2000);
   };
 
   if (!product) {
@@ -83,14 +83,18 @@ const Product = () => {
           <div className="Product__sizes">
             <h3>Select size</h3>
             <div className="Product__sizes">
-              <button>37</button>
+              {/* <button>37</button>
               <button>38</button>
               <button>39</button>
               <button>40</button>
               <button>41</button>
               <button>42</button>
               <button>43</button>
-              <button>44</button>
+              <button>44</button> */}
+               {product.size_range &&
+              product.size_range.map((size, index) => (
+                <button key={index} title={size} />
+              ))}
             </div>
           </div>
         </div>
@@ -128,15 +132,21 @@ const Product = () => {
           {/* Всплывающее окно с продуктом */}
           {isPopupVisible && addedProduct && (
         <div className={`Popup ${isPopupHiding ? 'Popup-hide' : 'Popup-show'}`}>
-          <p>Product added to bag!</p>
+    <div className='Popur__status'>
+    <svg fill="#128A09" width="20px" height="20px" class="mr2-sm" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm-.96 16.64l-3.68-3.68 1.84-1.92 1.84 1.92 5.6-5.6 1.92 1.84-7.52 7.44z"></path></svg>
+    <p> Added to Bag</p>
+    </div>
           <div className="Popup__info">
           <img src={addedProduct.images[0].url} alt={addedProduct.name} className="Popup__img" />
-            <p>{addedProduct.name}</p>
-            <p>${addedProduct.price}</p>
-          </div>
           <div>
-            <button></button>
-            <button></button>
+          <h3>{addedProduct.name}</h3>
+          <p>{addedProduct.size_range[1]}</p>
+          <h4>${addedProduct.price}</h4>
+          </div>
+          </div>
+          <div className='Popur__btn'>
+        <a href='/bag'>    <button>view bag()</button></a>
+            <button onClick={setPopupHiding}>remove</button>
           </div>
         </div>
       )}

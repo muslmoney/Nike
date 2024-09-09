@@ -1,11 +1,13 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import { IoIosArrowDown } from "react-icons/io";
+import ProductsData from '../data/api.json';
 
 const Bag = () => {
   const { cart, getTotalPrice, removeFromCart, updateQuantity } = useCart();
   const [isArrowOpen, setArrowOpen] = React.useState(false);
-
+  const { id } = useParams();
+  const product = ProductsData.sneakers.find((product) => product.id == id);
   const handleArrowClick = () => {
     setArrowOpen(prev => !prev);
   };

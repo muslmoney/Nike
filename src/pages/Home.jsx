@@ -8,7 +8,7 @@ import ProductsData from '../data/api.json';
 
 const Home = () => {
     const { id } = useParams();
-    const product = ProductsData.sneakers.find((product) => product.id == id);
+~    const product = ProductsData.sneakers.find((product) => product.id == id);
   
   
   return (
