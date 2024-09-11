@@ -1,38 +1,37 @@
-import React, { Fragment, useEffect } from 'react';
-import './App.css';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { Fragment, useEffect } from "react";
+import "./App.css";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 // import Header from './layout/Header';
-import Footer from './layout/Footer';
-import Background from 'three/src/renderers/common/Background.js';
-import Header from './layout/Header';
-import { CartProvider } from './context/CartContext';
+import Footer from "./layout/Footer";
+import Background from "three/src/renderers/common/Background.js";
+import Header from "./layout/Header";
+import { CartProvider } from "./context/CartContext";
 
 const App = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
   useEffect(() => {
-    if (pathname === '/') {
-      navigate('/home');
+    if (pathname === "/") {
+      navigate("/home");
     }
   }, [pathname, navigate]);
 
   return (
     <div className="app-container">
       <Fragment>
-<header>
-<Header />
-</header>
-        <main>
-            {' '}
-            {/* Оборачиваем основное содержимое в SearchProvider */}
-            <RouteTransition>
-              <Outlet />
-            </RouteTransition>
-        </main>
+        <header>
+          <Header />
+        </header>
+        
+        <RouteTransition>
+          <Outlet />
+        </RouteTransition>
+
+        <main> {/* Оборачиваем основное содержимое в SearchProvider */}</main>
 
         <footer>
           <Footer />
@@ -69,7 +68,6 @@ function RouteTransition({ children }) {
         </CSSTransition>
       </TransitionGroup>
     </AnimatePresence>
- 
   );
 }
 

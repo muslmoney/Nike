@@ -7,6 +7,22 @@ const Header = () => {
   const onClickBurger = () => setBurger((prev) => !prev);
   const [isSearchActive, setSearchActive] = useState(false);
 
+
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    // Устанавливаем таймер на 2 секунды
+    const timer = setTimeout(() => {
+      setIsHovered(true);
+    }, 800);
+
+    // Очистка таймера при размонтировании компонента
+    return () => clearTimeout(timer);
+  }, []);
+
+
+
   const searchRef = useRef(null);
 
   const [inputValue, setInputValue] = useState('');
@@ -127,7 +143,7 @@ const Header = () => {
                       <p className="Header__nav-text">New & Featured</p>
                     </a>
 
-                    <div className="Header-hover">
+                    <div className={`Header-hover ${isHovered ? 'Header-hover-open' : ''}`}>
                       <div className="Header__hover-menu">
                         <div className="Header__hover-card">
                           <h3>New & Featured</h3>
@@ -197,7 +213,7 @@ const Header = () => {
                       <p className="Header__nav-text">Men</p>
                     </a>
 
-                    <div className="Header-hover">
+                    <div className={`Header-hover ${isHovered ? 'Header-hover-open' : ''}`}>
                       <div className="Header__hover-menu">
                         <div className="Header__hover-card">
                           <h3>New & Featured</h3>
@@ -306,7 +322,7 @@ const Header = () => {
                       <p className="Header__nav-text">Women</p>
                     </a>
 
-                    <div className="Header-hover">
+                    <div className={`Header-hover ${isHovered ? 'Header-hover-open' : ''}`}>
                       <div className="Header__hover-menu">
                         <div className="Header__hover-card">
                           <h3>New & Featured</h3>
@@ -414,7 +430,7 @@ const Header = () => {
                     <a href={'/products'} className="Header__nav-link">
                       <p className="Header__nav-text">Kids</p>
                     </a>
-                    <div className="Header-hover">
+                    <div className={`Header-hover ${isHovered ? 'Header-hover-open' : ''}`}>
                       <div className="Header__hover-menu">
                         <div className="Header__hover-card">
                           <h3>New & Featured</h3>
@@ -522,7 +538,7 @@ const Header = () => {
                     <a href={'/products'} className="Header__nav-link">
                       <p className="Header__nav-text">Sale</p>
                     </a>
-                    <div className="Header-hover">
+                    <div className={`Header-hover ${isHovered ? 'Header-hover-open' : ''}`}>
                       <div className="Header__hover-menu">
                         <div className="Header__hover-card">
                           <h3>New & Featured</h3>

@@ -1,16 +1,13 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
-// Создание контекста
 const CartContext = createContext();
 
-// Провайдер контекста
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(() => {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
-  // Сохранение корзины в localStorage
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);

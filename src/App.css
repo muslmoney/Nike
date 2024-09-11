@@ -13,14 +13,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   background: rgb(0, 0, 0); 
   text-shadow: #fff 11px 11px 11px 11px;
   opacity: 0;
   pointer-events: none; 
   z-index: 9 ; 
-  transition: opacity 800ms ease-in-out;
-  animation: fadeInOut 800ms ease-in-out ;
+  transition: opacity 1100ms ease-in-out;
+  animation: fadeInOut 1100ms ease-in-out ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,8 @@
   font-size: 680px;
   font-family: 'Thunder';
   opacity: 0;
-  animation: fadeInOut 800ms ease-in-out forwards;
+  animation: fadeInOut 1100ms ease-in-out forwards;
+  
 }
 
   
@@ -67,7 +68,7 @@
   .fade-exit-active {
     
     opacity: 0;
-    transition: opacity 400ms ease-out;
+    transition: opacity 1100ms ease-out;
   }
   @keyframes fadeInOut {
     0% {
@@ -126,13 +127,13 @@
 }
 
 .nike-text:before {
-   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.9) both infinite;
    color: #0ff;
    z-index: -1;
 }
 
 .nike-text:after {
-   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.9) reverse both infinite;
    color: #ff00ff;
    z-index: -2;
 }
