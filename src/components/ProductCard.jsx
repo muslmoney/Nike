@@ -98,7 +98,7 @@ export const ProductCardClass = ({
   onClick={onClick}
   className={className}
   return (
-    <div className={'Product__card-icons'}>
+    <div className={'Product__card-class'}>
       {/* //опеределенный товар */}
       <Link to={link}>
         <div>

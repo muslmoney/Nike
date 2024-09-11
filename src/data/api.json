@@ -651,7 +651,7 @@
     },
     {
       "box_condition": "good_condition",
-      "brand_name": "Air Jordan",
+      "brand_name": "Blazer",
       "category": [
         "lifestyle"
       ],
@@ -774,7 +774,7 @@
     },
     {
       "box_condition": "good_condition",
-      "brand_name": "Air Jordan",
+      "brand_name": "Air Max",
       "category": [
         "lifestyle"
       ],
@@ -891,7 +891,7 @@
     },
     {
       "box_condition": "good_condition",
-      "brand_name": "Air Jordan",
+      "brand_name": "Vomero",
       "category": [
         "lifestyle"
       ],
@@ -1005,7 +1005,7 @@
     },
     {
       "box_condition": "good_condition",
-      "brand_name": "Air Jordan",
+      "brand_name": "Dunk",
       "category": [
         "lifestyle"
       ],
@@ -1107,7 +1107,7 @@
     },
     {
       "box_condition": "no_original_box",
-      "brand_name": "Air Jordan",
+      "brand_name": "Air Force 1",
       "category": [
         "lifestyle"
       ],
@@ -1220,7 +1220,136 @@
       "status": "active",
       "story_html": "<p>Releasing in January 2019, the Air Jordan 4 Retro ‘Laser’ celebrates the venerable silhouette’s 30th anniversary. Laser-etched designs are nothing new for the Air Jordan 4, and this iteration showcases the embellishments in subtle tonal fashion on a full-grain black leather upper. Contrasting white appears on the Jumpman logos that adorn the heel and tongue tag, while a gum rubber outsole delivers grippy traction underfoot.</p>\n",
       "upper_material": ""
-    },{
+    },
+    {
+      "box_condition": "good_condition",
+      "brand_name": "Air Jordan",
+      "category": [
+        "lifestyle"
+      ],
+      "collection_slugs": [
+        "air-jordan-1",
+        "belly",
+        "brokenrecord",
+        "bs",
+        "capspace",
+        "congrats",
+        "friendzone",
+        "greatness",
+        "hangtime",
+        "idiots",
+        "jj",
+        "just-dropped",
+        "just-dropped-1",
+        "kfc",
+        "official",
+        "pka",
+        "ringer",
+        "sneakdiss",
+        "solid",
+        "super-bowl-liii",
+        "tape",
+        "teeth",
+        "theread",
+        "thestarters",
+        "top-20-trending",
+        "wgg",
+        "woj"
+      ],
+      "color": "Brown",
+      "designer": "Peter Moore",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd150294-a43a-4eb9-949d-50f9d82d3cd1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45ba78cb-baf3-4c12-b4a2-e7056bd052fd/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aefbcc9a-6111-40b9-88cc-45062648690a/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 6,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 7,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e6546a3-2b89-4257-b5a4-70a1d0a53195/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 8,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ea5f52c-5273-4ae7-89f3-083008280fce/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 9,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e8f94f-9519-4ebf-8a59-e0830a9bc2f7/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        }
+      ],
+      "details": "Sail/Dark Mocha-University Red-Black",
+      "gender": [
+        "men's"
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13564560-2361-400e-bb23-cb0142d3620d/JR+ZM+VAPOR+16+PRO+FG.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
+        }
+      ],
+      "grid_picture_url": "/public/Air Jordan 1.jpg",
+      "has_picture": true,
+      "has_stock": true,
+      "price": 150,
+      "id": 12,
+      "keywords": [
+        "cactus jack"
+      ],
+      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "midsole": "Air",
+      "name": "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'",
+      "nickname": "Mocha",
+      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "product_template_id": 488879,
+      "release_date": "2019-05-11T23:59:59.000Z",
+      "release_date_unix": 1557619199,
+      "release_year": 2019,
+      "retail_price_cents": 16000,
+      "shoe_condition": "new_no_defects",
+      "silhouette": "Air Jordan 1",
+      "size_range": [
+        10,
+        10.5,
+        11,
+        11.5,
+        12,
+        12.5
+       
+      ],
+      "sku": "CD4487 100",
+      "slug": "travis-scott-x-air-jordan-1-retro-high-og-cd4487-100",
+      "status": "active",
+      "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
+      "upper_material": ""
+    },  
+    {
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
