@@ -32,6 +32,10 @@ const Home = () => {
           </Link>
         </div>
       </div>
+
+
+
+
       <section className='Latest' >
 
         <div className="container">
@@ -42,6 +46,9 @@ const Home = () => {
         </div>
       </section>
 
+
+
+
       <div className='Home__hero-2'>
         <h1>
           Just do it
@@ -51,48 +58,66 @@ const Home = () => {
         </p>
 
       </div>
+
+
       <div className='Shop' >
         <p>Shop All New Arrivals</p>
         <a href="/products">
           <p>Shop</p>
         </a>
       </div>
+
+
+
       <section className='chetirefotki'>
         <div className='chetirefotki-grid'>
-          <div className='chetirefotki__card'>
-            <img className='img1' src="https://static.nike.com/a/images/f_auto/dpr_0.3,cs_srgb/w_2092,c_limit/f06d460a-91b3-40ba-848c-3bc2be5213bb/nike-just-do-it.jpg" alt="" />
-            <div>
-              <p>just in</p>
-              <h3>fall favourites</h3>
-              <button>shop</button>
+
+          <a href="/products">
+            <div className='chetirefotki__card'>
+              <img className='img1' src="https://static.nike.com/a/images/f_auto/dpr_0.3,cs_srgb/w_2092,c_limit/f06d460a-91b3-40ba-848c-3bc2be5213bb/nike-just-do-it.jpg" alt="" />
+              <div>
+                <p>just in</p>
+                <h3>fall favourites</h3>
+                <button>shop</button>
+              </div>
             </div>
-          </div>
-          <div className='chetirefotki__card'>
-            <img className='img2' src="https://static.nike.com/a/images/f_auto/dpr_0.3,cs_srgb/w_2092,c_limit/866e7614-162d-4647-9eb8-752739d4315f/nike-just-do-it.jpg" alt="" />
-            <div>
-              <p>for all walks</p>
-              <h3>nike motiva</h3>
-              <button>shop</button>
+          </a>
+          <a href="/products">
+            <div className='chetirefotki__card'>
+              <img className='img2' src="https://static.nike.com/a/images/f_auto/dpr_0.3,cs_srgb/w_2092,c_limit/866e7614-162d-4647-9eb8-752739d4315f/nike-just-do-it.jpg" alt="" />
+              <div>
+                <p>for all walks</p>
+                <h3>nike motiva</h3>
+                <button>shop</button>
+              </div>
             </div>
-          </div>
-          <div className='chetirefotki__card'>
-            <img className='img3' src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_1373,c_limit/ff898853-a5a8-4fdd-bb4d-014ac934d9ad/nike-just-do-it.jpg" alt="" />
-            <div>
-              <p>jordans's latest</p>
-              <h3>brooklyn fleece</h3>
-              <button>shop</button>
+          </a>
+          <a href="/products">
+            <div className='chetirefotki__card'>
+              <img className='img3' src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_1373,c_limit/ff898853-a5a8-4fdd-bb4d-014ac934d9ad/nike-just-do-it.jpg" alt="" />
+              <div>
+                <p>jordans's latest</p>
+                <h3>brooklyn fleece</h3>
+                <button>shop</button>
+              </div>
             </div>
-          </div>
-          <div className='chetirefotki__card'>
-            <img className='img4' src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_1373,c_limit/59176597-0a35-48a2-96b8-f39824239e74/nike-just-do-it.jpg" alt="" />
-            <div>
-              <p>new in basketball</p>
-              <h3>giannis freak 6 'naija'</h3>
-              <button>shop</button>
+          </a>
+          <a href="/products">
+            <div className='chetirefotki__card'>
+              <img className='img4' src="https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_1373,c_limit/59176597-0a35-48a2-96b8-f39824239e74/nike-just-do-it.jpg" alt="" />
+              <div>
+                <p>new in basketball</p>
+                <h3>giannis freak 6 'naija'</h3>
+                <button>shop</button>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
+
+
+
+
       <section className='OurIcons' >
 
         <div className="container">
@@ -102,6 +127,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
 
       <section className='Latest' >
 
@@ -113,6 +140,8 @@ const Home = () => {
         </div>
       </section>
 
+
+
       <section className='OurIcons' >
 
         <div className="container">
@@ -123,7 +152,13 @@ const Home = () => {
         </div>
       </section>
 
-
+<div className='Home__hero-1'>
+ <p>Nike Unveils Technological Advances in the Pegasus 41</p>
+  <h1>
+  Nike Pegasus 41
+  </h1>
+  <img src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/981dd274-b6a6-4679-8a96-86430bb748a9___92e1503574db4cd99149055f4543c4e0.png" alt="" />
+</div>
 
 
     </div>

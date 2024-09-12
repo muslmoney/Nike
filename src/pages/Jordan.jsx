@@ -57,7 +57,7 @@ const Jordan = () => {
            </div>
             </div>
             <div className="Jordan__model">
-              <Canvas
+           <Canvas
                 className='model'
                 style={{
                   maxWidth: '800px',
@@ -84,14 +84,23 @@ const Jordan = () => {
               </Canvas>
             </div>
             <div className="Jordan__options card2">
-          
-              <button>buy</button>
+          <p>
+          The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side.
+          <br />
+           A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede.
+          </p>
+  
+          <a href="/product/17" className="">
+          <button >buy</button>
+          </a>
+
+
             </div>
           </div>
           <div className="Jordan__colors">
             <button className='red'></button>
-            <button className='white'></button>
-            <button></button>
+            <button className='blue'></button>
+            <button className='green'></button>
           </div>
         </div>
       </div>

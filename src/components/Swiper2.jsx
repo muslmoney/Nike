@@ -26,9 +26,10 @@ const Swiper2 = () => {
         spaceBetween={20}
         className="Swiper" 
         centeredSlides = {true}
-        loop={true}                // Зацикливание слайдов
-        initialSlide={5}           // Начинаем с третьего слайда
-        modules={[Navigation]}     // Подключаем модуль навигации
+        loop={true}             
+        lazy={true} 
+        initialSlide={5}           
+        modules={[Navigation]}    
       >
         {filteredProducts.map((item) => (
           <SwiperSlide key={item.id}>

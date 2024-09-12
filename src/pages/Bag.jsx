@@ -52,10 +52,12 @@ const Bag = () => {
   const handleModalClose = () => {
     setShowModal(false);
   };
-
+  
   const totalPrice = getTotalPrice();
   const totalAfterDiscount = totalPrice * (1 - discount / 100);
-
+  const discountValue = totalPrice - totalAfterDiscount;
+  console.log(totalPrice);
+  console.log(totalAfterDiscount);
   return (
     <section className='Bag'>
       <div className="container">
@@ -81,7 +83,7 @@ const Bag = () => {
                         <span>{item.quantity}</span>
                         <button onClick={() => updateQuantity(item.id, item.quantity + 1)}><CiCirclePlus /></button>
                       </div>
-                      <div className='Bag__btns'> 
+                      <div className='Bag__btns'>
                         <button className='Bag__btn-remove' onClick={() => removeFromCart(item.id)}>
                           <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
                             <path stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" d="M14.25 7.5v12m-4.5-12v12M5.25 6v13.5c0 1.24 1.01 2.25 2.25 2.25h9c1.24 0 2.25-1.01 2.25-2.25V5.25m0 0h2.75m-2.75 0H21m-12-3h5.25c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H3"></path>
@@ -93,7 +95,7 @@ const Bag = () => {
                           </svg>
                         </button>
                       </div>
-                    </div>          
+                    </div>
                   </div>
                 ))}
               </div>
@@ -103,7 +105,7 @@ const Bag = () => {
             <h2 className='Bag__title'>Summary</h2>
             <details className='Bag-arrow'>
               <summary onClick={handleArrowClick}>
-                Do you have a promo code? 
+                Do you have a promo code?
                 <div className={`arrow ${isArrowOpen ? 'active' : ''}`}>
                   <IoIosArrowDown />
                 </div>
@@ -114,8 +116,8 @@ const Bag = () => {
                     <form onSubmit={handleApplyPromoCode}>
                       <div className='Bag-arrow-label'>
                         <div className='Bag-arrow-input'>
-                          <input 
-                            type="text" 
+                          <input
+                            type="text"
                             value={promoCode}
                             onChange={(e) => setPromoCode(e.target.value)}
                             placeholder="Enter promo code"
@@ -137,7 +139,7 @@ const Bag = () => {
             </div>
             <div className='Bag-count'>
               <p>Discount</p>
-              <b>{discount}%</b>
+              <b>${discountValue}.00</b>
             </div>
             <div className='Bag-total'>
               <b>Total</b>

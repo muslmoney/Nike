@@ -69,7 +69,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 218099,
+      "id": 1,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/011/119/994/original/218099_00.png.png",
       "midsole": "Air",
@@ -158,7 +158,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 507844,
+      "id": 2,
       "keywords": [
         "black cement",
         "bred",
@@ -213,7 +213,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 235806,
+      "id": 3,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/008/870/353/original/235806_00.png.png",
       "midsole": "Air",
@@ -361,7 +361,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 52015,
+      "id": 4,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/008/654/900/original/52015_00.png.png",
       "midsole": "Air",
@@ -455,7 +455,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 13607,
+      "id": 5,
       "keywords": [],
       "main_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2f988915-2092-47c6-8f69-8f19dce02a0c/WMNS+AIR+JORDAN+1+MID.png",
       "midsole": "Air",
@@ -602,7 +602,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 509480,
+      "id": 6,
       "keywords": [
         "Panda",
         "Twist"
@@ -1314,139 +1314,11 @@
           "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
         }
       ],
-      "grid_picture_url": "/public/Air Jordan 1.jpg",
-      "has_picture": true,
-      "has_stock": true,
-      "price": 150,
-      "id": 12,
-      "keywords": [
-        "cactus jack"
-      ],
-      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
-      "midsole": "Air",
-      "name": "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'",
-      "nickname": "Mocha",
-      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
-      "product_template_id": 488879,
-      "release_date": "2019-05-11T23:59:59.000Z",
-      "release_date_unix": 1557619199,
-      "release_year": 2019,
-      "retail_price_cents": 16000,
-      "shoe_condition": "new_no_defects",
-      "silhouette": "Air Jordan 1",
-      "size_range": [
-        10,
-        10.5,
-        11,
-        11.5,
-        12,
-        12.5
-       
-      ],
-      "sku": "CD4487 100",
-      "slug": "travis-scott-x-air-jordan-1-retro-high-og-cd4487-100",
-      "status": "active",
-      "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
-      "upper_material": ""
-    },  
-    {
-      "box_condition": "good_condition",
-      "brand_name": "Air Jordan",
-      "category": [
-        "lifestyle"
-      ],
-      "collection_slugs": [
-        "air-jordan-1",
-        "belly",
-        "brokenrecord",
-        "bs",
-        "capspace",
-        "congrats",
-        "friendzone",
-        "greatness",
-        "hangtime",
-        "idiots",
-        "jj",
-        "just-dropped",
-        "just-dropped-1",
-        "kfc",
-        "official",
-        "pka",
-        "ringer",
-        "sneakdiss",
-        "solid",
-        "super-bowl-liii",
-        "tape",
-        "teeth",
-        "theread",
-        "thestarters",
-        "top-20-trending",
-        "wgg",
-        "woj"
-      ],
-      "color": "Brown",
-      "designer": "Peter Moore",
-      "images": [
-        {
-          "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 2,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd150294-a43a-4eb9-949d-50f9d82d3cd1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45ba78cb-baf3-4c12-b4a2-e7056bd052fd/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aefbcc9a-6111-40b9-88cc-45062648690a/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e6546a3-2b89-4257-b5a4-70a1d0a53195/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ea5f52c-5273-4ae7-89f3-083008280fce/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e8f94f-9519-4ebf-8a59-e0830a9bc2f7/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        }
-      ],
-      "details": "Sail/Dark Mocha-University Red-Black",
-      "gender": [
-        "men's"
-      ],
-      "colors": [
-        {
-          "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13564560-2361-400e-bb23-cb0142d3620d/JR+ZM+VAPOR+16+PRO+FG.png"
-        },
-        {
-          "id": 2,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
-        },
-        {
-          "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
-        }
-      ],
       "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b2f41c22-aea5-458b-9366-fa5b10d48606/JR+ZM+VAPOR+16+PRO+FG+OLY.png",
       "has_picture": true,
       "has_stock": true,
       "price": 150,
-      "id": 488879,
+      "id": 13,
       "keywords": [
         "cactus jack"
       ],
@@ -1558,7 +1430,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 150,
-      "id": 335047,
+      "id": 14,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/012/219/518/original/335047_00.png.png",
       "midsole": "Air",
@@ -1653,7 +1525,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 190,
-      "id": 515029,
+      "id": 15,
       "keywords": [],
       "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/021/474/777/original/TR_JSP_5_ICE.png.png",
       "midsole": "Air",
@@ -1754,7 +1626,7 @@
       "has_picture": true,
       "has_stock": true,
       "price": 150,
-      "id": 365514,
+      "id": 16,
       "keywords": [
         "travis scott"
       ],
@@ -1796,8 +1668,278 @@
       "status": "active",
       "story_html": "<p>Music artist Travis Scott hails from Houston, where the Oilers used to take the field in red, white and blue uniforms. The Travis Scott x Air Jordan 4 Retro &#39;Cactus Jack&#39; colorway pays tribute to the city’s bygone football team with a Durabuck leather upper dressed in University Blue and a Varsity Red insole. The black lace cage and a heel panel feature a light blue speckle pattern. Cactus Jack branding appears on the left heel in Varsity Red, with a matching Jumpman logo on the right.</p>\n",
       "upper_material": ""
+    }, 
+    {
+      "box_condition": "good_condition",
+      "brand_name": "Air Jordan",
+      "category": [
+        "lifestyle"
+      ],
+      "collection_slugs": [
+        "just-dropped",
+        "just-dropped-1"
+      ],
+      "color": "Brown",
+      "designer": "Tinker Hatfield",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0e6648ed-4722-4085-8fcb-882cc674454f/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/df104459-0dbb-4b87-80a9-07dce3901fd0/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/724e5a22-8301-42ba-b86e-f80462df42b3/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7f26f824-2731-4438-830a-12e582468d06/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1e15bf17-8b09-40da-8413-aea457b3e3ba/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 6,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3c871607-23e7-405d-8c97-962354ca9ecb/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 7,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d56ae1b5-21e1-4b80-80f7-8867c75b0d9b/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 8,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/90a7bfeb-8e1d-48d7-bd09-072e6af48601/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 9,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6fc4f04a-6f71-434f-a2ef-c3b977e875bc/AIR+JORDAN+1+HIGH+G.png"
+        }
+      ],
+      "details": "Shimmer/Mahogany Mink-Velvet Brown-Tough Red",
+      "gender": [
+        "men's"
+      ],
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7867a4b9-4091-44d2-843a-c7563c60810a/AIR+JORDAN+1+HIGH+G.png",
+      "has_picture": true,
+      "has_stock": true,
+      "price": 190,
+      "id": 17,
+      "keywords": [],
+      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/021/321/847/original/473391_00.png.png",
+      "midsole": "Air",
+      "name": "Air Jordan I High G",
+      "nickname": "Shimmer",
+      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/021/321/847/original/473391_00.png.png",
+      "product_template_id": 473391,
+      "release_date": "2019-05-18T07:00:00.000Z",
+      "release_date_unix": 1558162800,
+      "release_year": 2019,
+      "retail_price_cents": 20000,
+      "shoe_condition": "new_no_defects",
+      "silhouette": "Air Jordan 7",
+      "size_range": [
+        10,
+        10.5,
+        11,
+        11.5,
+        12,
+        12.5,
+        13,
+        13.5,
+        14,
+        14.5,
+        15,
+        15.5,
+        16,
+        16.5,
+        17,
+        17.5,
+        18,
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d35c686b-f9e6-49cb-9381-9bcc79388e72/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ac0c4950-5804-4395-909c-c7511d183e8e/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89572137-c50b-4cdf-806f-e1703aff4054/AIR+JORDAN+1+HIGH+G.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0e6648ed-4722-4085-8fcb-882cc674454f/AIR+JORDAN+1+HIGH+G.png"
+          
+        }
+        ,
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/211d4d31-22dc-4792-aafd-70a6d32a4fdf/AIR+JORDAN+1+HIGH+G.png"
+          
+        }
+        ,
+        {
+          "id": 6,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b2abbb0a-f7a5-4e96-88a4-2306562b3fe0/AIR+JORDAN+1+HIGH+G.png"
+          
+        }
+       
+      ],
+      "sku": "AT3375 200",
+      "slug": "patta-x-air-jordan-7-retro-og-sp-shimmer-patta-aj7-shm",
+      "status": "active",
+      "story_html": "<p>Amsterdam-based boutique and streetwear brand, Patta joins forces with Jordan Brand to lend their signature aesthetic to the Patta x Air Jordan 7 Retro OG SP &#39;Shimmer&#39; sneaker. Part of a limited-edition capsule collection released in May 2019, this rendition sports an earth-toned color palette of Shimmer, Mahogany Mink, Velvet Brown and Tough Red hues on a premium leather and suede upper. Unique perforation patterns and an offset Jumpman logo accent the underlay, while signature Patta script dresses the triple-tone midsole. A durable rubber outsole equipped with Air technology reinforces the design, which is inspired by Michael Jordan&#39;s run with the Dream Team at the 1992 Summer Games in Barcelona.</p>\n",
+      "upper_material": null
     },
-      {
+    {
+      "box_condition": "good_condition",
+      "brand_name": "Air Jordan",
+      "category": [
+        "lifestyle"
+      ],
+      "collection_slugs": [
+        "air-jordan-1",
+        "belly",
+        "brokenrecord",
+        "bs",
+        "capspace",
+        "congrats",
+        "friendzone",
+        "greatness",
+        "hangtime",
+        "idiots",
+        "jj",
+        "just-dropped",
+        "just-dropped-1",
+        "kfc",
+        "official",
+        "pka",
+        "ringer",
+        "sneakdiss",
+        "solid",
+        "super-bowl-liii",
+        "tape",
+        "teeth",
+        "theread",
+        "thestarters",
+        "top-20-trending",
+        "wgg",
+        "woj"
+      ],
+      "color": "Brown",
+      "designer": "Peter Moore",
+      "images": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd150294-a43a-4eb9-949d-50f9d82d3cd1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45ba78cb-baf3-4c12-b4a2-e7056bd052fd/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aefbcc9a-6111-40b9-88cc-45062648690a/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 6,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 7,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e6546a3-2b89-4257-b5a4-70a1d0a53195/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 8,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ea5f52c-5273-4ae7-89f3-083008280fce/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 9,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e8f94f-9519-4ebf-8a59-e0830a9bc2f7/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        }
+      ],
+      "details": "Sail/Dark Mocha-University Red-Black",
+      "gender": [
+        "men's"
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13564560-2361-400e-bb23-cb0142d3620d/JR+ZM+VAPOR+16+PRO+FG.png"
+        },
+        {
+          "id": 2,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+        },
+        {
+          "id": 3,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
+        }
+      ],
+      "grid_picture_url": "/public/Air Jordan 1.jpg",
+      "has_picture": true,
+      "has_stock": true,
+      "price": 150,
+      "id": 12,
+      "keywords": [
+        "cactus jack"
+      ],
+      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "midsole": "Air",
+      "name": "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'",
+      "nickname": "Mocha",
+      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "product_template_id": 488879,
+      "release_date": "2019-05-11T23:59:59.000Z",
+      "release_date_unix": 1557619199,
+      "release_year": 2019,
+      "retail_price_cents": 16000,
+      "shoe_condition": "new_no_defects",
+      "silhouette": "Air Jordan 1",
+      "size_range": [
+        10,
+        10.5,
+        11,
+        11.5,
+        12,
+        12.5
+       
+      ],
+      "sku": "CD4487 100",
+      "slug": "travis-scott-x-air-jordan-1-retro-high-og-cd4487-100",
+      "status": "active",
+      "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
+      "upper_material": ""
+    }, 
+    {
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [

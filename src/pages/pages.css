@@ -137,12 +137,14 @@ h6 {
     padding: 0;
   }
 }
-.chetirefotki-grid{
+
+.chetirefotki-grid {
   @media (max-width: 850px) {
     display: flex !important;
     flex-direction: column;
   }
 }
+
 .chetirefotki {
   .chetirefotki-grid {
     display: grid;
@@ -249,202 +251,6 @@ h6 {
   }
 }
 
-.Jordan {
-  width: 100%;
-  font-family: "Tomorrow";
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    .Jordan__hero {
-      padding: 0 50px;
-      width: 100%;
-      padding-top: 60px;
-      /* .Jordan__card{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: none;
-
-            } */
-
-      .Jordan__wrap {
-        display: flex;
-
-        .Jordan__options {
-          width: 100%;
-          max-width: 350px;
-          text-transform: uppercase;
-          display: flex;
-          align-items: start;
-          flex-direction: column;
-          justify-content: center;
-          padding-top: 100px;
-
-          &:nth-child(1) {
-            h1 {
-              font-size: 40px;
-              text-transform: uppercase;
-              padding-bottom: 40px;
-            }
-          }
-
-          p {
-            font-weight: 900;
-            text-transform: uppercase;
-            font-size: 20px;
-            padding-top: 10px;
-            max-width: 200px;
-            line-height: 25px;
-          }
-
-          .Jordan__sizes {
-            padding-top: 158px;
-
-            h3 {
-              font-size: 25px;
-              padding-bottom: 20px;
-            }
-
-            .Jordan__sizes-wrap {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 25px;
-              font-weight: 900;
-              max-width: 350px;
-
-              button {
-                font-size: 20px;
-                background: transparent;
-                border: 1px solid black;
-                text-transform: uppercase;
-                width: 55px;
-                height: 55px;
-              }
-
-              /* button:hover{
-                     border: 2px solid black;
-
-                   } */
-              button:active {
-                border: 2px solid black;
-              }
-            }
-          }
-
-          button {
-            padding: 5px 10px;
-          }
-        }
-
-        .Jordan__model {
-          display: flex;
-          width: 100%;
-
-          opacity: 0;
-          animation: fadeIn 3s forwards;
-        }
-
-        /* .card1::after {
-               content: '';
-               position: absolute;
-               top: 0px;
-               left: -40px;
-               z-index: -1;
-               width: 100%;
-               max-width: 400px;
-               height: 700px;
-               border-radius: 0% 35% 35% 0% / 0% 23% 23% 0%;
-               background-color: #44bee4;
-
-            }
-
-            .card2::before {
-               content: '';
-               position: absolute;
-               top: 0px;
-               right: -60px;
-               z-index: -1;
-               width: 100%;
-               max-width: 400px;
-               height: 700px;
-               border-radius: 35% 0% 0% 35% /23% 0% 0% 23%;
-               background-color: #44bee4;
-
-            }
-            */
-      }
-    }
-  }
-
-  .Jordan__colors {
-    display: flex;
-    align-items: center;
-    padding: 0px 0 70px 0;
-    justify-content: center;
-    gap: 40px;
-
-    h2 {
-      font-size: 20px;
-    }
-
-    button {
-      width: 46px;
-      height: 46px;
-      border: none;
-      border-radius: 50%;
-      border: 1px solid #cbcbcb;
-
-      &:nth-child(1) {
-        background: #00ff22;
-      }
-
-      &:nth-child(2) {
-        background: #ffffff;
-      }
-
-      &:nth-child(3) {
-        background: #ff0000;
-      }
-    }
-  }
-
-  .Jordan__logo {
-    margin: 0 auto;
-    max-width: 200px;
-  }
-
-  /* h1 {
-      padding-top: 50px;
-      font-size: 50px;
-      text-align: center;
-      font-weight: 100;
-      font-family: 'Helvetica';
-   } */
-  h2 {
-    font-family: "Thunder";
-
-    font-size: 690px;
-    text-align: center;
-    letter-spacing: -10px;
-    position: absolute;
-    top: 100px;
-    z-index: 0;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 .Bag {
   .Bag__wrap {
@@ -710,7 +516,7 @@ h6 {
     align-items: center;
 
     background-color: #fff;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -1335,5 +1141,241 @@ h6 {
   100% {
     opacity: 0;
     transform: translateY(20px);
+  }
+}
+
+.Jordan {
+  width: 100%;
+  font-family: "Tomorrow";
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .Jordan__hero {
+      padding: 0 50px;
+      width: 100%;
+      padding-top: 60px;
+      /* .Jordan__card{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: none;
+
+            } */
+
+      .Jordan__wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .Jordan__options {
+          width: 100%;
+          height: 100%;
+          min-height: 675px;
+          max-width: 350px;
+          min-width:350px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          padding: 1.5rem;
+          border-radius: 12px;
+          background-color: transparent !important;
+          backdrop-filter: blur(10px);
+          box-shadow:10px  14px 18px rgba(0, 0, 0, 0.1);
+          justify-content: space-between;
+          z-index: 8;
+
+          p {
+            margin: 0.5rem 0;
+            color: #7f8c8d;
+          }
+
+          &:nth-child(1) {
+            h1 {
+              text-transform: uppercase;
+              padding-bottom: 40px;
+              font-size: 2rem;
+              color: #2c3e50;
+              white-space: nowrap;
+            }
+          }
+
+          p {
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding-top: 10px;
+            max-width: 200px;
+            line-height: 25px;
+          }
+
+          .Jordan__sizes {
+            padding-top: 158px;
+
+            h3 {
+              font-size: 25px;
+              padding-bottom: 20px;
+            }
+
+            .Jordan__sizes-wrap {
+
+              display: flex;
+              flex-wrap: wrap;
+              gap: 25px;
+              font-weight: 900;
+              max-width: 350px;
+
+              button {
+                font-size: 20px;
+                background: transparent;
+                border: 1px solid   #7f8c8d;
+                ;
+                text-transform: uppercase;
+                width: 55px;
+                height: 55px;
+
+              }
+
+              /* button:hover{
+                     border: 2px solid black;
+
+                   } */
+              button:active {
+                border: 2px solid black;
+              }
+            }
+          }
+
+          button {
+            padding: 5px 10px;
+          }
+        }
+        .card2{
+          p{
+            text-align: right;
+            max-width: 500px;
+            text-transform: capitalize;
+            font-size: 20px;
+            color: #4d4b4b;
+            line-height: 35px;
+
+          }
+          button{
+            text-transform: uppercase;
+            
+            padding:10px 60px;
+            background: none;
+            font-size: 35px;
+          }
+        }
+        .Jordan__model {
+          display: flex;
+          width: 100%;
+          position: absolute;
+          opacity: 0;
+          left: 0;
+          animation: fadeIn 3s forwards;
+          z-index: 8;
+        }
+
+        /* .card1::after {
+               content: '';
+               position: absolute;
+               top: 0px;
+               left: -40px;
+               z-index: -1;
+               width: 100%;
+               max-width: 400px;
+               height: 700px;
+               border-radius: 0% 35% 35% 0% / 0% 23% 23% 0%;
+               background-color: #44bee4;
+
+            }
+
+            .card2::before {
+               content: '';
+               position: absolute;
+               top: 0px;
+               right: -60px;
+               z-index: -1;
+               width: 100%;
+               max-width: 400px;
+               height: 700px;
+               border-radius: 35% 0% 0% 35% /23% 0% 0% 23%;
+               background-color: #44bee4;
+
+            }
+            */
+      }
+    }
+  }
+
+  .Jordan__colors {
+    display: flex;
+    align-items: center;
+    padding: 0px 0 70px 0;
+    justify-content: center;
+    gap: 40px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    button {
+      width: 46px;
+      height: 46px;
+      border: none;
+      border-radius: 50%;
+      border: 1px solid #cbcbcb;
+
+      &:nth-child(1) {
+        background: #00ff22;
+      }
+
+      &:nth-child(2) {
+        background: #57caff;
+      }
+
+      &:nth-child(3) {
+        background: #ff0000;
+      }
+    }
+  }
+
+
+  .Jordan__logo {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+
+  /* h1 {
+      padding-top: 50px;
+      font-size: 50px;
+      text-align: center;
+      font-weight: 100;
+      font-family: 'Helvetica';
+   } */
+  h2 {
+    font-family: "Thunder";
+
+    font-size: 690px;
+    text-align: center;
+    letter-spacing: -10px;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
