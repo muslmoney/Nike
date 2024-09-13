@@ -14,7 +14,6 @@ section {
     margin: 20px 0;
   }
 }
-
 h1,
 h2,
 h3,
@@ -179,7 +178,7 @@ h6 {
 
     div {
       position: absolute;
-      z-index: 10;
+      z-index: 7 !important;
       bottom: 12%;
       left: 7%;
 
@@ -1147,7 +1146,6 @@ h6 {
 .Jordan {
   width: 100%;
   font-family: "Tomorrow";
-
   .container {
     display: flex;
     align-items: center;
@@ -1155,9 +1153,11 @@ h6 {
     position: relative;
 
     .Jordan__hero {
+min-height: 70dvh;
+
       padding: 0 50px;
       width: 100%;
-      padding-top: 60px;
+      padding-top: 30px;
       /* .Jordan__card{
             display: flex;
             justify-content: space-between;
@@ -1167,15 +1167,18 @@ h6 {
             } */
 
       .Jordan__wrap {
+        transition: 0.3s ease-in-out;
+position: relative;
         display: flex;
         justify-content: space-between;
 
         .Jordan__options {
+          
           width: 100%;
           height: 100%;
-          min-height: 675px;
+          min-height: 575px;
           max-width: 350px;
-          min-width:350px;
+          min-width: 350px;
           text-transform: uppercase;
           display: flex;
           align-items: start;
@@ -1183,10 +1186,10 @@ h6 {
           padding: 1.5rem;
           border-radius: 12px;
           background-color: transparent !important;
-          backdrop-filter: blur(10px);
-          box-shadow:10px  14px 18px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(4px);
+          box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
           justify-content: space-between;
-          z-index: 8;
+          z-index: 10;
 
           p {
             margin: 0.5rem 0;
@@ -1213,7 +1216,6 @@ h6 {
           }
 
           .Jordan__sizes {
-            padding-top: 158px;
 
             h3 {
               font-size: 25px;
@@ -1230,8 +1232,9 @@ h6 {
 
               button {
                 font-size: 20px;
+                color: #929292;
                 background: transparent;
-                border: 1px solid   #7f8c8d;
+                border: 1px solid #7f8c8d;
                 ;
                 text-transform: uppercase;
                 width: 55px;
@@ -1253,8 +1256,30 @@ h6 {
             padding: 5px 10px;
           }
         }
-        .card2{
-          p{
+
+        .card2 {
+          .Jordan__btns {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+            align-items: center;
+
+            a {
+              width: 100%;
+            }
+
+            button {
+              text-transform: uppercase;
+              width: 100%;
+              max-width: calc(365px / 2);
+              background: none;
+              padding: 10px 0;
+
+            }
+          }
+
+          p {
             text-align: right;
             max-width: 500px;
             text-transform: capitalize;
@@ -1263,22 +1288,22 @@ h6 {
             line-height: 35px;
 
           }
-          button{
-            text-transform: uppercase;
-            
-            padding:10px 60px;
-            background: none;
-            font-size: 35px;
-          }
+
+
         }
+
         .Jordan__model {
           display: flex;
           width: 100%;
           position: absolute;
           opacity: 0;
           left: 0;
+          transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
           animation: fadeIn 3s forwards;
-          z-index: 8;
+          canvas{
+            transition: 0.2s all ease-in-out;
+
+          }
         }
 
         /* .card1::after {
@@ -1313,37 +1338,7 @@ h6 {
     }
   }
 
-  .Jordan__colors {
-    display: flex;
-    align-items: center;
-    padding: 0px 0 70px 0;
-    justify-content: center;
-    gap: 40px;
 
-    h2 {
-      font-size: 20px;
-    }
-
-    button {
-      width: 46px;
-      height: 46px;
-      border: none;
-      border-radius: 50%;
-      border: 1px solid #cbcbcb;
-
-      &:nth-child(1) {
-        background: #00ff22;
-      }
-
-      &:nth-child(2) {
-        background: #57caff;
-      }
-
-      &:nth-child(3) {
-        background: #ff0000;
-      }
-    }
-  }
 
 
   .Jordan__logo {
@@ -1361,13 +1356,92 @@ h6 {
   h2 {
     font-family: "Thunder";
 
-    font-size: 690px;
+    font-size: 590px;
     text-align: center;
     letter-spacing: -10px;
     position: absolute;
-    top: 100px;
+    top: 70px;
     z-index: 0;
   }
+}
+.showTheModel{
+
+
+ h2{
+   transition: 0.4s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    position: fixed;
+    top: 70px;
+    background-color: #fff;
+    width: 100%;
+    font-size: 850px;
+    height: 100dvh;
+z-index: 999;
+  }
+}
+
+.Jordan__model.showTheModel {
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+    position: fixed;
+    top: -90px;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+  .model{
+    height: 100dvh !important;  
+    width: 100dvw !important;
+    max-height: none !important;
+  }
+
+}
+
+.Jordan__options {
+  transition: transform 0.5s ease-in-out; /* Плавный переход для перемещения карточек */
+}
+
+.showModel.card1 {
+  transform: translateX(-200%); /* Переместить карточку влево */
+}
+
+.showModel.card2 {
+  transform: translateX(200%); /* Переместить карточку вправо */
+}
+.cross {
+  position: fixed;
+  bottom: 5%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1011;
+  opacity: 0; /* Скрыт по умолчанию */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Плавные переходы для opacity и transform */
+  transform: scale(0); /* Уменьшенный размер крестика по умолчанию */
+}
+
+.cross.show {
+  opacity: 1; /* Показать крестик */
+  transform: scale(1); /* Восстановить размер крестика */
+}
+
+.cross::before,
+.cross::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.cross::before {
+  transform: rotate(45deg);
+}
+
+
+.cross::after {
+  transform: rotate(-45deg);
 }
 
 @keyframes fadeIn {
@@ -1379,3 +1453,4 @@ h6 {
     opacity: 1;
   }
 }
+

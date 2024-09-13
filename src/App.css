@@ -18,7 +18,7 @@
   text-shadow: #fff 11px 11px 11px 11px;
   opacity: 0;
   pointer-events: none; 
-  z-index: 9 ; 
+  z-index:111111 ; 
   transition: opacity 1100ms ease-in-out;
   animation: fadeInOut 1100ms ease-in-out ;
   display: flex;
@@ -31,7 +31,7 @@
   left: 0;
   top: 170px;
   width: 100%;
-  z-index: 10;
+  z-index: 11111111;
   display: flex;
   align-items: center;
   justify-content: center;

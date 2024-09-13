@@ -2,7 +2,9 @@
   padding-top: 70px;
   text-align: center;
 }
-
+.top-none{
+  display: none;
+}
 .opacity {
   opacity: 0.7;
 }
@@ -49,7 +51,7 @@
   max-height: 0;
   transition: all 0.6s;
   overflow-x: hidden;
-  z-index: 1;
+  z-index: 10;
   position: absolute;
   top: 80px;
   left: 0;
@@ -59,6 +61,7 @@
   }
 }
 .Header__nav-item {
+  z-index: 20;
   &:hover {
     .Header-hover {
       width: 100%;
@@ -73,6 +76,7 @@
   }
 }
 .Header {
+
   /* position: sticky; */
   position: relative;
   width: 100%;
@@ -94,10 +98,9 @@
 
     .Header__nav {
       margin: 0 auto;
-
       .Header__nav-list {
-        
         display: flex;
+
         a {
           font-weight: 700;
           font-size: 18px;
@@ -105,6 +108,7 @@
         }
         .Header__nav-text {
           padding:25px 15px;
+
         }
 
         .Header__nav-link::after,
@@ -122,7 +126,7 @@
           bottom: 10px;
           transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
         }
-
+       
         .Header__nav-link::after {
           top: 0;
           transform-origin: 100% 50%;
@@ -144,6 +148,8 @@
 
     .Header__tools {
       .Header__tools-list {
+  pointer-events: all;
+
         display: flex;
         align-items: center;
         gap: 10px;
@@ -196,6 +202,7 @@
         .Header-search {
           border-radius: 20px;
           background-color: #f5f5f5;
+        pointer-events: all;
 
           @media (max-width: 1000px) {
             .Header__form-btn {

@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
+import { useLocation } from 'react-router-dom';
+
 
 const Header = () => {
   const [Burger, setBurger] = useState(false);
@@ -34,7 +36,7 @@ const Header = () => {
       searchRef.current &&
       searchRef.current.classList.contains('SearchActive')
     ) {
-      return; 
+      return;
     } else {
       setInputValue('');
     }
@@ -49,7 +51,7 @@ const Header = () => {
 
   const handleClickOutside = (event) => {
     if (searchRef.current && !searchRef.current.contains(event.target)) {
-      closeSearch({ stopPropagation: () => {} }); 
+      closeSearch({ stopPropagation: () => { } });
     }
   };
 
@@ -649,9 +651,8 @@ const Header = () => {
                   <li
                     ref={searchRef}
                     onClick={(e) => e.stopPropagation()}
-                    className={`Header__input-item ${
-                      isSearchActive ? 'SearchActive' : ''
-                    } Header-search`}
+                    className={`Header__input-item ${isSearchActive ? 'SearchActive' : ''
+                      } Header-search`}
                   >
                     <form
                       onSubmit={(e) => e.preventDefault()}
@@ -677,7 +678,7 @@ const Header = () => {
                         </svg>
                       </button>
                       <input
-                      onChange={handleInputChange}
+                        onChange={handleInputChange}
                         value={inputValue}
                         style={{ border: 'none', background: 'transparent' }}
                         placeholder="Search"
