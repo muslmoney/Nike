@@ -2,35 +2,49 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useLocation } from 'react-router-dom';
-
+import ProductsData from '../data/api.json'
+import { v4 as uuidv4 } from 'uuid';
 
 const Header = () => {
   const [Burger, setBurger] = useState(false);
   const onClickBurger = () => setBurger((prev) => !prev);
   const [isSearchActive, setSearchActive] = useState(false);
-
-
-
   const [isHovered, setIsHovered] = useState(false);
+  const [searchHistory, setSearchHistory] = useState([]);
+
+  const searchRef = useRef(null);
+  const products = ProductsData.sneakers;
+  const [inputValue, setInputValue] = useState('');
+  const [filteredProducts, setFilteredProducts] = useState(products);
 
   useEffect(() => {
-    // Устанавливаем таймер на 2 секунды
     const timer = setTimeout(() => {
       setIsHovered(true);
     }, 800);
-
-    // Очистка таймера при размонтировании компонента
     return () => clearTimeout(timer);
   }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const filtered = products.filter(product =>
+        product.name.toLowerCase().includes(inputValue.toLowerCase())
+      );
+      setFilteredProducts(filtered);
 
+    }, 500);
 
+    return () => clearTimeout(timer);
+  }, [inputValue, products, searchHistory]);
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Предотвращаем перезагрузку страницы
 
-  const searchRef = useRef(null);
-
-  const [inputValue, setInputValue] = useState('');
-
-  // const toggleSearch = () => setSearchActive(prev => !prev);
-
+    // Добавляем запрос в историю, если он не пустой и не повторяется
+    if (inputValue.trim() && !searchHistory.some(item => item.query === inputValue)) {
+      setSearchHistory((prevHistory) => [
+        { id: uuidv4(), query: inputValue }, // Изменение: добавляем объект с уникальным id и запросом
+        ...prevHistory.slice(0, 4) // Ограничиваем историю 5 элементами
+      ]);
+    }
+  };
   const toggleSearch = () => {
     if (
       searchRef.current &&
@@ -42,7 +56,6 @@ const Header = () => {
     }
     setSearchActive((prev) => !prev);
   };
-
   const closeSearch = (event) => {
     event.stopPropagation();
     setSearchActive(false);
@@ -54,7 +67,12 @@ const Header = () => {
       closeSearch({ stopPropagation: () => { } });
     }
   };
-
+  const handleRemoveHistoryItem = (id) => {
+    setSearchHistory(prevHistory => prevHistory.filter(item => item.id !== id));
+  };
+  const handleHistoryClick = (query) => {
+    setInputValue(query); // Вставляем запрос в поле ввода
+  };
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
@@ -651,65 +669,122 @@ const Header = () => {
                   <li
                     ref={searchRef}
                     onClick={(e) => e.stopPropagation()}
-                    className={`Header__input-item ${isSearchActive ? 'SearchActive' : ''
-                      } Header-search`}
-                  >
-                    <form
-                      onSubmit={(e) => e.preventDefault()}
-                      className="Header__form"
-                      onClick={toggleSearch}
-                    >
-                      <button type="button" className="Header__form-btn">
-                        <svg
-                          className="Header__icon-search search-button"
-                          aria-hidden="true"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                          role="img"
-                          width="24px"
-                          height="24px"
-                          fill="none"
+                    className={`Header__input-item ${isSearchActive ? 'SearchActive' : ''} Header-search`}>
+                    <div className='SearchA'>
+                      <div className='Search__form'>
+                        <form
+                          onSubmit={handleSubmit}
+                          className="Header__form"
+                          onClick={toggleSearch}
                         >
-                          <path
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"
-                          ></path>
-                        </svg>
-                      </button>
-                      <input
-                        onChange={handleInputChange}
-                        value={inputValue}
-                        style={{ border: 'none', background: 'transparent' }}
-                        placeholder="Search"
-                        type="text"
-                        className="Header__input"
-                      />
-                      {isSearchActive && (
-                        <button
-                          type="button"
-                          className="Header__form-close"
-                          onClick={closeSearch}
-                        >
-                          <svg
-                            className="Header__icon-close"
-                            aria-hidden="true"
-                            focusable="false"
-                            viewBox="0 0 24 24"
-                            role="img"
-                            width="24px"
-                            height="24px"
-                            fill="none"
-                          >
-                            <path
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              d="M6 18L18 6M6 6l12 12"
-                            ></path>
-                          </svg>
-                        </button>
-                      )}
-                    </form>
+                          <button type="button" className="Header__form-btn">
+                            <svg
+                              className="Header__icon-search search-button"
+                              aria-hidden="true"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                              role="img"
+                              width="24px"
+                              height="24px"
+                              fill="none"
+                            >
+                              <path
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"
+                              ></path>
+                            </svg>
+                          </button>
+                          <input
+                            onChange={handleInputChange}
+                            value={inputValue}
+                            style={{ border: 'none', background: 'transparent' }}
+                            placeholder="Search"
+                            type="text"
+                            className="Header__input"
+                          />
+                          {isSearchActive && (
+                            <button
+                              type="button"
+                              className="Header__form-close"
+                              onClick={closeSearch}
+                            >
+                              <svg
+                                className="Header__icon-close"
+                                aria-hidden="true"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                role="img"
+                                width="24px"
+                                height="24px"
+                                fill="none"
+                              >
+                                <path
+                                  stroke="currentColor"
+                                  strokeWidth="1.5"
+                                  d="M6 18L18 6M6 6l12 12"
+                                ></path>
+                              </svg>
+                            </button>
+                          )}
+                        </form>
+
+                      </div>
+                      <div className='filteredProducts__wrap'>
+                        <div className='filteredProducts history'>
+                          <h2>history</h2>
+                          <ul>
+
+                            {searchHistory.map((item) => (
+                              <li onClick={() => handleHistoryClick(item.query)} className='fade-in' key={item.id}>
+                                    <button 
+                  onClick={() => handleHistoryClick(item.query)} 
+                  style={{ 
+                    cursor: 'pointer', 
+                    background: 'none', 
+                    border: 'none', 
+                    whiteSpace: 'nowrap', // Предотвращаем перенос строк
+                    overflow: 'hidden', // Скрываем переполнение
+                    textOverflow: 'ellipsis', // Добавляем многоточие
+                    maxWidth: '150px', // Ограничиваем ширину кнопки
+                    textTransform:'capitalize',
+                    fontSize:'20px'
+                  }}
+                >
+                  {item.query}
+                </button>
+                <button onClick={() => handleRemoveHistoryItem(item.id)} style={{ cursor: 'pointer', background: 'none', border: 'none', color: 'red' }}>
+                  &times; {/* Символ крестика */}
+                </button>
+                              </li>
+
+                            ))
+                            }
+                          </ul>
+                        </div>
+
+                        <div className='filteredProducts' >
+                          {
+                            filteredProducts.length > 0 ? (
+                              <>
+                                {
+                                  filteredProducts.map((product, index) => {
+                                    return (
+                                      <div className='filteredProducts-card fade-in '>
+                                        <img src={product.grid_picture_url} alt="" />
+                                        <b>{product.name}</b>
+                                        <p>{product.gender}</p>
+                                        <b>${product.price}</b>
+                                      </div>
+                                    )
+                                  })
+                                }
+                              </>
+                            ) : (<p className='notfound' >nothing found</p>)
+                          }
+                        </div>
+                      </div>
+                    </div>
                   </li>
                   <li className="Header__tools-item Header__icon-favourites">
                     <a href="/favourites" className="Header__tools-link">

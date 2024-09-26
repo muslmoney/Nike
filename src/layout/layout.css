@@ -2,9 +2,11 @@
   padding-top: 70px;
   text-align: center;
 }
-.top-none{
+
+.top-none {
   display: none;
 }
+
 .opacity {
   opacity: 0.7;
 }
@@ -31,10 +33,12 @@
         padding-right: 10px;
         margin-left: 10px;
       }
-     
+
     }
+
     li:not(:last-child) a {
-      border-right: 1px solid #8b8b8b; /* Добавляем правый бордер */
+      border-right: 1px solid #8b8b8b;
+      /* Добавляем правый бордер */
     }
   }
 
@@ -56,12 +60,15 @@
   top: 80px;
   left: 0;
   width: 100%;
+
   @media (max-width: 800px) {
     display: none;
   }
 }
+
 .Header__nav-item {
   z-index: 20;
+
   &:hover {
     .Header-hover {
       width: 100%;
@@ -75,18 +82,21 @@
     }
   }
 }
+
 .Header {
 
   /* position: sticky; */
   position: relative;
   width: 100%;
   background-color: #fff;
-  top: 0; 
+  top: 0;
   width: 100%;
   background-color: #fff;
+
   ::-webkit-scrollbar {
     width: 0;
   }
+
   .Header__wrap-menu {
     align-items: center;
     display: flex;
@@ -98,6 +108,7 @@
 
     .Header__nav {
       margin: 0 auto;
+
       .Header__nav-list {
         display: flex;
 
@@ -106,8 +117,9 @@
           font-size: 18px;
           position: relative;
         }
+
         .Header__nav-text {
-          padding:25px 15px;
+          padding: 25px 15px;
 
         }
 
@@ -126,7 +138,7 @@
           bottom: 10px;
           transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
         }
-       
+
         .Header__nav-link::after {
           top: 0;
           transform-origin: 100% 50%;
@@ -148,7 +160,7 @@
 
     .Header__tools {
       .Header__tools-list {
-  pointer-events: all;
+        pointer-events: all;
 
         display: flex;
         align-items: center;
@@ -168,7 +180,7 @@
             padding: 5px 0px 5px 5px;
             background-color: #f5f5f5;
             outline: none;
-            font-size: 16px;
+            font-size: 21px;
           }
 
           .Header__form-btn {
@@ -192,22 +204,23 @@
           border-radius: 50%;
           background-color: #cacacb;
         }
+
         @media (prefers-color-scheme: dark) {
           .Header__tools-item:hover {
-            
+
             background-color: #000;
-            }
+          }
         }
 
         .Header-search {
           border-radius: 20px;
           background-color: #f5f5f5;
-        pointer-events: all;
+          pointer-events: all;
 
           @media (max-width: 1000px) {
             .Header__form-btn {
               padding: 5px;
-              
+
             }
 
             .Header__form-btn:hover {
@@ -225,20 +238,22 @@
               display: none;
             }
           }
+
           @media (prefers-color-scheme: dark) {
             border: #c2c2c2 1px solid;
-           
+
           }
         }
 
         .Header-search.SearchActive {
+
           border: none;
           border-radius: unset;
           transition: 0.2s linear;
           padding-top: 50px;
           position: fixed;
           width: 100%;
-          height: 40dvh;
+          height: 60dvh;
           box-shadow: 1px 1px 50px 1px rgba(0, 0, 0, 0.539);
           inset: 0;
           z-index: 10000000;
@@ -247,25 +262,36 @@
           display: flex;
           gap: 30px;
           background-color: #fff;
+
+
+
           .Header__input {
             padding: 9px;
-
+            text-transform: capitalize;
             width: 100%;
 
             display: flex;
           }
+
           .Header__form::before {
             content: '';
-            width: 100%;
-            height: 100%;
+            width: 200px;
+            height: 30px;
             color-scheme: dark !important;
             max-width: 66px;
             background-image: url(../assets/Nike-logo.svg);
             background-repeat: no-repeat;
             position: absolute;
-            left: -100px;
-            top: 10px;
+            left: -15%;
+            top: 25%;
+            transform: scale(2);
           }
+
+          .Search__form {
+            display: flex;
+            justify-content: end;
+          }
+
           .Header__form {
             width: 85%;
             border: #cacacb 1px solid;
@@ -275,10 +301,11 @@
               background: transparent;
             }
           }
+
           @media (prefers-color-scheme: dark) {
             background: #000;
-            color: #fff;  
-           
+            color: #fff;
+
           }
         }
 
@@ -288,6 +315,117 @@
           }
         }
       }
+
+      .filteredProducts__wrap {
+        display: none;
+      }
+
+
+      .Header__tools-list>.SearchActive {
+        .filteredProducts__wrap {
+          min-width: 1350px;
+          min-height: 470px;
+          display: flex;
+          max-width: 1350px;
+          padding-top: 30px;
+          justify-content: end;
+          align-items: start;
+          position: relative;
+
+
+
+
+          .filteredProducts {
+            scroll-behavior: smooth; /* Опционально: плавный скролл */
+            touch-action: pan-x; /* Разрешаем горизонтальный скролл касанием */
+            overflow-x: auto;
+            text-transform: capitalize;
+            display: flex;
+            gap: 10px;
+            width: 85%;
+            height: 100%;
+
+            .filteredProducts-card {
+
+              img {
+                width: 277px;
+                padding-bottom: 10px;
+              }
+              b{
+                font-size: 20px;
+              }
+              p {
+                font-size: 19px;
+                padding: 6px 0;
+              }
+            }
+
+          }
+
+          .notfound {
+            margin: 0 auto;
+            padding-top: 10%;
+            font-size: 40px;
+
+          }
+
+          .history {
+            left: 0;
+            position: absolute;
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+
+            ul {
+              li {
+
+                justify-content: space-between;
+                display: flex;
+
+              }
+            }
+
+            h2 {
+              font-size: 35px;
+            }
+
+            li {
+              font-size: 20px;
+              padding-top: 10px;
+            }
+          }
+
+          .filteredProducts.history {
+            max-width: 10%;
+
+            p {
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+
+      /* CSS для плавного появления элементов */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.5s ease forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+
+
+
+
+
+
+
 
       .Header__icon-favourites {
         @media (max-width: 800px) {
@@ -356,6 +494,7 @@
       right: -100%;
       transition: 0.3s ease-out;
       color: white;
+
       &.active {
         right: 0;
       }
@@ -363,6 +502,7 @@
       .Header__nav-list {
         flex-direction: column;
         text-align: left;
+
         li {
           a {
             p {
@@ -373,12 +513,14 @@
       }
     }
   }
+
   @media (max-width: 600px) {
     .Header__nav {
       width: 50%;
       padding: 100px 0 0 40px;
     }
   }
+
   @media (max-width: 600px) {
     .Header__nav {
       width: 50%;
@@ -396,6 +538,7 @@
   }
 
   text-transform: capitalize;
+
   .Header__hover-menu {
     width: 100%;
     padding-top: 10px;
@@ -404,6 +547,7 @@
     justify-content: center;
     padding: 0px 50px 50px 50px;
     gap: 80px;
+
     /* backdrop-filter: blur(3px); */
     /* filter: blur(3px); */
     .Header__hover-card {
@@ -411,6 +555,7 @@
       flex-direction: column;
       line-height: 30px;
       padding-top: 20px;
+
       h3 {
         font-weight: 700;
         font-size: 16px;
