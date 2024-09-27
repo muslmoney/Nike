@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useLocation } from 'react-router-dom';
-import ProductsData from '../data/api.json'
+import ProductsData from '../data/api.json';
 import { v4 as uuidv4 } from 'uuid';
+import Fuse from 'fuse.js'; // Импортируем библиотеку для фуззи-матчинга
 
 const Header = () => {
   const [Burger, setBurger] = useState(false);
@@ -17,23 +18,35 @@ const Header = () => {
   const [inputValue, setInputValue] = useState('');
   const [filteredProducts, setFilteredProducts] = useState(products);
 
+  // Настройки для фуззи-поиска
+  const fuseOptions = {
+    keys: ['name', 'description'], // Ищем по имени и описанию продукта
+    includeScore: true,
+    threshold: 0.3, // Чем меньше threshold, тем точнее совпадение
+  };
+  
+  const fuse = new Fuse(products, fuseOptions);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsHovered(true);
     }, 800);
     return () => clearTimeout(timer);
   }, []);
+  
   useEffect(() => {
     const timer = setTimeout(() => {
-      const filtered = products.filter(product =>
-        product.name.toLowerCase().includes(inputValue.toLowerCase())
-      );
-      setFilteredProducts(filtered);
-
+      if (inputValue.trim() === '') {
+        setFilteredProducts(products); // Если поле поиска пустое, показываем все продукты
+      } else {
+        const results = fuse.search(inputValue); // Используем фуззи-поиск
+        setFilteredProducts(results.map(result => result.item)); // Извлекаем продукты из результатов поиска
+      }
     }, 500);
 
     return () => clearTimeout(timer);
   }, [inputValue, products, searchHistory]);
+
   const handleSubmit = (e) => {
     e.preventDefault(); // Предотвращаем перезагрузку страницы
 
@@ -41,10 +54,11 @@ const Header = () => {
     if (inputValue.trim() && !searchHistory.some(item => item.query === inputValue)) {
       setSearchHistory((prevHistory) => [
         { id: uuidv4(), query: inputValue }, // Изменение: добавляем объект с уникальным id и запросом
-        ...prevHistory.slice(0, 4) // Ограничиваем историю 5 элементами
+        ...prevHistory.slice(0, 4), // Ограничиваем историю 5 элементами
       ]);
     }
   };
+
   const toggleSearch = () => {
     if (
       searchRef.current &&
@@ -56,6 +70,7 @@ const Header = () => {
     }
     setSearchActive((prev) => !prev);
   };
+
   const closeSearch = (event) => {
     event.stopPropagation();
     setSearchActive(false);
@@ -64,18 +79,22 @@ const Header = () => {
 
   const handleClickOutside = (event) => {
     if (searchRef.current && !searchRef.current.contains(event.target)) {
-      closeSearch({ stopPropagation: () => { } });
+      closeSearch({ stopPropagation: () => {} });
     }
   };
+
   const handleRemoveHistoryItem = (id) => {
     setSearchHistory(prevHistory => prevHistory.filter(item => item.id !== id));
   };
+
   const handleHistoryClick = (query) => {
     setInputValue(query); // Вставляем запрос в поле ввода
   };
+
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
+
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
 
@@ -83,6 +102,9 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+ 
+
   return (
     <div className="Header-top">
       <div className="Header__topbar container">

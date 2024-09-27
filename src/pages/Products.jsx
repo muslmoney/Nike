@@ -1,103 +1,95 @@
-import React from 'react';
-import { Button, Dropdown, Space, Cascader } from 'antd';
+import React, { useState } from 'react';
+import { Button, Dropdown, Select } from 'antd';
 import { useNavigate } from 'react-router-dom';
-// import ProductsData from '../data/Products';
 import ProductsData from '../data/api.json';
 import { ProductCard2 } from '../components/ProductCard';
 
-
-const options = [
-  {
-    label: 'Light',
-    value: 'light',
-    children: new Array(20).fill(null).map((_, index) => ({
-      label: `Number ${index}`,
-      value: index,
-    })),
-  },
-  {
-    label: 'Bamboo',
-    value: 'bamboo',
-    children: [
-      {
-        label: 'Little',
-        value: 'little',
-        children: [
-          {
-            label: 'Toy Fish',
-            value: 'fish',
-            disableCheckbox: true,
-          },
-          {
-            label: 'Toy Cards',
-            value: 'cards',
-          },
-          {
-            label: 'Toy Bird',
-            value: 'bird',
-          },
-        ],
-      },
-    ],
-  },
+// Опции для фильтров
+const genderOptions = [
+  { label: "Men's", value: "men's" },
+  { label: "Women", value: "women" },
 ];
 
+const categoryOptions = [
+  { label: 'Basketball', value: 'basketball' },
+  { label: 'Running', value: 'running' },
+];
+
+const colorOptions = [
+  { label: 'Black', value: 'black' },
+  { label: 'Red', value: 'red' },
+];
+
+const brandOptions = [
+  { label: 'Air Jordan', value: 'Air Jordan' },
+  { label: 'Nike', value: 'Nike' },
+];
+
+// Элементы для сортировки
 const items = [
-  {
-    key: '1',
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Featured
-      </a>
-    ),
-  },
-  {
-    key: '2',
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
-        Newest
-      </a>
-    ),
-  },
-  {
-    key: '3',
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        Price High-Low
-      </a>
-    ),
-  },
-  {
-    key: '4',
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        Price Low-High
-      </a>
-    ),
-  },
+  { key: '1', label: 'Featured' },
+  { key: '2', label: 'Newest' },
+  { key: '3', label: 'Price High-Low' },
+  { key: '4', label: 'Price Low-High' },
 ];
 
 const Products = () => {
   const navigate = useNavigate();
 
+  // Состояния для фильтров
+  const [selectedGender, setSelectedGender] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedColor, setSelectedColor] = useState(null);
+  const [selectedBrand, setSelectedBrand] = useState(null);
+
+  // Функция для фильтрации продуктов
+  const filteredProducts = ProductsData.sneakers.filter((product) => {
+    const genderArray = Array.isArray(product.gender) ? product.gender : [];
+    const categoryArray = Array.isArray(product.category) ? product.category : [];
+    const color = typeof product.color === 'string' ? product.color.toLowerCase() : '';
+    const brand = typeof product.brand_name === 'string' ? product.brand_name.toLowerCase() : '';
+
+    // Логирование для отладки
+    console.log('Filtering:', { genderArray, categoryArray, color, brand });
+    console.log('Selected Filters:', { selectedGender, selectedCategory, selectedColor, selectedBrand });
+
+    // Фильтруем продукты на основе выбранных фильтров
+    return (
+      (!selectedGender || genderArray.includes(selectedGender)) &&
+      (!selectedCategory || categoryArray.includes(selectedCategory)) &&
+      (!selectedColor || color.includes(selectedColor)) &&
+      (!selectedBrand || brand === selectedBrand.toLowerCase())
+    );
+  });
+
+  // Обработчики для фильтров
+  const handleGenderChange = (value) => setSelectedGender(value);
+  const handleCategoryChange = (value) => setSelectedCategory(value);
+  const handleColorChange = (value) => setSelectedColor(value);
+  const handleBrandChange = (value) => setSelectedBrand(value);
+
   const handleProductClick = (id) => {
     navigate(`/product/${id}`);
+  };
+
+  // Функция для удаления фильтра и сброса значения Select
+  const removeFilter = (filterType) => {
+    switch (filterType) {
+      case 'gender':
+        setSelectedGender(null);
+        break;
+      case 'category':
+        setSelectedCategory(null);
+        break;
+      case 'color':
+        setSelectedColor(null);
+        break;
+      case 'brand':
+        setSelectedBrand(null);
+        break;
+      default:
+        break;
+    }
   };
 
   return (
@@ -105,133 +97,94 @@ const Products = () => {
       <div className="container">
         <header className="Products__header">
           <div className="Products__header-inner">
-            <h1>new trainers & gear</h1>
-            <div className="aside-categoties">
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-            </div>
-
-            <marquee behavior="scroll" direction="right" scrollamount="10">
-              ssale sdale sal
-            </marquee>
-
+            <h1>New Trainers & Gear</h1>
             <div className="Products__header-btns">
-              <div>
-                <button className="filters">
-                  hide filters{' '}
-                  <svg
-                    aria-hidden="true"
-                    className="icon-filter-ds"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    role="img"
-                    width="24px"
-                    height="24px"
-                    fill="none"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      d="M21 8.25H10m-5.25 0H3"
-                    ></path>
-                    <path
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      d="M7.5 6v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
-                      clipRule="evenodd"
-                    ></path>
-                    <path
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      d="M3 15.75h10.75m5 0H21"
-                    ></path>
-                    <path
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      d="M16.5 13.5v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              <button className="sortBy">
-                <Space direction="vertical">
-                  <Space wrap>
-                    <Dropdown menu={{ items }} placement="bottomLeft">
-                      <Button>sort by</Button>
-                    </Dropdown>
-                  </Space>
-                </Space>
-              </button>
+              <Button className="filters">Hide Filters</Button>
+              <Dropdown menu={{ items }} placement="bottomLeft">
+                <Button>Sort by</Button>
+              </Dropdown>
             </div>
           </div>
         </header>
 
         <div className="content">
           <aside className="aside">
-            <div className="aside-categoties">
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
-              <a href="/product">
-                <p>Shoes</p>
-              </a>
+            {/* Отображение выбранных фильтров */}
+            <div className="selected-filters">
+              {selectedGender && (
+                <div className="filter-chip">
+                  Gender: {selectedGender}
+                  <button onClick={() => removeFilter('gender')}>X</button>
+                </div>
+              )}
+              {selectedCategory && (
+                <div className="filter-chip">
+                  Category: {selectedCategory}
+                  <button onClick={() => removeFilter('category')}>X</button>
+                </div>
+              )}
+              {selectedColor && (
+                <div className="filter-chip">
+                  Color: {selectedColor}
+                  <button onClick={() => removeFilter('color')}>X</button>
+                </div>
+              )}
+              {selectedBrand && (
+                <div className="filter-chip">
+                  Brand: {selectedBrand}
+                  <button onClick={() => removeFilter('brand')}>X</button>
+                </div>
+              )}
             </div>
 
-            <Cascader
-              className="Cascader"
+            {/* Фильтры */}
+            <Select
               style={{ width: '100%' }}
-              options={options}
-              multiple
-              maxTagCount="responsive"
-              placeholder={'Gender'}
+              placeholder="Gender"
+              options={genderOptions}
+              onChange={handleGenderChange}
+              value={selectedGender}
             />
-            <Cascader
-              className="Cascader"
+            <Select
               style={{ width: '100%' }}
-              options={options}
-              multiple
-              maxTagCount="responsive"
-              placeholder={'Category'}
+              placeholder="Category"
+              options={categoryOptions}
+              onChange={handleCategoryChange}
+              value={selectedCategory}
             />
-            {/* Добавьте дополнительные Cascader по необходимости */}
+            <Select
+              style={{ width: '100%' }}
+              placeholder="Color"
+              options={colorOptions}
+              onChange={handleColorChange}
+              value={selectedColor}
+            />
+            <Select
+              style={{ width: '100%' }}
+              placeholder="Brand"
+              options={brandOptions}
+              onChange={handleBrandChange}
+              value={selectedBrand}
+            />
           </aside>
           <main>
-            {ProductsData.sneakers.map((item) => (
-              <ProductCard2
-                key={item.id}
-                title={item.name}
-                category={item.category}
-                price={item.price}
-                brand={item.brand_name}
-                gender={item.gender}
-                link={`/product/${item.id}`} // Используйте правильный путь
-                ImgSrc={item.grid_picture_url}
-                onClick={() => handleProductClick(item.id)}
-              />
-            ))}
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((item) => (
+                <ProductCard2
+                  key={item.id}
+                  title={item.name}
+                  category={item.category.join(", ")} // Объединяем категории в строку
+                  price={item.price}
+                  brand={item.brand_name}
+                  gender={item.gender.join(", ")} // Объединяем пол в строку
+                  link={`/product/${item.id}`}
+                  ImgSrc={item.grid_picture_url}
+                  onClick={() => handleProductClick(item.id)}
+                />
+              ))
+            ) : (
+              <p>No products found</p>
+            )}
           </main>
         </div>
       </div>
