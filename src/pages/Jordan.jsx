@@ -27,10 +27,7 @@ function Model({ url }) {
 }
 
 const Jordan = () => {
-  const { id } = useParams();
-  const product = ProductsData.sneakers.find((product) => product.id = id);
   const [showTheModel, setShowTheModel] = useState(false);
-
   const onClickModel = () => setShowTheModel((prev) => !prev);
 
   return (

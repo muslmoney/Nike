@@ -31,7 +31,7 @@ const App = () => {
           <Outlet />
         </RouteTransition>
 
-        <main> {/* Оборачиваем основное содержимое в SearchProvider */}</main>
+        <main></main>
 
         <footer>
           <Footer />

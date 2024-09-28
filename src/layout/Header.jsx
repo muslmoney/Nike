@@ -1,69 +1,75 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
-import { useLocation } from 'react-router-dom';
 import ProductsData from '../data/api.json';
 import { v4 as uuidv4 } from 'uuid';
-import Fuse from 'fuse.js'; // Импортируем библиотеку для фуззи-матчинга
 
 const Header = () => {
+  const { id } = useParams();
+  const product = ProductsData.sneakers.find((product) => product.id == id);
   const [Burger, setBurger] = useState(false);
   const onClickBurger = () => setBurger((prev) => !prev);
   const [isSearchActive, setSearchActive] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [searchHistory, setSearchHistory] = useState([]);
+  const [isHeaderInteractive, setHeaderInteractive] = useState(false); // New state
 
   const searchRef = useRef(null);
   const products = ProductsData.sneakers;
   const [inputValue, setInputValue] = useState('');
   const [filteredProducts, setFilteredProducts] = useState(products);
-
-  // Настройки для фуззи-поиска
-  const fuseOptions = {
-    keys: ['name', 'description'], // Ищем по имени и описанию продукта
-    includeScore: true,
-    threshold: 0.3, // Чем меньше threshold, тем точнее совпадение
-  };
+  const [isToolsActive, setIsToolsActive] = useState(false);
   
-  const fuse = new Fuse(products, fuseOptions);
-
   useEffect(() => {
     const timer = setTimeout(() => {
+      setIsToolsActive(true);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleSearchInputChange = (e) => {
+    setInputValue(e.target.value);
+    const filtered = data.filter(product =>
+      product.title.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+    setFilteredProducts(filtered);
+  };
+
+  useEffect(() => {
+    // Disable header interactions for the first 800ms
+    const timer = setTimeout(() => {
       setIsHovered(true);
+      setHeaderInteractive(true); // Enable interactions
     }, 800);
     return () => clearTimeout(timer);
   }, []);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (inputValue.trim() === '') {
-        setFilteredProducts(products); // Если поле поиска пустое, показываем все продукты
-      } else {
-        const results = fuse.search(inputValue); // Используем фуззи-поиск
-        setFilteredProducts(results.map(result => result.item)); // Извлекаем продукты из результатов поиска
-      }
+      const filtered = products.filter(product =>
+        product.name.toLowerCase().includes(inputValue.toLowerCase())
+      );
+      setFilteredProducts(filtered.slice(0, 6));
     }, 500);
 
     return () => clearTimeout(timer);
   }, [inputValue, products, searchHistory]);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Предотвращаем перезагрузку страницы
+    e.preventDefault(); // Prevent page reload
 
-    // Добавляем запрос в историю, если он не пустой и не повторяется
+    // Add query to history if it's not empty and not a duplicate
     if (inputValue.trim() && !searchHistory.some(item => item.query === inputValue)) {
       setSearchHistory((prevHistory) => [
-        { id: uuidv4(), query: inputValue }, // Изменение: добавляем объект с уникальным id и запросом
-        ...prevHistory.slice(0, 4), // Ограничиваем историю 5 элементами
+        { id: uuidv4(), query: inputValue }, // Add object with unique id and query
+        ...prevHistory.slice(0, 4) // Limit history to 5 items
       ]);
     }
   };
 
   const toggleSearch = () => {
-    if (
-      searchRef.current &&
-      searchRef.current.classList.contains('SearchActive')
-    ) {
+    if (searchRef.current && searchRef.current.classList.contains('SearchActive')) {
       return;
     } else {
       setInputValue('');
@@ -88,7 +94,7 @@ const Header = () => {
   };
 
   const handleHistoryClick = (query) => {
-    setInputValue(query); // Вставляем запрос в поле ввода
+    setInputValue(query); // Insert query into input field
   };
 
   const handleInputChange = (event) => {
@@ -102,9 +108,6 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-
- 
-
   return (
     <div className="Header-top">
       <div className="Header__topbar container">
@@ -686,70 +689,70 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <nav className="Header__tools">
-                <ul className="Header__tools-list">
-                  <li
-                    ref={searchRef}
-                    onClick={(e) => e.stopPropagation()}
-                    className={`Header__input-item ${isSearchActive ? 'SearchActive' : ''} Header-search`}>
-                    <div className='SearchA'>
-                      <div className='Search__form'>
-                        <form
-                          onSubmit={handleSubmit}
-                          className="Header__form"
-                          onClick={toggleSearch}
-                        >
-                          <button type="button" className="Header__form-btn">
-                            <svg
-                              className="Header__icon-search search-button"
-                              aria-hidden="true"
-                              focusable="false"
-                              viewBox="0 0 24 24"
-                              role="img"
-                              width="24px"
-                              height="24px"
-                              fill="none"
-                            >
-                              <path
-                                stroke="currentColor"
-                                strokeWidth="1.5"
-                                d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"
-                              ></path>
-                            </svg>
-                          </button>
-                          <input
-                            onChange={handleInputChange}
-                            value={inputValue}
-                            style={{ border: 'none', background: 'transparent' }}
-                            placeholder="Search"
-                            type="text"
-                            className="Header__input"
-                          />
-                          {isSearchActive && (
-                            <button
-                              type="button"
-                              className="Header__form-close"
-                              onClick={closeSearch}
-                            >
-                              <svg
-                                className="Header__icon-close"
-                                aria-hidden="true"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                                role="img"
-                                width="24px"
-                                height="24px"
-                                fill="none"
-                              >
-                                <path
-                                  stroke="currentColor"
-                                  strokeWidth="1.5"
-                                  d="M6 18L18 6M6 6l12 12"
-                                ></path>
-                              </svg>
-                            </button>
-                          )}
-                        </form>
+              <nav className="Header__tools" style={{ pointerEvents: isHeaderInteractive ? 'auto' : 'none', opacity: isHeaderInteractive ? 1 : 0.5 }}>
+  <ul className="Header__tools-list">
+    <li
+      ref={searchRef}
+      onClick={(e) => e.stopPropagation()}
+      className={`Header__input-item ${isSearchActive ? 'SearchActive' : ''} Header-search`}>
+      <div className='SearchA'>
+        <div className='Search__form'>
+          <form
+            onSubmit={handleSubmit}
+            className="Header__form"
+            onClick={toggleSearch}
+          >
+            <button type="button" className="Header__form-btn">
+              <svg
+                className="Header__icon-search search-button"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"
+                ></path>
+              </svg>
+            </button>
+            <input
+              onChange={handleInputChange}
+              value={inputValue}
+              style={{ border: 'none', background: 'transparent' }}
+              placeholder="Search"
+              type="text"
+              className="Header__input"
+            />
+            {isSearchActive && (
+              <button
+                type="button"
+                className="Header__form-close"
+                onClick={closeSearch}
+              >
+                <svg
+                  className="Header__icon-close"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            )}
+          </form>
 
                       </div>
                       <div className='filteredProducts__wrap'>
@@ -792,12 +795,14 @@ const Header = () => {
                                 {
                                   filteredProducts.map((product, index) => {
                                     return (
-                                      <div className='filteredProducts-card fade-in '>
-                                        <img src={product.grid_picture_url} alt="" />
+                                      <div className='filteredProducts-card fade-in ' key={index}>
+                                     <a href={`/product/${product.id}`}>
+                                     <img src={product.grid_picture_url} alt="" />
                                         <b>{product.name}</b>
                                         <p>{product.gender}</p>
                                         <b>${product.price}</b>
-                                      </div>
+                                     </a>
+                                     </div>
                                     )
                                   })
                                 }
@@ -828,7 +833,26 @@ const Header = () => {
                       </svg>
                     </a>
                   </li>
-            
+                  <li className="Header__tools-item">
+                    <a href="/profile" className="Header__tools-link">
+                      <svg
+                        className="Header__tools-profile"
+                        aria-hidden="true"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        role="img"
+                        width="24px"
+                        height="24px"
+                        fill="none"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          d="M3.75 21v-3a3.75 3.75 0 013.75-3.75h9A3.75 3.75 0 0120.25 18v3M12 3.75a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
                   <li className="Header__tools-item">
                     <a
                       href="/bag"

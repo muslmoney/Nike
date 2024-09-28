@@ -6,11 +6,20 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(() => {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
+  });    
+ 
+  const [favorites, setFavorites] = useState(() => {
+    const savedFavorites = localStorage.getItem('favorites');
+    return savedFavorites ? JSON.parse(savedFavorites) : [];
   });
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
+
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
 
   const addToCart = (product) => {
     setCart((prevCart) => {
@@ -28,12 +37,17 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
-  const updateQuantity = (id, quantity) => {
-    setCart((prevCart) =>
-      prevCart.map((item) =>
-        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
-      )
-    );
+  const addToFavorites = (product) => {
+    setFavorites((prevFavorites) => {
+      if (!prevFavorites.find((item) => item.id === product.id)) {
+        return [...prevFavorites, product];
+      }
+      return prevFavorites; // Не добавлять, если уже есть
+    });
+  };
+
+  const removeFromFavorites = (id) => {
+    setFavorites((prevFavorites) => prevFavorites.filter((item) => item.id !== id));
   };
 
   const getTotalPrice = () => {
@@ -42,12 +56,11 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, updateQuantity, getTotalPrice }}
+      value={{ cart, addToCart, removeFromCart, addToFavorites, removeFromFavorites, getTotalPrice, favorites }}
     >
       {children}
     </CartContext.Provider>
   );
 };
 
-// Хук для использования контекста
 export const useCart = () => useContext(CartContext);

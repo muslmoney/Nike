@@ -14,6 +14,7 @@ section {
     margin: 20px 0;
   }
 }
+
 h1,
 h2,
 h3,
@@ -22,7 +23,17 @@ h5,
 h6 {
   font-weight: 900;
 }
+.container{
 
+  @media (max-width: 970px) {
+padding: 0;  }
+}
+.liked{
+svg{
+  fill: red;
+
+}
+}
 .Home {
   padding: 0 0 90px 0;
 
@@ -283,12 +294,14 @@ h6 {
           p {
             padding-top: 4px;
           }
-
-          img {
-            max-width: 200px;
-            max-height: 200px;
-            object-fit: cover;
-          }
+a{
+  width: 200px;
+  img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
 
           .Bag__item-details {
             display: flex;
@@ -540,6 +553,7 @@ h6 {
   }
 }
 
+
 .Products {
   .Products__header {
     position: relative;
@@ -645,12 +659,14 @@ h6 {
   }
 
   .content {
+    transition: 0.3s;
     display: flex;
     padding-top: 50px;
+    width: 100%;
 
     .aside {
       max-width: 260px;
-      padding-left: 38px;
+      padding:0  30px 0 10px;
       width: 100%;
 
       a {
@@ -691,16 +707,12 @@ h6 {
 
     main {
       width: 100%;
-      padding-left: 40px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr ;
       grid-gap: 40px 15px;
-
       img {
-        max-width: 507px;
         width: 100%;
         height: 100%;
-        max-height: 456px;
       }
 
       .Product__Card2 {
@@ -812,18 +824,19 @@ h6 {
 
   .Product__carousel {
     display: flex;
-    justify-content: space-between;
     align-items: start;
     max-width: 620px;
     width: 100%;
+    gap: 15px;
 
     aside {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      overflow-y: scroll;
+      height: 100%;
       max-height: 669px;
       scrollbar-width: none;
+      overflow-y: scroll;
 
       .Product__carousel-img {
         width: 60px;
@@ -851,11 +864,13 @@ h6 {
       .Product__main-img {
         object-fit: cover;
         border-radius: 4px;
-        width: 535px;
+        width: 100%;
         max-width: 535px;
-        height: 669px;
       }
     }
+
+    @media (max-width:975px) {}
+
   }
 
   .Product__about {
@@ -1015,6 +1030,46 @@ h6 {
 
     }
   }
+  @media (max-width:990px) {
+    flex-direction: column;
+padding: 0;
+    
+  .Product__carousel{
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+    aside{
+      overflow-y: scroll;
+      
+      max-height: none;
+      flex-direction: row !important; 
+      .Product__carousel-img{
+        width: 100px;
+        height: 100px;
+        @media (max-width:490px) {
+          width:80px;
+          height: 80px;
+        }
+      }
+    }
+    .Product__main{
+      max-width: none !important;
+flex-grow: unset;
+
+
+    }
+    .Product__main-img  {
+      max-width: none !important;
+    }
+  }
+
+    .Product__about-card ,  .Product-payment , .Product__colors
+    {
+      width: 100%;
+      max-width: none !important;
+    }
+  }
 }
 
 .Popup {
@@ -1035,6 +1090,10 @@ h6 {
   opacity: 0;
 
   transform: translateY(20px);
+  @media (max-width:990px) {
+    width: 80% ;
+  margin: 0 auto;
+  }
 }
 
 .Popup__status {
@@ -1079,6 +1138,7 @@ h6 {
     max-width: 150px;
     max-height: 150px;
   }
+
 }
 
 .Popup-show {
@@ -1146,6 +1206,8 @@ h6 {
 .Jordan {
   width: 100%;
   font-family: "Tomorrow";
+  padding-bottom: 80px;
+
   .container {
     display: flex;
     align-items: center;
@@ -1153,7 +1215,7 @@ h6 {
     position: relative;
 
     .Jordan__hero {
-min-height: 70dvh;
+      min-height: 70dvh;
 
       padding: 0 50px;
       width: 100%;
@@ -1168,12 +1230,12 @@ min-height: 70dvh;
 
       .Jordan__wrap {
         transition: 0.3s ease-in-out;
-position: relative;
+        position: relative;
         display: flex;
         justify-content: space-between;
 
         .Jordan__options {
-          
+
           width: 100%;
           height: 100%;
           min-height: 575px;
@@ -1300,7 +1362,8 @@ position: relative;
           left: 0;
           transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
           animation: fadeIn 3s forwards;
-          canvas{
+
+          canvas {
             transition: 0.2s all ease-in-out;
 
           }
@@ -1364,34 +1427,36 @@ position: relative;
     z-index: 0;
   }
 }
-.showTheModel{
+
+.showTheModel {
 
 
- h2{
-   transition: 0.4s all ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  h2 {
+    transition: 0.4s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 70px;
     background-color: #fff;
     width: 100%;
     font-size: 850px;
     height: 100dvh;
-z-index: 999;
+    z-index: 999;
   }
 }
 
 .Jordan__model.showTheModel {
-    opacity: 1;
-    transition: 0.2s all ease-in-out;
-    position: fixed;
-    top: -90px;
-    left: 0;
-    z-index: 1000;
-    overflow: hidden;
-  .model{
-    height: 100dvh !important;  
+  opacity: 1;
+  transition: 0.2s all ease-in-out;
+  position: fixed;
+  top: -90px;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+
+  .model {
+    height: 100dvh !important;
     width: 100dvw !important;
     max-height: none !important;
   }
@@ -1399,16 +1464,20 @@ z-index: 999;
 }
 
 .Jordan__options {
-  transition: transform 0.5s ease-in-out; /* Плавный переход для перемещения карточек */
+  transition: transform 0.5s ease-in-out;
+  /* Плавный переход для перемещения карточек */
 }
 
 .showModel.card1 {
-  transform: translateX(-200%); /* Переместить карточку влево */
+  transform: translateX(-200%);
+  /* Переместить карточку влево */
 }
 
 .showModel.card2 {
-  transform: translateX(200%); /* Переместить карточку вправо */
+  transform: translateX(200%);
+  /* Переместить карточку вправо */
 }
+
 .cross {
   position: fixed;
   bottom: 5%;
@@ -1416,14 +1485,19 @@ z-index: 999;
   height: 40px;
   cursor: pointer;
   z-index: 1011;
-  opacity: 0; /* Скрыт по умолчанию */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Плавные переходы для opacity и transform */
-  transform: scale(0); /* Уменьшенный размер крестика по умолчанию */
+  opacity: 0;
+  /* Скрыт по умолчанию */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  /* Плавные переходы для opacity и transform */
+  transform: scale(0);
+  /* Уменьшенный размер крестика по умолчанию */
 }
 
 .cross.show {
-  opacity: 1; /* Показать крестик */
-  transform: scale(1); /* Восстановить размер крестика */
+  opacity: 1;
+  /* Показать крестик */
+  transform: scale(1);
+  /* Восстановить размер крестика */
 }
 
 .cross::before,
@@ -1453,7 +1527,6 @@ z-index: 999;
     opacity: 1;
   }
 }
-
 /* Container for the selected filters */
 .selected-filters {
   display: flex;
@@ -1503,4 +1576,105 @@ z-index: 999;
 
 .main {
   display: flex; /* Flex layout for content */
+}
+.hide{
+  display: none;
+}
+.Favourites{
+  h2{
+padding: 40px 0;
+    font-size: 50px;
+  font-family: 'Futura';
+text-transform: uppercase;
+text-align: center;
+}
+  .container{
+    height: 50dvh;
+    padding-top: 30px;
+    p{
+    font-size: 40px;
+    text-align: center;
+    }
+    .favorites-list{
+display: flex;
+gap: 20px;
+    }
+    .favorites-item{
+      img{
+      max-width: 400px;  
+      }
+    }
+  }
+}
+.Favourites {
+  padding: 20px;
+}
+
+.Favourites h2 {
+  margin-bottom: 30px;
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Сетка для карточек */
+  gap: 20px;
+}
+
+.favorites-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favorites-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorites-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.favorites-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.favorites-item p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.favorites-item button {
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Кнопка растягивается на всю ширину карточки */
+  text-align: center;
+}
+
+.favorites-item button:hover {
+  background-color: #d9363e;
+}
+
+.favorites-item button:active {
+  background-color: #b52a2d;
 }

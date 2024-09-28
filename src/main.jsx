@@ -10,6 +10,7 @@ import NotFound from './pages/NotFound.jsx';
 import Jordan from './pages/Jordan.jsx';
 import Bag from './pages/Bag.jsx';
 import Product from './pages/Product.jsx'
+import Favourites from './pages/Favourites.jsx';
 
 
 const router = createBrowserRouter([
@@ -48,10 +49,10 @@ const router = createBrowserRouter([
         path: 'bag',
         element: <Bag />,
       },
-      //  {
-      //   path: 'favourites',
-      //   element : <Fav />
-      //  }
+       {
+        path: 'favourites',
+        element : <Favourites />
+       }
     ],
   },
 ]);

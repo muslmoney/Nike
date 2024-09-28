@@ -41,6 +41,9 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
   const [selectedBrand, setSelectedBrand] = useState(null);
+  
+  // Состояние для управления видимостью фильтров
+  const [areFiltersVisible, setFiltersVisible] = useState(true);
 
   // Функция для фильтрации продуктов
   const filteredProducts = ProductsData.sneakers.filter((product) => {
@@ -48,10 +51,6 @@ const Products = () => {
     const categoryArray = Array.isArray(product.category) ? product.category : [];
     const color = typeof product.color === 'string' ? product.color.toLowerCase() : '';
     const brand = typeof product.brand_name === 'string' ? product.brand_name.toLowerCase() : '';
-
-    // Логирование для отладки
-    console.log('Filtering:', { genderArray, categoryArray, color, brand });
-    console.log('Selected Filters:', { selectedGender, selectedCategory, selectedColor, selectedBrand });
 
     // Фильтруем продукты на основе выбранных фильтров
     return (
@@ -92,6 +91,11 @@ const Products = () => {
     }
   };
 
+  // Обработчик для кнопки фильтров
+  const toggleFilters = () => {
+    setFiltersVisible(!areFiltersVisible);
+  };
+
   return (
     <section className="Products">
       <div className="container">
@@ -99,7 +103,9 @@ const Products = () => {
           <div className="Products__header-inner">
             <h1>New Trainers & Gear</h1>
             <div className="Products__header-btns">
-              <Button className="filters">Hide Filters</Button>
+              <Button className="filters" onClick={toggleFilters}>
+                {areFiltersVisible ? 'Hide Filters' : 'Show Filters'}
+              </Button>
               <Dropdown menu={{ items }} placement="bottomLeft">
                 <Button>Sort by</Button>
               </Dropdown>
@@ -108,7 +114,7 @@ const Products = () => {
         </header>
 
         <div className="content">
-          <aside className="aside">
+          <aside className={`aside ${!areFiltersVisible ? 'hide' : ''}`}>
             {/* Отображение выбранных фильтров */}
             <div className="selected-filters">
               {selectedGender && (
