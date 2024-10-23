@@ -76,11 +76,11 @@
    button:hover {
      background-color: #fff;
    }
-   @media (prefers-color-scheme: dark) {
+   /* @media (prefers-color-scheme: dark) {
     button:hover {
       background-color: #000;
     }
-  }
+  } */
    @media (max-width:1300px) {
   min-height: 0px;
 button{

@@ -6,8 +6,8 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(() => {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
-  });    
- 
+  });
+
   const [favorites, setFavorites] = useState(() => {
     const savedFavorites = localStorage.getItem('favorites');
     return savedFavorites ? JSON.parse(savedFavorites) : [];
@@ -37,6 +37,14 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
+  const updateQuantity = (id, quantity) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
+      )
+    );
+  };
+
   const addToFavorites = (product) => {
     setFavorites((prevFavorites) => {
       if (!prevFavorites.find((item) => item.id === product.id)) {
@@ -56,7 +64,16 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, addToFavorites, removeFromFavorites, getTotalPrice, favorites }}
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        updateQuantity, // Добавили функцию обновления количества
+        addToFavorites,
+        removeFromFavorites,
+        getTotalPrice,
+        favorites,
+      }}
     >
       {children}
     </CartContext.Provider>
