@@ -1589,7 +1589,6 @@ text-transform: uppercase;
 text-align: center;
 }
   .container{
-    height: 50dvh;
     padding-top: 30px;
     p{
     font-size: 40px;
@@ -1618,8 +1617,9 @@ gap: 20px;
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Сетка для карточек */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   gap: 20px;
+  padding-bottom: 50px;
 }
 
 .favorites-item {
@@ -1628,11 +1628,16 @@ gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  max-width: 420px;
+  text-align: center;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  div{
+    width: 100%;
+  }
 }
 
 .favorites-item:hover {
@@ -1667,7 +1672,7 @@ gap: 20px;
   cursor: pointer;
   border-radius: 6px;
   transition: background-color 0.3s ease;
-  width: 100%; /* Кнопка растягивается на всю ширину карточки */
+  width: 100%; 
   text-align: center;
 }
 
