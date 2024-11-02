@@ -142,7 +142,11 @@ button{
  }
 
  
-
+.Classic-swiper{
+  .swiper-slide{
+    min-width: 350px;
+  }
+}
 
  
 
