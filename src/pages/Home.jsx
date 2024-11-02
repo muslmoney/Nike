@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className='Home'>
       <div className="Home__hero-1">
-        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1423,c_limit/7f6c6390-fa88-41d0-9198-38f6c1ada4e6/nike-just-do-it.jpg" alt="" />
+        <img className='Home__hero-img' src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1423,c_limit/7f6c6390-fa88-41d0-9198-38f6c1ada4e6/nike-just-do-it.jpg" alt="" />
         <div className='Hero__title'>
           <p>
             Nike Pegasus 41 'Prequel'
@@ -157,7 +157,7 @@ const Home = () => {
   <h1>
   Nike Pegasus 41
   </h1>
-  <img src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/981dd274-b6a6-4679-8a96-86430bb748a9___92e1503574db4cd99149055f4543c4e0.png" alt="" />
+  <img className='Home__hero-img' src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/981dd274-b6a6-4679-8a96-86430bb748a9___92e1503574db4cd99149055f4543c4e0.png" alt="" />
 </div>
 
 

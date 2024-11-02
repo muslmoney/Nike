@@ -46,20 +46,38 @@ svg{
       font-family: 'Futura';
       text-transform: uppercase;
       font-size: 75px;
+      font-size: clamp(35px ,3.906vw, 75px  );
 
     }
 
     p {
       font-size: 24px;
+      font-size: clamp(12px , 1.25vw , 25px);
       font-weight: 600;
     }
-
+   
+    .Home__hero-img{
+      @media (max-width: 850px) {
+  height: 50dvh;
+  object-fit: cover;
+      }
+    }
+    .Home__hero-img{
+      @media (max-width: 650px) {
+  height: 30dvh;
+  object-fit: cover;
+      }
+    }
     .Hero__title {
       padding-top: 50px;
     }
 
     a {
       padding-top: 30px;
+      
+      @media (max-width: 650px) {
+        padding: 10px;
+          }
     }
 
     button {
@@ -69,10 +87,14 @@ svg{
       background-color: #000;
       border: none;
       color: #fff;
+      @media (max-width: 650px) {
+        padding: 4px 15px;
+          }
 
       @media (max-width: 850px) {
         font-size: 15px;
       }
+      
     }
 
     button:hover {
@@ -91,8 +113,7 @@ svg{
     a {
       text-decoration: underline;
     }
-
-
+    
   }
 
   .Home__hero-2 {
@@ -106,12 +127,15 @@ svg{
     h1 {
       text-transform: uppercase;
       font-family: "Futura";
-      font-size: clamp(55px, 5.6875vw, 90px);
+      font-size: clamp(45px, 5.6875vw, 90px);
 
       @media (max-width: 850px) {
         color: white;
         text-shadow: #000 11px 4px 11px;
       }
+      /* @media (prefers-color-scheme: dark) {
+        color : white;
+      } */
     }
 
     p {
@@ -121,7 +145,9 @@ svg{
       font-size: clamp(15px, 1.3541vw, 26px);
 
       padding: 15px 0;
-
+      /* @media (prefers-color-scheme: dark) {
+        color : white;
+      } */
       @media (max-width: 850px) {
         color: white;
 
@@ -134,9 +160,9 @@ svg{
     }
 
 
-    @media (prefers-color-scheme: dark) {
+    /* @media (prefers-color-scheme: dark) {
       background-image: url("../assets/Nike-hero-2.jpg");
-    }
+    } */
 
     @media (max-width: 450px) {
       padding: 110px 10px 10px 10px;
@@ -144,7 +170,7 @@ svg{
   }
 
   @media (max-width: 650px) {
-    padding: 0;
+    padding: 0 0 20px 0;
   }
 }
 
@@ -232,9 +258,12 @@ svg{
   h2 {
     font-family: "Futura" !important;
     padding: 0px 0 19px 0;
-    font-size: 65px;
+    font-size: clamp(35px , 3.785vw , 65px);
     text-transform: uppercase;
-  }
+
+    @media (max-width: 650px) {
+      padding: 0;
+        }  }
 }
 
 
@@ -1527,7 +1556,6 @@ flex-grow: unset;
     opacity: 1;
   }
 }
-/* Container for the selected filters */
 .selected-filters {
   display: flex;
   flex-wrap: wrap;
@@ -1535,7 +1563,6 @@ flex-grow: unset;
   margin-bottom: 20px; /* Space below filters */
 }
 
-/* Style for each filter chip */
 .filter-chip {
   display: flex;
   align-items: center;
@@ -1545,7 +1572,6 @@ flex-grow: unset;
   padding: 5px 10px; /* Padding inside the chip */
 }
 
-/* Style for the remove button */
 .filter-chip button {
   background: none;
   border: none;
@@ -1555,12 +1581,10 @@ flex-grow: unset;
   font-weight: bold; /* Make button text bold */
 }
 
-/* Button styles for filter selections */
 .ant-select {
   margin-bottom: 20px; /* Space below select filters */
 }
 
-/* General container styles */
 .Products {
   padding: 20px; /* Padding inside the main product section */
 }
