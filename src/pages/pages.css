@@ -5,7 +5,9 @@ section {
   @media (max-width: 1100px) {
     margin: 60px 0;
   }
-
+  @media (max-width: 600px) {
+    margin: 20px 0 0 0 ;
+  }
  
 
  
@@ -26,7 +28,7 @@ padding: 0;  }
 }
 .liked{
 svg{
-  fill: red;
+  fill: rgb(247, 82, 82);
 
 }
 }
@@ -304,9 +306,6 @@ svg{
       .Bag__inner {
         display: flex;
         flex-direction: column;
-        max-height: 500px;
-        overflow: scroll;
-        scrollbar-width: none;
 
         .Bag__item {
           width: 100%;
@@ -324,6 +323,8 @@ a{
   img {
     max-width: 200px;
     max-height: 200px;
+    min-height: 200px;
+    min-width: 200px;
     object-fit: cover;
   }
 }

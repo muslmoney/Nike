@@ -40,8 +40,9 @@
 
 .nike-text {
   color: #fff;
-  
   font-size: 680px;
+font-size: clamp(250px, 40.416vw, 680px);
+
   font-family: 'Thunder';
   opacity: 0;
   animation: fadeInOut 1100ms ease-in-out forwards;

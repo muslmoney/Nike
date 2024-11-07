@@ -235,7 +235,6 @@
 
         .Header-search {
           border-radius: 20px;
-          background-color: #f5f5f5;
           pointer-events: all;
 
           @media (max-width: 1050px) {
@@ -246,6 +245,7 @@
 
             .Header__form-btn:hover {
               background-color: #cacacb;
+              border-radius: 50%;
             }
 
             .Header__form {
