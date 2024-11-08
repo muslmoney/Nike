@@ -16,7 +16,7 @@ const ProductCard = ({
     <div className={'Product__card'}>
       <Link to={link}>
         <div>
-          <img src={ImgSrc} alt={ImgTitle} />
+          <img src={ImgSrc} alt={ImgTitle}  loading="lazy" />
           <a href={link}>
             <button>{title}</button>
           </a>
@@ -42,7 +42,7 @@ export const ProductCard2 = ({
    <a>
     <div className="Product__Card2">
       <a href={link}>
-        <img src={ImgSrc} alt={ImgTitle} />
+        <img src={ImgSrc} alt={ImgTitle} loading="lazy" />
       </a>
       <div>
         <h3>
@@ -73,7 +73,7 @@ export const ProductCardSwiper = ({
    <a>
     <div className="ProductCardSwiper">
       <a href={link}>
-        <img src={ImgSrc} alt={ImgTitle} />
+        <img src={ImgSrc} alt={ImgTitle}  loading="lazy" />
       </a>
       <div>
         <h3>
@@ -101,7 +101,7 @@ export const ProductCardClass = ({
       {/* //опеределенный товар */}
       <Link to={link}>
         <div>
-          <img src={ImgSrc} alt={ImgTitle} />
+          <img src={ImgSrc} alt={ImgTitle}   loading="lazy" />
           <p>
             {title}
           </p>
