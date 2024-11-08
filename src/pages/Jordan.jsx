@@ -3,9 +3,9 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import './pages.css';
 
-function Model({ url, onLoad }) {
+function LowQualityModel() {
   const modelRef = React.useRef();
-  const { scene } = useGLTF(url, true, onLoad);
+  const { scene } = useGLTF('/jordan-low.glb'); // Путь к low-poly модели
 
   // Вращение модели
   useFrame(() => {
@@ -14,14 +14,21 @@ function Model({ url, onLoad }) {
     }
   });
 
-  return (
-    <primitive
-      object={scene}
-      ref={modelRef}
-      scale={1}
-      position={[0, 0, 0]}
-    />
-  );
+  return <primitive object={scene} ref={modelRef} scale={1} position={[0, 0, 0]} />;
+}
+
+function HighQualityModel({ onLoad }) {
+  const modelRef = React.useRef();
+  const { scene } = useGLTF('/jordan.glb', true, onLoad); // Путь к high-poly модели
+
+  // Вращение модели
+  useFrame(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return <primitive object={scene} ref={modelRef} scale={1} position={[0, 0, 0]} />;
 }
 
 const Jordan = () => {
@@ -82,11 +89,12 @@ const Jordan = () => {
                 />
                 <pointLight position={[-10, -10, -10]} decay={0} intensity={1} color={''} />
                 
-                {/* Показываем модель низкого качества до загрузки high-poly */}
-                {!isHighQualityLoaded && <Model url="/jordan-low.glb" />}
-                
-                {/* Загружаем high-poly модель и скрываем low-poly после загрузки */}
-                <Model url="/jordan.glb" onLoad={() => setHighQualityLoaded(true)} />
+                {/* Показываем только low-poly модель до загрузки high-poly */}
+                {!isHighQualityLoaded ? (
+                  <LowQualityModel />
+                ) : (
+                  <HighQualityModel onLoad={() => setHighQualityLoaded(true)} />
+                )}
 
                 <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} maxDistance={5} minDistance={5} minPolarAngle={Math.PI / 2} />
               </Canvas>
