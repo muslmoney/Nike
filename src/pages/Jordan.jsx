@@ -5,7 +5,7 @@ import './pages.css';
 
 function LowQualityModel() {
   const modelRef = React.useRef();
-  const { scene } = useGLTF('/jordan-low.glb'); // Путь к low-poly модели
+  const { scene } = useGLTF('/jordan-low.glb?v=1'); // Путь к low-poly модели
 
   // Вращение модели
   useFrame(() => {
@@ -19,7 +19,14 @@ function LowQualityModel() {
 
 function HighQualityModel({ onLoad }) {
   const modelRef = React.useRef();
-  const { scene } = useGLTF('/jordan.glb', true, onLoad); // Путь к high-poly модели
+  const { scene } = useGLTF('/jordan.glb?v=1', true);
+
+  // Убедимся, что функция onLoad вызывается, когда модель полностью загружена
+  React.useEffect(() => {
+    if (scene && onLoad) {
+      onLoad();
+    }
+  }, [scene, onLoad]);
 
   // Вращение модели
   useFrame(() => {
@@ -30,6 +37,7 @@ function HighQualityModel({ onLoad }) {
 
   return <primitive object={scene} ref={modelRef} scale={1} position={[0, 0, 0]} />;
 }
+
 
 const Jordan = () => {
   const [showTheModel, setShowTheModel] = useState(false);
@@ -88,7 +96,7 @@ const Jordan = () => {
                   color={'lightblue'}
                 />
                 <pointLight position={[-10, -10, -10]} decay={0} intensity={1} color={''} />
-                
+
                 {/* Показываем только low-poly модель до загрузки high-poly */}
                 {!isHighQualityLoaded ? (
                   <LowQualityModel />
