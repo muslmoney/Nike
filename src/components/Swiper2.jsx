@@ -22,13 +22,13 @@ const Swiper2 = () => {
   return (
     <div className="Classic-swiper">
       <Swiper
-        slidesPerView={3.9}
+        slidesPerView={4}
         spaceBetween={20}
         className="Swiper" 
         centeredSlides = {true}
         loop={true}             
         lazy={true} 
-        initialSlide={5}           
+        initialSlide={0}           
         modules={[Navigation]}    
       >
         {filteredProducts.map((item) => (

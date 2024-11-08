@@ -1,55 +1,39 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
+import ProductsData from '../data/api.json';
 import './pages.css';
 
-function LowQualityModel() {
+function Model({ url }) {
   const modelRef = React.useRef();
-  const { scene } = useGLTF('/jordan-low.glb?v=1'); // Путь к low-poly модели
+  const { scene } = useGLTF(url);
 
-  // Вращение модели
+  // Вращаем модель
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.01;
+      modelRef.current.rotation.y += 0.01; // Ротация модели по оси Y
     }
   });
 
-  return <primitive object={scene} ref={modelRef} scale={1} position={[0, 0, 0]} />;
+  return (
+    <primitive
+      object={scene}
+      ref={modelRef}
+      scale={1}
+      position={[0, 0, 0]}
+    />
+  );
 }
-
-function HighQualityModel({ onLoad }) {
-  const modelRef = React.useRef();
-  const { scene } = useGLTF('/jordan.glb?v=1', true);
-
-  // Убедимся, что функция onLoad вызывается, когда модель полностью загружена
-  React.useEffect(() => {
-    if (scene && onLoad) {
-      onLoad();
-    }
-  }, [scene, onLoad]);
-
-  // Вращение модели
-  useFrame(() => {
-    if (modelRef.current) {
-      modelRef.current.rotation.y += 0.01;
-    }
-  });
-
-  return <primitive object={scene} ref={modelRef} scale={1} position={[0, 0, 0]} />;
-}
-
 
 const Jordan = () => {
   const [showTheModel, setShowTheModel] = useState(false);
-  const [isHighQualityLoaded, setHighQualityLoaded] = useState(false);
-
-  // Переключение отображения модели
-  const toggleModel = () => setShowTheModel(prev => !prev);
+  const onClickModel = () => setShowTheModel((prev) => !prev);
 
   return (
     <div className="Jordan">
       <div className={`container ${showTheModel ? 'showTheModel' : ''}`}>
-        <h2>NIKE</h2>
+        <h2 >NIKE</h2>
         <div className="Jordan__hero">
           <div className="Jordan__wrap">
             <div className={`Jordan__options card1 ${showTheModel ? 'showModel' : ''}`}>
@@ -57,7 +41,7 @@ const Jordan = () => {
               <div className="Jordan__about">
                 <p>release date</p>
                 <p>2016-10-06</p>
-                <p>color way</p>
+                <p>color way </p>
                 <p>sail/starfish-black</p>
               </div>
               <div className='Jordan__sizes'>
@@ -74,7 +58,7 @@ const Jordan = () => {
                 </div>
               </div>
             </div>
-            <div className={`Jordan__model ${showTheModel ? 'showTheModel' : ''}`}>
+            <div className={`Jordan__model  ${showTheModel ? 'showTheModel' : ''}`}>
               <Canvas
                 className='model'
                 style={{
@@ -96,14 +80,7 @@ const Jordan = () => {
                   color={'lightblue'}
                 />
                 <pointLight position={[-10, -10, -10]} decay={0} intensity={1} color={''} />
-
-                {/* Показываем только low-poly модель до загрузки high-poly */}
-                {!isHighQualityLoaded ? (
-                  <LowQualityModel />
-                ) : (
-                  <HighQualityModel onLoad={() => setHighQualityLoaded(true)} />
-                )}
-
+                <Model url="/jordan.glb" position={[0, 0, 0]} />
                 <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} maxDistance={5} minDistance={5} minPolarAngle={Math.PI / 2} />
               </Canvas>
             </div>
@@ -117,14 +94,14 @@ const Jordan = () => {
                 <a href="/product/17">
                   <button>buy</button>
                 </a>
-                <button onClick={toggleModel}>
+                <button onClick={onClickModel}>
                   {showTheModel ? 'Hide model' : 'Show model'}
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className={`cross ${showTheModel ? 'show' : ''}`} onClick={toggleModel}></div>
+        <div className={`cross ${showTheModel ? 'show' : ''}`} onClick={onClickModel}></div>
       </div>
     </div>
   );

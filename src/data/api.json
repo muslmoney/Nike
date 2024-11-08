@@ -651,127 +651,132 @@
     },
     {
       "box_condition": "good_condition",
-      "brand_name": "Blazer",
+      "brand_name": "Air Jordan",
       "category": [
         "lifestyle"
       ],
       "collection_slugs": [
-        "under-retail-10"
+        "air-jordan-1",
+        "belly",
+        "brokenrecord",
+        "bs",
+        "capspace",
+        "congrats",
+        "friendzone",
+        "greatness",
+        "hangtime",
+        "idiots",
+        "jj",
+        "just-dropped",
+        "just-dropped-1",
+        "kfc",
+        "official",
+        "pka",
+        "ringer",
+        "sneakdiss",
+        "solid",
+        "super-bowl-liii",
+        "tape",
+        "teeth",
+        "theread",
+        "thestarters",
+        "top-20-trending",
+        "wgg",
+        "woj"
       ],
-      "color": "Black",
+      "color": "Brown",
       "designer": "Peter Moore",
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 2,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cacf1d36-8769-41b2-8616-a351efae9ce5/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd150294-a43a-4eb9-949d-50f9d82d3cd1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6eea83ac-7862-459e-abf5-2f566e2f0ac1/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45ba78cb-baf3-4c12-b4a2-e7056bd052fd/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8bc7d689-de2c-4b49-986c-b42153895bc0/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ef4dbed6-c621-4879-8db3-f87296bfb570/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aefbcc9a-6111-40b9-88cc-45062648690a/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d9fe33e-9a31-4e7b-9d7c-c4ecf7abd2bb/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ee4cdc5a-36bb-40f5-bf8d-a441674bdfd6/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e6546a3-2b89-4257-b5a4-70a1d0a53195/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3844259f-f989-464c-a143-b3a274b35ae9/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ea5f52c-5273-4ae7-89f3-083008280fce/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/adc43e71-ff78-4d39-a95f-ba86aa88565f/BLAZER+MID+%2777+VNTG.png"
-        }
-        ,
-        {
-          "id": 10,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/eb25805f-6064-42a1-aa7a-0e4c426bc374/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e8f94f-9519-4ebf-8a59-e0830a9bc2f7/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         }
       ],
-      "details": "Black/Varsity Red-Varsity Royal-White",
+      "details": "Sail/Dark Mocha-University Red-Black",
       "gender": [
         "men's"
       ],
-      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/BLAZER+MID+%2777+VNTG.png",
-      "has_picture": true,
-      "has_stock": true,
-      "price": 108,
-      "id": 7,
-      "keywords": [
-        "promoted1",
-        "underRetail"
-      ],
-      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/012/910/690/original/554724_065.png.png",
-      "midsole": "Air",
-      "name": "Nike Blazer Mid '77 Vintage",
-      "nickname": "Multicolor Swoosh Black",
-      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/012/910/690/original/554724_065.png.png",
-      "product_template_id": 397517,
-      "release_date": null,
-      "release_date_unix": null,
-      "release_year": null,
-      "retail_price_cents": 11000,
-      "shoe_condition": "new_with_defects",
-      "silhouette": "Air Jordan 1",
-      "size_range": [
-       
-        3.5,
-        4,
-        4.5,
-        5,
-        5.5,
-        6,
-        6.5,
-        7,
-        7.5,
-        8,
-        8.5,
-        9,
-        9.5
-      ],
-      "sku": "554724 065",
-      "slug": "air-jordan-1-mid-554724-065",
-      "status": "active",
-      "story_html": null,
       "colors": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5ae3d658-7948-4212-8a97-b4ac30005e90/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13564560-2361-400e-bb23-cb0142d3620d/JR+ZM+VAPOR+16+PRO+FG.png"
         },
         {
           "id": 2,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/057482ba-4077-40a4-aa18-ef8f1b8f4fcf/BLAZER+MID+%2777+VNTG.png"
-        },
-        {
-          "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b47d63e-e088-4b4c-b5fd-40c9d0fb15ba/BLAZER+MID+%2777+VNTG.png"
-        },
-        {
-          "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d5495df-cdd7-432a-afc1-1f5606a1f03f/BLAZER+MID+%2777+VNTG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
         }
       ],
+      "grid_picture_url": "/public/AirJordan1.jpg",
+      "has_picture": true,
+      "has_stock": true,
+      "price": 150,
+      "id": 12,
+      "keywords": [
+        "cactus jack"
+      ],
+      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "midsole": "Air",
+      "name": "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'",
+      "nickname": "Mocha",
+      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
+      "product_template_id": 488879,
+      "release_date": "2019-05-11T23:59:59.000Z",
+      "release_date_unix": 1557619199,
+      "release_year": 2019,
+      "retail_price_cents": 16000,
+      "shoe_condition": "new_no_defects",
+      "silhouette": "Air Jordan 1",
+      "size_range": [
+        10,
+        10.5,
+        11,
+        11.5,
+        12,
+        12.5
+       
+      ],
+      "sku": "CD4487 100",
+      "slug": "travis-scott-x-air-jordan-1-retro-high-og-cd4487-100",
+      "status": "active",
+      "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
       "upper_material": ""
-    },
+    }, 
     {
       "box_condition": "good_condition",
       "brand_name": "Air Max",
@@ -1813,132 +1818,127 @@
     },
     {
       "box_condition": "good_condition",
-      "brand_name": "Air Jordan",
+      "brand_name": "Blazer",
       "category": [
         "lifestyle"
       ],
       "collection_slugs": [
-        "air-jordan-1",
-        "belly",
-        "brokenrecord",
-        "bs",
-        "capspace",
-        "congrats",
-        "friendzone",
-        "greatness",
-        "hangtime",
-        "idiots",
-        "jj",
-        "just-dropped",
-        "just-dropped-1",
-        "kfc",
-        "official",
-        "pka",
-        "ringer",
-        "sneakdiss",
-        "solid",
-        "super-bowl-liii",
-        "tape",
-        "teeth",
-        "theread",
-        "thestarters",
-        "top-20-trending",
-        "wgg",
-        "woj"
+        "under-retail-10"
       ],
-      "color": "Brown",
+      "color": "Black",
       "designer": "Peter Moore",
       "images": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 2,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fd150294-a43a-4eb9-949d-50f9d82d3cd1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cacf1d36-8769-41b2-8616-a351efae9ce5/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/45ba78cb-baf3-4c12-b4a2-e7056bd052fd/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6eea83ac-7862-459e-abf5-2f566e2f0ac1/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 4,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8bc7d689-de2c-4b49-986c-b42153895bc0/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 5,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aefbcc9a-6111-40b9-88cc-45062648690a/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ef4dbed6-c621-4879-8db3-f87296bfb570/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 6,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbca3069-2975-451c-9031-df3d6b77e9e1/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d9fe33e-9a31-4e7b-9d7c-c4ecf7abd2bb/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 7,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e6546a3-2b89-4257-b5a4-70a1d0a53195/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ee4cdc5a-36bb-40f5-bf8d-a441674bdfd6/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 8,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ea5f52c-5273-4ae7-89f3-083008280fce/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3844259f-f989-464c-a143-b3a274b35ae9/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 9,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/08e8f94f-9519-4ebf-8a59-e0830a9bc2f7/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/adc43e71-ff78-4d39-a95f-ba86aa88565f/BLAZER+MID+%2777+VNTG.png"
+        }
+        ,
+        {
+          "id": 10,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/eb25805f-6064-42a1-aa7a-0e4c426bc374/BLAZER+MID+%2777+VNTG.png"
         }
       ],
-      "details": "Sail/Dark Mocha-University Red-Black",
+      "details": "Black/Varsity Red-Varsity Royal-White",
       "gender": [
         "men's"
       ],
+      "grid_picture_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/BLAZER+MID+%2777+VNTG.png",
+      "has_picture": true,
+      "has_stock": true,
+      "price": 108,
+      "id": 7,
+      "keywords": [
+        "promoted1",
+        "underRetail"
+      ],
+      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/012/910/690/original/554724_065.png.png",
+      "midsole": "Air",
+      "name": "Nike Blazer Mid '77 Vintage",
+      "nickname": "Multicolor Swoosh Black",
+      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/012/910/690/original/554724_065.png.png",
+      "product_template_id": 397517,
+      "release_date": null,
+      "release_date_unix": null,
+      "release_year": null,
+      "retail_price_cents": 11000,
+      "shoe_condition": "new_with_defects",
+      "silhouette": "Air Jordan 1",
+      "size_range": [
+       
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5
+      ],
+      "sku": "554724 065",
+      "slug": "air-jordan-1-mid-554724-065",
+      "status": "active",
+      "story_html": null,
       "colors": [
         {
           "id": 1,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13564560-2361-400e-bb23-cb0142d3620d/JR+ZM+VAPOR+16+PRO+FG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5ae3d658-7948-4212-8a97-b4ac30005e90/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 2,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d9639a7c-1f57-4e39-8a22-8b5ce747d449/JR+ZM+VAPOR+16+PRO+FG+OLY.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/BLAZER+MID+%2777+VNTG.png"
         },
         {
           "id": 3,
-          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/057482ba-4077-40a4-aa18-ef8f1b8f4fcf/BLAZER+MID+%2777+VNTG.png"
+        },
+        {
+          "id": 4,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b47d63e-e088-4b4c-b5fd-40c9d0fb15ba/BLAZER+MID+%2777+VNTG.png"
+        },
+        {
+          "id": 5,
+          "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d5495df-cdd7-432a-afc1-1f5606a1f03f/BLAZER+MID+%2777+VNTG.png"
         }
       ],
-      "grid_picture_url": "/public/AirJordan1.jpg",
-      "has_picture": true,
-      "has_stock": true,
-      "price": 150,
-      "id": 12,
-      "keywords": [
-        "cactus jack"
-      ],
-      "main_picture_url": "https://image.goat.com/750/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
-      "midsole": "Air",
-      "name": "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'",
-      "nickname": "Mocha",
-      "original_picture_url": "https://image.goat.com/attachments/product_template_pictures/images/018/783/111/original/488879_00.png.png",
-      "product_template_id": 488879,
-      "release_date": "2019-05-11T23:59:59.000Z",
-      "release_date_unix": 1557619199,
-      "release_year": 2019,
-      "retail_price_cents": 16000,
-      "shoe_condition": "new_no_defects",
-      "silhouette": "Air Jordan 1",
-      "size_range": [
-        10,
-        10.5,
-        11,
-        11.5,
-        12,
-        12.5
-       
-      ],
-      "sku": "CD4487 100",
-      "slug": "travis-scott-x-air-jordan-1-retro-high-og-cd4487-100",
-      "status": "active",
-      "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
       "upper_material": ""
-    }, 
+    },
     {
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
