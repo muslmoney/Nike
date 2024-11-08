@@ -24,7 +24,7 @@
         },
         {
           "id": 2,
-          "url": "/public/Air Jordan 4RM.gif"
+          "url": "/public/AirJordan4RM.gif"
         },
         {
           "id": 2,
@@ -114,7 +114,7 @@
         },
         {
           "id": 2,
-          "url": "/public/Jordan 1.gif"
+          "url": "/public/Jordan1.gif"
         },
         {
           "id": 3,
@@ -277,7 +277,7 @@
         },
         {
           "id": 2,
-          "url": "/public/Luka 3 Speedway.gif"
+          "url": "/public/Luka3Speedway.gif"
         },
         {
           "id": 3,
@@ -416,7 +416,7 @@
         },
         {
           "id": 2,
-          "url": "/public/Air Jordan 1 Mid.gif"
+       "url": "/public/AirJordan1Mid.gif"
         },
         {
           "id": 3,
@@ -1124,7 +1124,7 @@
         },
         {
           "id": 2,
-          "url": "/Nike Air Force.gif"
+          "url": "/NikeAirForce.gif"
         },
         {
           "id": 3,
@@ -1904,7 +1904,7 @@
           "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
         }
       ],
-      "grid_picture_url": "/public/Air Jordan 1.jpg",
+      "grid_picture_url": "/public/AirJordan1.jpg",
       "has_picture": true,
       "has_stock": true,
       "price": 150,

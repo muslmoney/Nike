@@ -14,7 +14,6 @@ const ProductCard = ({
   className={className}
   return (
     <div className={'Product__card'}>
-      {/* //опеределенный товар */}
       <Link to={link}>
         <div>
           <img src={ImgSrc} alt={ImgTitle} />

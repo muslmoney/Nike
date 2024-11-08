@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import ProductsData from '../data/api.json';
 import './pages.css';
 
-function Model({ url }) {
+function Model({ url, onLoad }) {
   const modelRef = React.useRef();
-  const { scene } = useGLTF(url);
+  const { scene } = useGLTF(url, true, onLoad);
 
-  // Вращаем модель
+  // Вращение модели
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.01; // Ротация модели по оси Y
+      modelRef.current.rotation.y += 0.01;
     }
   });
 
@@ -28,12 +26,15 @@ function Model({ url }) {
 
 const Jordan = () => {
   const [showTheModel, setShowTheModel] = useState(false);
-  const onClickModel = () => setShowTheModel((prev) => !prev);
+  const [isHighQualityLoaded, setHighQualityLoaded] = useState(false);
+
+  // Переключение отображения модели
+  const toggleModel = () => setShowTheModel(prev => !prev);
 
   return (
     <div className="Jordan">
       <div className={`container ${showTheModel ? 'showTheModel' : ''}`}>
-        <h2 >NIKE</h2>
+        <h2>NIKE</h2>
         <div className="Jordan__hero">
           <div className="Jordan__wrap">
             <div className={`Jordan__options card1 ${showTheModel ? 'showModel' : ''}`}>
@@ -41,7 +42,7 @@ const Jordan = () => {
               <div className="Jordan__about">
                 <p>release date</p>
                 <p>2016-10-06</p>
-                <p>color way </p>
+                <p>color way</p>
                 <p>sail/starfish-black</p>
               </div>
               <div className='Jordan__sizes'>
@@ -58,7 +59,7 @@ const Jordan = () => {
                 </div>
               </div>
             </div>
-            <div className={`Jordan__model  ${showTheModel ? 'showTheModel' : ''}`}>
+            <div className={`Jordan__model ${showTheModel ? 'showTheModel' : ''}`}>
               <Canvas
                 className='model'
                 style={{
@@ -80,7 +81,13 @@ const Jordan = () => {
                   color={'lightblue'}
                 />
                 <pointLight position={[-10, -10, -10]} decay={0} intensity={1} color={''} />
-                <Model url="/jordan.glb" position={[0, 0, 0]} />
+                
+                {/* Показываем модель низкого качества до загрузки high-poly */}
+                {!isHighQualityLoaded && <Model url="/jordan-low.glb" />}
+                
+                {/* Загружаем high-poly модель и скрываем low-poly после загрузки */}
+                <Model url="/jordan.glb" onLoad={() => setHighQualityLoaded(true)} />
+
                 <OrbitControls enablePan={false} maxPolarAngle={Math.PI / 2} maxDistance={5} minDistance={5} minPolarAngle={Math.PI / 2} />
               </Canvas>
             </div>
@@ -94,15 +101,14 @@ const Jordan = () => {
                 <a href="/product/17">
                   <button>buy</button>
                 </a>
-                <button onClick={onClickModel}>
+                <button onClick={toggleModel}>
                   {showTheModel ? 'Hide model' : 'Show model'}
                 </button>
               </div>
             </div>
           </div>
         </div>
-        {/* Крестик теперь находится вне Jordan__wrap и отображается только при showTheModel */}
-        <div className={`cross ${showTheModel ? 'show' : ''}`} onClick={onClickModel}></div>
+        <div className={`cross ${showTheModel ? 'show' : ''}`} onClick={toggleModel}></div>
       </div>
     </div>
   );
