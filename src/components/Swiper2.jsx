@@ -27,9 +27,23 @@ const Swiper2 = () => {
         className="Swiper" 
         centeredSlides = {true}
         loop={true}             
+        observer
         lazy={true} 
         initialSlide={0}           
-        modules={[Navigation]}    
+        modules={[Navigation]}   
+        breakpoints={{
+          640: { slidesPerView: 2 }, // 1 слайд для мобильных устройств
+          768: { slidesPerView: 3 }, // 2 слайда для планшетов
+          1024: { slidesPerView: 4 } // 3 слайда для десктопа
+        }} 
+        effect={window.innerWidth > 640 ? 'coverflow' : 'slide'} // Используем "slide" вместо "coverflow" на мобильных
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
       >
         {filteredProducts.map((item) => (
           <SwiperSlide key={item.id}>
