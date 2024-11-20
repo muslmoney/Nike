@@ -603,14 +603,6 @@ a{
         white-space: nowrap;
       }
 
-      .aside-categoties {
-        display: none;
-
-        @media (max-width: 960px) {
-          display: flex;
-        }
-      }
-
       @media (max-width: 960px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -620,8 +612,8 @@ a{
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-          "h1 Products__header-btns"
-          "aside-categoties aside-categoties";
+          "h1 h1 "
+          " Products__header-btns Products__header-btns";
       }
 
       h1 {
@@ -639,7 +631,7 @@ a{
       .aside-categoties {
         justify-content: space-around;
         font-size: 20px;
-        padding: 10px 0;
+        padding: 10px 0px;
       }
 
       .Products__header-btns {
@@ -676,7 +668,7 @@ a{
 
       @media (max-width: 560px) {
         width: 140px;
-        align-self: flex-end;
+        justify-content: end;
 
         .sortBy {
           display: none;
@@ -729,6 +721,7 @@ a{
 
       @media (max-width: 960px) {
         display: none;
+        
       }
     }
 
@@ -1597,22 +1590,11 @@ flex-grow: unset;
   margin-bottom: 20px; /* Space below select filters */
 }
 
-.Products {
-  padding: 20px; /* Padding inside the main product section */
-}
 
-.Products__header {
-  margin-bottom: 20px; /* Space below header */
-}
 
-.Products__header-btns {
-  display: flex;
-  gap: 10px; /* Space between buttons */
-}
 
-.main {
-  display: flex; /* Flex layout for content */
-}
+
+
 .hide{
   display: none;
 }

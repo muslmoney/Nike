@@ -106,7 +106,7 @@ const Products = () => {
               <Button className="filters" onClick={toggleFilters}>
                 {areFiltersVisible ? 'Hide Filters' : 'Show Filters'}
               </Button>
-              <Dropdown menu={{ items }} placement="bottomLeft">
+              <Dropdown className='sortBy' menu={{ items }} placement="bottomLeft">
                 <Button>Sort by</Button>
               </Dropdown>
             </div>
@@ -115,7 +115,6 @@ const Products = () => {
 
         <div className="content">
           <aside className={`aside ${!areFiltersVisible ? 'hide' : ''}`}>
-            {/* Отображение выбранных фильтров */}
             <div className="selected-filters">
               {selectedGender && (
                 <div className="filter-chip">
