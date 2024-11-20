@@ -742,7 +742,7 @@
           "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/963596b6-029f-4b95-ad43-a7c4101344c5/JR+ZM+VAPOR+16+PRO+FG.png"
         }
       ],
-      "grid_picture_url": "/public/AirJordan1.jpg",
+      "grid_picture_url": "/public/AirJordan1.jpg ",
       "has_picture": true,
       "has_stock": true,
       "price": 150,

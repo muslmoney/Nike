@@ -1,17 +1,17 @@
 
 @font-face {
 	font-family: 'Helvetica Now Text';
-	src: url('/public/fonts/HelveticaNowText-Light.ttf') ;
+	src: url('/fonts/HelveticaNowText-Light.ttf') ;
 } 
 @font-face {
 	font-family: 'Futura';
-	src: url('/public/fonts/Nike\ Futura\ ND.ttf');
+	src: url('/fonts/Nike\ Futura\ ND.ttf');
 } 
 @font-face {
 	font-family: 'Thunder';
-	src: url('/public/fonts/Thunder-ExtraBoldLC.ttf') ;
+	src: url('/fonts/Thunder-ExtraBoldLC.ttf') ;
 } 
 @font-face {
 	font-family: 'Tomorrow';
-	src: url('/public/fonts/Tomorrow-ExtraLight.ttf') ;
+	src: url('/fonts/Tomorrow-ExtraLight.ttf') ;
 } 

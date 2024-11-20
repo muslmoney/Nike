@@ -32,11 +32,11 @@ const Swiper2 = () => {
         initialSlide={0}           
         modules={[Navigation]}   
         breakpoints={{
-          640: { slidesPerView: 2 }, // 1 слайд для мобильных устройств
-          768: { slidesPerView: 3 }, // 2 слайда для планшетов
-          1024: { slidesPerView: 4 } // 3 слайда для десктопа
+          640: { slidesPerView: 2 }, 
+          768: { slidesPerView: 3 }, 
+          1024: { slidesPerView: 4 } 
         }} 
-        effect={window.innerWidth > 640 ? 'coverflow' : 'slide'} // Используем "slide" вместо "coverflow" на мобильных
+        effect={window.innerWidth > 640 ? 'coverflow' : 'slide'} 
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -46,16 +46,21 @@ const Swiper2 = () => {
         }}
       >
         {filteredProducts.map((item) => (
-          <SwiperSlide key={item.id}>
-            <ProductCardClass
-              link={`/product/${item.id}`}
-              key={item.id}
-              title={item.brand_name}
-              className={'ProductCardClass'}
-              ImgSrc={item.grid_picture_url}
-              onClick={() => handleProductClick(item.id)}
-            />
-          </SwiperSlide>
+         <SwiperSlide key={item.id}>
+         <ProductCardClass
+           link={`/product/${item.id}`}
+           key={item.id}
+           title={item.brand_name}
+           className={'ProductCardClass'}
+           ImgSrc={
+             item.grid_picture_url.startsWith('http')
+               ? item.grid_picture_url
+               : item.grid_picture_url
+           }
+           onClick={() => handleProductClick(item.id)}
+         />
+       </SwiperSlide>
+       
         ))}
       </Swiper>
     </div>
