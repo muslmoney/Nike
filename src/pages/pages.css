@@ -21,9 +21,7 @@ h5,
 h6 {
   font-weight: 900;
 }
-h1 , h2{
-  letter-spacing: -5px;
-}
+
 .container{
 
   @media (max-width: 970px) {
