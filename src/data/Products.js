@@ -66,7 +66,7 @@ const ProductsData = [
       },
       {
         id: 2,
-        url: '/public/nikevideo.gif',
+        url: '/nikevideo.gif',
       },
       {
         id: 3,

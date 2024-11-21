@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductsData from '../data/api.json';
 import NotFound from './NotFound';
@@ -8,6 +8,7 @@ const Product = () => {
   const { id } = useParams();
   const { addToCart, addToFavorites } = useCart();
   const product = ProductsData.sneakers.find((product) => product.id == id);
+  const carouselRef = useRef(null);
 
   if (!product) {
     return <NotFound />;
@@ -21,6 +22,9 @@ const Product = () => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [sizeError, setSizeError] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
+
+  const [showLeftShadow, setShowLeftShadow] = useState(false);
+  const [showRightShadow, setShowRightShadow] = useState(false);
 
   const handleAddToCart = () => {
     if (isButtonDisabled) return;
@@ -58,21 +62,61 @@ const Product = () => {
       addToFavorites({
         ...product,
         selectedSize,
-        selectedColor: { url: product.grid_picture_url }, // Это должно быть правильно
-        grid_picture_url: product.grid_picture_url, // Добавьте это, если его нет в добавляемом объекте
+        selectedColor: { url: product.grid_picture_url },
+        grid_picture_url: product.grid_picture_url,
       });
     }
   };
+
+  const handleScroll = () => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+  
+    const { scrollLeft, scrollWidth, clientWidth } = carousel;
+  
+    // Логирование значений для отладки
+    console.log('scrollLeft:', scrollLeft);
+    console.log('scrollWidth:', scrollWidth);
+    console.log('clientWidth:', clientWidth);
+  
+    setShowLeftShadow(scrollLeft > 0);
+    setShowRightShadow(scrollLeft + clientWidth < scrollWidth);
+  };
+  
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+
+    if (carousel) {
+      carousel.addEventListener('scroll', handleScroll);
+      handleScroll(); // Проверяем при монтировании
+    }
+
+    return () => {
+      if (carousel) {
+        carousel.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
 
   return (
     <div className="container">
       <div className="Product">
         <div className="Product__carousel">
-          <aside>
+          {/* Добавляем классы для теней */}
+          <aside
+            ref={carouselRef}
+            className={`Product__carousel-aside ${
+              showLeftShadow ? 'show-left-shadow' : ''
+            } ${showRightShadow ? 'show-right-shadow' : ''}`}
+          >
             {product.images.map((image, index) => {
               const isGif = image.url.endsWith('.gif');
               return (
-                <div key={index} className={`Product__carousel-img-container ${isGif ? 'video' : ''}`}>
+                <div
+                  key={index}
+                  className={`Product__carousel-img-container ${isGif ? 'video' : ''}`}
+                >
                   <img
                     loading="lazy"
                     src={image.url}
