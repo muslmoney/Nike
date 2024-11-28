@@ -25,8 +25,7 @@
       navigate(`/product/${id}`);
     };
 
-    // Добавляем useEffect для прокрутки страницы наверх при изменении роута
-    useEffect(() => {
+      useEffect(() => {
       window.scrollTo(0, 0);
     }, [id]);
 

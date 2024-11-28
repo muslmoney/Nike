@@ -74,10 +74,7 @@ const Product = () => {
   
     const { scrollLeft, scrollWidth, clientWidth } = carousel;
   
-    // Логирование значений для отладки
-    console.log('scrollLeft:', scrollLeft);
-    console.log('scrollWidth:', scrollWidth);
-    console.log('clientWidth:', clientWidth);
+    
   
     setShowLeftShadow(scrollLeft > 0);
     setShowRightShadow(scrollLeft + clientWidth < scrollWidth);

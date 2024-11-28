@@ -5,10 +5,12 @@ import { IoIosArrowDown } from "react-icons/io";
 import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 import ProductsData from '../data/api.json';
+import NotFound from './NotFound';
 
 const Bag = () => {
   const { id } = useParams();
-  const product = ProductsData.sneakers.find((product) => product.id == id);
+  const product = ProductsData.sneakers.find((product) => product.id = id);
+
   const { cart, getTotalPrice, removeFromCart, updateQuantity } = useCart();
   const [isArrowOpen, setArrowOpen] = React.useState(false);
   const [promoCode, setPromoCode] = React.useState('');
@@ -18,6 +20,8 @@ const Bag = () => {
 
   const handleArrowClick = () => {
     setArrowOpen(prev => !prev);
+    console.log(product);
+
   };
 
   const handleAddToCart = () => {
@@ -106,22 +110,27 @@ const Bag = () => {
                       <p>Size: {item.selectedSize}</p>
                       <p>${item.price}</p>
                       <div className='Bag__item-quantity'>
-                        <button onClick={() => updateQuantity(item.id, item.quantity - 1)}><CiCircleMinus /></button>
+                        <button
+                          onClick={() => {
+                            if (item.quantity > 1) {
+                              updateQuantity(item.id, item.quantity - 1);
+                            } else {
+                              removeFromCart(item.id);
+                            }
+                          }}
+                        >
+                          {item.quantity > 1 ? <CiCircleMinus /> : (
+                            <svg className='trash' aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+                              <path stroke="currentColor" strokeMiterlimit="10" strokeWidth="1.5" d="M14.25 7.5v12m-4.5-12v12M5.25 6v13.5c0 1.24 1.01 2.25 2.25 2.25h9c1.24 0 2.25-1.01 2.25-2.25V5.25m0 0h2.75m-2.75 0H21m-12-3h5.25c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H3"></path>
+                            </svg>
+                          )}
+                        </button>
                         <span>{item.quantity}</span>
-                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)}><CiCirclePlus /></button>
-                      </div>
-                      <div className='Bag__btns'>
-                        <button className='Bag__btn-remove' onClick={() => removeFromCart(item.id)}>
-                          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
-                            <path stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" d="M14.25 7.5v12m-4.5-12v12M5.25 6v13.5c0 1.24 1.01 2.25 2.25 2.25h9c1.24 0 2.25-1.01 2.25-2.25V5.25m0 0h2.75m-2.75 0H21m-12-3h5.25c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H3"></path>
-                          </svg>
-                        </button>
-                        <button>
-                          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
-                            <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
-                          </svg>
+                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>
+                          <CiCirclePlus />
                         </button>
                       </div>
+
                     </div>
                   </div>
                 ))}

@@ -27,11 +27,11 @@ const App = () => {
           <Header />
         </header>
         
-        <RouteTransition>
-          <Outlet />
-        </RouteTransition>
+   
 
-        <main></main>
+        <main>     <RouteTransition>
+          <Outlet />
+        </RouteTransition></main>
 
         <footer>
           <Footer />

@@ -1,8 +1,12 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
+import { useParams, Link } from 'react-router-dom';
+import ProductsData from '../data/api.json';
 
 const Favorites = () => {
   const { favorites, removeFromFavorites } = useCart();
+  const { id } = useParams();
+  const product = ProductsData.sneakers.find((product) => product.id = id);
 
   return (
     <div className="Favourites">
